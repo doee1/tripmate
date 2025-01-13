@@ -212,8 +212,10 @@ h1 {
 .card {
   width: 100%;
   height: fit-content;
-  transform: scale(0.8);
+  transform: scale(0.93);
   transition: transform 0.3s ease-in-out;
+  filter: brightness(80%);
+
 }
 
 .slide_img_wrap {
@@ -233,6 +235,7 @@ h1 {
 
 .card:hover {
   transform: scaleX(1);
+  filter: brightness(100%);
 }
 .img_area img {
   width: 100%;
