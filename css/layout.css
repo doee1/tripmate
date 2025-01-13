@@ -23,6 +23,7 @@ header {
   align-items: center;
   position: fixed;
   background-color: white;
+  z-index: 999;
 }
 
 .header_contents {
@@ -212,7 +213,7 @@ h1 {
   width: 100%;
   height: fit-content;
   transform: scale(0.8);
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .slide_img_wrap {
@@ -237,7 +238,10 @@ h1 {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: -20px 0;
+}
+
+.img_area .sydney_img {
+  object-position: -295px;
 }
 .text_wrap {
   padding: 10px;
@@ -260,4 +264,259 @@ h1 {
   font-size: 16px;
   font-weight: 500;
   line-height: 23px;
+}
+/*🎀베너1 */
+.banner1 {
+  width: 100%;
+  height: fit-content;
+  background-color: #fff;
+  padding: 120px 0;
+  display: flex;
+  justify-content: center;
+}
+.banner1_img {
+  width: 1200px;
+  height: 200px;
+  background-image: url(/img/banner1/banner1_content.png);
+  background-repeat: no-repeat;
+  padding: 0 175px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+/* 베너1 텍스트 */
+.banner1_textbox {
+  color: var(--default-wh);
+}
+.banner1_botton {
+  width: fit-content;
+  font-size: 12px;
+  color: var(--default-wh);
+  background-color: var(--default-gr);
+  padding: 5px 20px;
+  border-radius: 10px;
+  line-height: 17px;
+  align-items: center;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.banner1 h3 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+
+.banner1 h3 span {
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.banner1 p {
+  font-size: 12px;
+  line-height: 38px;
+}
+/* 🌞🌞sec2 */
+.sec2 {
+  width: 100%;
+  height: fit-content;
+  background-color: #f7f7f7;
+  padding: 120px 0;
+}
+.sec2_contents {
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto;
+}
+
+.sec2_title h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 58px;
+  margin-bottom: 40px;
+}
+
+.sec2 .sec2_contents .sec2_img {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  gap: 15px;
+}
+
+/* 혼자여행 */
+.sec2_img .solo_trip {
+  width: 390px;
+  height: 480px;
+  background-image: url(/img/sec2/img1.png);
+  background-repeat: no-repeat;
+  color: var(--default-wh);
+  display: flex;
+  align-items: end;
+  padding: 20px;
+  box-sizing: border-box;
+  transform: scale(0.95);
+  transition: 0.3s;
+  filter: brightness(80%);
+}
+
+.sec2_img .solo_trip:hover {
+  transform: scale(1);
+  filter: brightness(100%);
+}
+
+.sec2_img2 {
+  width: 795px;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* 작은이미지 박스들 */
+
+.sec2_img2 div {
+  width: 390px;
+  height: 232.5px;
+  color: var(--default-wh);
+  display: flex;
+  align-items: end;
+  padding: 20px;
+  box-sizing: border-box;
+  transform: scale(0.95);
+  transition: 0.3s;
+  filter: brightness(80%);
+}
+
+/* 효도여행 */
+.sec2_img2 a:first-child div {
+  background-image: url(/img/sec2/효도여행.png);
+  background-repeat: no-repeat;
+}
+/* 가족여행 */
+.sec2_img2 a:nth-child(2) div {
+  background-image: url(/img/sec2/가족여행.png);
+  background-repeat: no-repeat;
+}
+/* 저예산 */
+.sec2_img2 a:nth-child(3) div {
+  background-image: url(/img/sec2/저예산.png);
+  background-repeat: no-repeat;
+}
+/* 미식여행 */
+.sec2_img2 a:nth-child(4) div {
+  background-image: url(/img/sec2/미식여행.png);
+  background-repeat: no-repeat;
+}
+
+.sec2_img2 a:hover div {
+  transform: scale(1);
+  filter: brightness(100%);
+}
+
+/* 🌞🌞🌞섹션3 */
+.sec3 {
+  width: 100%;
+  height: fit-content;
+  background-color: #fff;
+  padding: 120px 0;
+}
+.sec3_contents {
+  width: 1200px;
+  height: fit-content;
+  margin: 0 auto;
+}
+/* 섹션3 타이틀 */
+.sec3 h2 {
+  color: var(--main-color);
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 58px;
+}
+.sec3_title > h3 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 58px;
+}
+
+.sec3_title > p {
+  font-size: 16px;
+  line-height: 23px;
+  color: var(--default-gr);
+  margin-bottom: 60px;
+}
+/* sec3 메인 */
+.sec3_main {
+  display: flex;
+  width: 100%;
+}
+/* sec3 이미지 */
+.left_img img {
+  width: 600px;
+  height: 380px;
+  border-radius: 15px;
+}
+/* sec3 텍스트 */
+.right_text {
+  width: 100%;
+  height: 380px;
+  overflow: hidden;
+  margin-left: 50px;
+}
+/* 페이지 버튼 */
+.page_button {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 16px;
+}
+
+.page_button a {
+  font-size: 16px;
+  line-height: 23px;
+  color: #d9d9d9;
+}
+/* 리뷰섹션 */
+.sec3_button {
+  width: fit-content;
+  height: fit-content;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--main-color);
+  border-radius: 17px;
+  border: 1px solid var(--main-color);
+  padding: 3px 24px;
+}
+.rivew1 span {
+  color: var(--main-color);
+  font-size: 20px;
+  line-height: 29px;
+  margin-bottom: 5px;
+}
+.rivew1 h3 {
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.rivew1 p {
+  font-size: 20px;
+  line-height: 36px;
+  margin-bottom: 30px;
+}
+
+/* 더보기 버튼 */
+.more_section {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+.right_text .more {
+  width: fit-content;
+  height: fit-content;
+  font-size: 15px;
+  padding: 5px 30px;
+  border-radius: 5px;
+  cursor: pointer;
 }
