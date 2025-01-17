@@ -210,11 +210,41 @@ section {
 .sec_title2 h3 {
   font-size: 20px;
   font-weight: 800;
-  background-color: aqua;
 }
 
 .sec_title2 p {
   text-align: center;
+}
+/* 슬라이드 영역 */
+.slide {
+  max-width: 100%;
+  height: 265px;
+  margin: 80px auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.slide > .slid_card_wrap {
+  display: flex;
+  gap: 0 40px;
+  width: max-content;
+  padding-right: 40px;
+  will-change: transform;
+  animation: slide 30s linear infinite;
+}
+
+.sec4_card {
+  width: 500px;
+  height: fit-content;
+}
+/* 카드 슬라이드 애니메이션 */
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 /* 🌞섹션1  */
@@ -280,9 +310,13 @@ section {
   height: fit-content;
 }
 
-.slide_img_wrap {
+.sec1_slide {
+  height: fit-content;
+}
+
+.sec1_slide_wrap {
+  height: fit-content;
   display: flex;
-  overflow: hidden;
   gap: 50px;
 }
 
@@ -343,7 +377,7 @@ section {
 .banner1_img {
   width: 1200px;
   height: 200px;
-  background-image: url(/img/banner1/banner1_content.png);
+  background-image: url(/img/main/banner1/banner1.png);
   background-repeat: no-repeat;
   padding: 0 175px;
   box-sizing: border-box;
@@ -373,7 +407,7 @@ section {
   margin-bottom: 20px;
 }
 
-.banner1 h3 span {
+.banner1 span {
   font-size: 25px;
   font-weight: 800;
 }
@@ -403,26 +437,25 @@ section {
 .sec2_img .solo_trip {
   width: 390px;
   height: 480px;
-  background-image: url(/img/sec2/img1.png);
+  background-image: url(/img/main/sec2/img1.png);
   background-repeat: no-repeat;
   color: var(--default-wh);
   display: flex;
   align-items: end;
   padding: 20px;
   box-sizing: border-box;
-  transform: scale(0.95);
   transition: 0.3s;
   filter: brightness(80%);
 }
 
 .sec2_img .solo_trip:hover {
-  transform: scale(1);
+  transform: scale(1.01);
   filter: brightness(100%);
 }
 
 .sec2_img2 {
   width: 795px;
-  height: fit-content;
+  height: 480px;
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
@@ -438,34 +471,33 @@ section {
   align-items: end;
   padding: 20px;
   box-sizing: border-box;
-  transform: scale(0.95);
   transition: 0.3s;
   filter: brightness(80%);
 }
 
 /* 효도여행 */
 .sec2_img2 a:first-child div {
-  background-image: url(/img/sec2/효도여행.png);
+  background-image: url(/img/main/sec2/효도여행.png);
   background-repeat: no-repeat;
 }
 /* 가족여행 */
 .sec2_img2 a:nth-child(2) div {
-  background-image: url(/img/sec2/가족여행.png);
+  background-image: url(/img/main/sec2/가족여행.png);
   background-repeat: no-repeat;
 }
 /* 저예산 */
 .sec2_img2 a:nth-child(3) div {
-  background-image: url(/img/sec2/저예산.png);
+  background-image: url(/img/main/sec2/저예산.png);
   background-repeat: no-repeat;
 }
 /* 미식여행 */
 .sec2_img2 a:nth-child(4) div {
-  background-image: url(/img/sec2/미식여행.png);
+  background-image: url(/img/main/sec2/미식여행.png);
   background-repeat: no-repeat;
 }
 
 .sec2_img2 a:hover div {
-  transform: scale(1);
+  transform: scale(1.01);
   filter: brightness(100%);
 }
 
@@ -557,91 +589,9 @@ section {
 /* 🌞🌞🌞🌞섹션4 */
 .sec4_contents {
   width: 100%;
-  background-color: aquamarine;
   overflow: hidden;
 }
 /* 카드 */
-.slide {
-  width: 100%;
-  height: 265px;
-  position: relative;
-  margin-top: 80px;
-}
-.slid_card_wrap,
-.slid_card_wrap2 {
-  position: absolute;
-  top: 0;
-  display: flex;
-  gap: 40px;
-  width: max-content;
-  overflow: hidden;
-}
-
-/* 첫 번째 슬라이드 */
-.slid_card_wrap {
-  animation: slide 20s linear infinite;
-}
-
-/* 두 번째 슬라이드 */
-.slid_card_wrap2 {
-  animation: slide2 20s linear infinite;
-  transform: translateX(100%);
-}
-
-/* 첫 번째 카드 슬라이드 애니메이션 */
-@keyframes slide {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-/* 두 번째 카드 슬라이드 애니메이션 */
-@keyframes slide2 {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
-}
-/* .slid_card_wrap {
-  position: absolute;
-  top: 0;
-  display: flex;
-  gap: 40px;
-  animation: slide 20s linear infinite;
-  width: max-content;
-}
-.slid_card_wrap2 {
-  position: absolute;
-  top: 0;
-  display: flex;
-  gap: 40px;
-  animation: slide 20s linear infinite;
-  width: max-content;
-  margin-left: 40px;
-  transform: translateX(100%);
-}
-
-@keyframes slide {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-@keyframes slide2 {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
-} */
 
 .sec4_card {
   width: 500px;
@@ -660,7 +610,7 @@ section {
   gap: 35px;
 }
 .sec4 {
-  background-color: #f7f7f7;
+  /* background-color: #f7f7f7; */
 }
 .sec4_main_txt h3 {
   font-size: 18px;
@@ -728,4 +678,100 @@ section {
   line-height: var(--xs-line-height);
   background-color: #f5f4f4;
   border-radius: 8px;
+}
+/* 🌞🌞🌞🌞🌞섹션5 */
+.sec5 {
+  background-color: #f7f7f7;
+}
+.sec5_contents {
+  width: 1200px;
+  height: fit-content;
+  margin: 0 auto;
+}
+
+.sec5_card_wrap {
+  display: flex;
+  gap: 25px;
+  margin-top: 85px;
+}
+/* 섹션5 카드 */
+.sec5_card {
+  flex: 1;
+  height: 445px;
+  position: relative;
+}
+
+.sec5_card > img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* 카드1 설정 */
+.sec5_card:first-child > img {
+  filter: brightness(32%);
+}
+
+.sec5_card:first-child::after {
+  content: "모집마감";
+  color: var(--default-wh);
+  font-size: 16px;
+  padding: 10px 20px;
+  border: 1px solid var(--default-wh);
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  top: 39%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 500;
+}
+
+.sec5_card:first-child .txt_button {
+  color: var(--default-wh);
+  background-color: var(--main-color);
+}
+
+/* 섹션5 카드 텍스트 */
+.sec5_card_txt {
+  padding: 0 10px;
+  font-size: var(--xs-font-size);
+}
+.txt_button {
+  width: fit-content;
+  font-size: var(--xs-font-size);
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+  padding: 5px 20px;
+  margin-bottom: 10px;
+}
+
+.txt_button p {
+  font-size: var(--xs-font-size);
+  margin-bottom: 20px;
+}
+.user {
+  display: flex;
+  gap: 3px;
+}
+
+.sec5_card_txt .user_info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+/* 베너2 */
+.banner2 {
+  background-image: url(/img/main/banner3/banner2.png);
+  background-repeat: no-repeat;
+}
+
+.banner2 h3 {
+  margin-bottom: 0;
+}
+
+.banner2 p {
+  margin-bottom: 30px;
 }
