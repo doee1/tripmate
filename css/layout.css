@@ -224,28 +224,28 @@ section {
   display: flex;
   align-items: center;
 }
-.slide > .slid_card_wrap {
+/* .slide > .slid_card_wrap {
   display: flex;
   gap: 0 40px;
   width: max-content;
   padding-right: 40px;
   will-change: transform;
   animation: slide 30s linear infinite;
-}
+} */
 
-.sec4_card {
+/* .sec5_card {
   width: 500px;
   height: fit-content;
-}
+} */
 /* 카드 슬라이드 애니메이션 */
-@keyframes slide {
+/* @keyframes slide {
   0% {
     transform: translateX(0%);
   }
   100% {
     transform: translateX(-100%);
   }
-}
+} */
 
 /* 🌞섹션1  */
 .sec1 {
@@ -333,6 +333,9 @@ section {
 
 .img_area:hover {
   transform: scaleX(1);
+}
+.sec1_slide_wrap:hover {
+  animation-play-state: paused;
 }
 .img_area img {
   width: 100%;
@@ -586,116 +589,23 @@ section {
   cursor: pointer;
 }
 
-/* 🌞🌞🌞🌞섹션4 */
-.sec4_contents {
-  width: 100%;
-  overflow: hidden;
-}
-/* 카드 */
-
-.sec4_card {
-  width: 500px;
-  height: fit-content;
-  padding: 35px 50px;
-  border: 1px solid #d9d9d9;
-  border-radius: 12px;
-  background-color: #fff;
-  box-sizing: border-box;
-  /* flex: 0 0 auto; */
-}
-/* 섹션4 카드 top */
-.card_top {
-  width: 100%;
-  display: flex;
-  gap: 35px;
-}
+/* 🌞🌞🌞🌞🌞섹션4 */
 .sec4 {
-  /* background-color: #f7f7f7; */
-}
-.sec4_main_txt h3 {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-.sec4_main_txt p {
-  font-size: var(--xs-font-size);
-  color: #7b7a7a;
-}
-.sec4_main_img img {
-  width: 100px;
-  height: 100px;
-  border-radius: 15px;
-  object-fit: cover;
-}
-/* 섹션4 카드 middle */
-.card_mid {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  justify-content: space-between;
-  margin-top: 30px;
-}
-.user_info {
-  font-size: 10px;
-  line-height: var(--xs-line-height);
-  color: var(--default-gr);
-  display: flex;
-  gap: 6px;
-}
-.user_info img {
-  width: 22px;
-  height: 22px;
-  object-fit: cover;
-  border-radius: 25px;
-}
-
-.date {
-  font-size: 10px;
-  line-height: var(--xs-line-height);
-  font-weight: 700;
-}
-.sec4_icon {
-  width: fit-content;
-  display: flex;
-  gap: 10px;
-}
-
-.sec4_icon span {
-  font-size: 10px;
-}
-/* 섹션4 카드 바텀 칩들 */
-.sec4_bottom {
-  display: flex;
-  margin-top: 10px;
-  gap: 8px;
-}
-
-.sec4_bottom div {
-  width: fit-content;
-  height: fit-content;
-  padding: 2px 20px;
-  font-size: 10px;
-  line-height: var(--xs-line-height);
-  background-color: #f5f4f4;
-  border-radius: 8px;
-}
-/* 🌞🌞🌞🌞🌞섹션5 */
-.sec5 {
   background-color: #f7f7f7;
 }
-.sec5_contents {
+.sec4_contents {
   width: 1200px;
   height: fit-content;
   margin: 0 auto;
 }
 
-.sec5_card_wrap {
+.sec4_card_wrap {
   display: flex;
   gap: 25px;
   margin-top: 85px;
 }
-/* 섹션5 카드 */
-.sec5_card {
+/* 섹션4 카드 */
+.sec4_card {
   flex: 1;
   height: 445px;
   position: relative;
@@ -774,4 +684,151 @@ section {
 
 .banner2 p {
   margin-bottom: 30px;
+}
+/* ================================================================ */
+/* 카드 자동 슬라이더 효과 */
+/* 🌞🌞🌞🌞섹션5 */
+
+.sec5 {
+  overflow: hidden;
+}
+.sec5_contents {
+  width: 100%;
+}
+/* 카드 */
+
+.sec5_card {
+  width: 500px;
+  height: fit-content;
+  padding: 35px 50px;
+  border-radius: 12px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+/* 섹션4 카드 top */
+.card_top {
+  width: 100%;
+  display: flex;
+  gap: 35px;
+}
+.sec5_main_txt h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.sec5_main_txt p {
+  font-size: var(--xs-font-size);
+  color: #7b7a7a;
+}
+.sec5_main_img img {
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+/* 섹션4 카드 middle */
+.card_mid {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.user_info {
+  font-size: 10px;
+  line-height: var(--xs-line-height);
+  color: var(--default-gr);
+  display: flex;
+  gap: 6px;
+}
+.user_info img {
+  width: 22px;
+  height: 22px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.date {
+  font-size: 10px;
+  line-height: var(--xs-line-height);
+  font-weight: 700;
+}
+.sec5_icon {
+  width: fit-content;
+  display: flex;
+  gap: 10px;
+}
+
+.sec5_icon span {
+  font-size: 10px;
+}
+/* 섹션4 카드 바텀 칩들 */
+.sec5_bottom {
+  display: flex;
+  margin-top: 10px;
+  gap: 8px;
+}
+
+.sec5_bottom div {
+  width: fit-content;
+  height: fit-content;
+  padding: 2px 20px;
+  font-size: 10px;
+  line-height: var(--xs-line-height);
+  background-color: #f5f4f4;
+  border-radius: 8px;
+}
+
+/* 카드 슬라이더 효과 */
+
+.slider {
+  height: 100%;
+  margin: auto;
+  position: relative;
+  width: 120%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  /* left: -10%; */
+}
+
+.slide-track {
+  display: flex;
+  width: calc(528px * 12);
+  animation: scroll 30s linear infinite;
+}
+
+.slide-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-528px * 6));
+  }
+}
+
+.slide {
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  perspective: 100px;
+  border: 1px solid #d9d9d9;
+  border-radius: 12px;
+}
+
+.train-card {
+  width: fit-content;
+  transition: transform 0.1s;
+  border-radius: 10px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.train-card:hover {
+  transform: scale(1.03);
 }
