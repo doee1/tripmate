@@ -235,6 +235,12 @@ section {
   align-items: center;
   border: 1px solid #d9d9d9;
   border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03), 0 3px 8px rgba(0, 0, 0, 0.03);
+  transition: box-shadow 0.3s ease;
+}
+
+.slide:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 16px rgba(0, 0, 0, 0.1);
 }
 
 .slide-track {
@@ -272,13 +278,13 @@ section {
 
 .sec1 .slide {
   width: fit-content;
-  height: 585px;
+  height: fit-content;
   border: none;
 }
 
 .sec1 .slide-track {
   width: calc(310px * 12);
-  animation: scroll2 25s linear infinite;
+  animation: scroll2 100s linear infinite;
   position: relative;
 }
 
@@ -366,38 +372,42 @@ section {
 /* 이미지 영역 */
 .img_area {
   width: 310px;
-  height: 470px;
+  height: 400px;
   overflow: hidden;
-  border-radius: 25px;
+  /* border-radius: 25px; */
   position: relative;
-  transform: scale(0.95);
-  transition: transform 0.3s ease-in-out;
-  border-radius: 10px;
+  /* transform: scale(0.95); */
+  /* border-radius: 10px; */
 }
 
-.img_area:hover {
-  transform: scale(1);
+.slide:hover img {
+  transform: scale(1.05);
 }
 .img_area img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.5s ease-in-out;
 }
 
 .img_area .sydney_img {
-  object-position: -295px;
+  object-position: -255px;
+}
+.img_area .sanfrancisco_img {
+  object-position: -5px;
 }
 .text_wrap {
-  padding: 10px;
+  padding: 25px;
+  box-sizing: border-box;
 }
 
 .text_wrap h4 {
-  font-size: 20px;
-  margin-bottom: 10px;
+  font-size: 15px;
+  margin-bottom: 2px;
   line-height: var(--sm-line-height);
 }
 .text_wrap h3 {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 800;
   margin-bottom: 10px;
   line-height: 32px;
@@ -405,9 +415,10 @@ section {
 
 .bottom_text span {
   color: var(--default-gr);
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   line-height: var(--xs-line-height);
+  margin-right: 10px;
 }
 
 /* 🌞🌞sec2 */
@@ -532,7 +543,15 @@ section {
   font-size: 16px;
   line-height: var(--xs-line-height);
   color: #d9d9d9;
+  position: relative;
 }
+
+.page_button a:hover {
+  font-size: 20px;
+  color: var(--main-color);
+  font-weight: 700;
+}
+
 /* 리뷰섹션 */
 .sec3_button {
   width: fit-content;
