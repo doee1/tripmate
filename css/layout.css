@@ -236,10 +236,10 @@ section {
   border: 1px solid #d9d9d9;
   border-radius: 12px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03), 0 3px 8px rgba(0, 0, 0, 0.03);
-  transition: box-shadow 0.3s ease;
+  /* transition: transform 0.3s; */
 }
 
-.slide:hover {
+.sec5 .slide:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 16px rgba(0, 0, 0, 0.1);
 }
 
@@ -264,13 +264,12 @@ section {
 
 .train-card {
   width: fit-content;
-  transition: transform 0.1s;
   border-radius: 10px;
   overflow: hidden;
   box-sizing: border-box;
 }
 
-.sec5 .train-card:hover {
+.sec5 .slide:hover {
   transform: scale(1.03);
 }
 
@@ -280,10 +279,11 @@ section {
   width: fit-content;
   height: fit-content;
   border: none;
+  box-shadow: none;
 }
 
 .sec1 .slide-track {
-  width: calc(310px * 12);
+  width: calc(334px * 12);
   animation: scroll2 100s linear infinite;
   position: relative;
 }
@@ -297,7 +297,7 @@ section {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-310px * 6));
+    transform: translateX(calc(-334px * 6));
   }
 }
 
@@ -371,11 +371,12 @@ section {
 
 /* 이미지 영역 */
 .img_area {
-  width: 310px;
-  height: 400px;
+  width: 334px;
+  height: 470px;
   overflow: hidden;
-  /* border-radius: 25px; */
+  border-radius: 25px;
   position: relative;
+
   /* transform: scale(0.95); */
   /* border-radius: 10px; */
 }
@@ -388,17 +389,29 @@ section {
   height: 100%;
   object-fit: cover;
   transition: transform 0.5s ease-in-out;
+  object-position: bottom;
 }
 
 .img_area .sydney_img {
-  object-position: -255px;
+  object-position: -293px;
 }
 .img_area .sanfrancisco_img {
   object-position: -5px;
 }
+
 .text_wrap {
-  padding: 25px;
+  padding: 12px 20px;
   box-sizing: border-box;
+  position: absolute;
+  top: 438px;
+  color: #fff;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0) 100%
+  );
+  width: 334px;
+  border-radius: 0 0 25px 25px;
 }
 
 .text_wrap h4 {
@@ -407,14 +420,14 @@ section {
   line-height: var(--sm-line-height);
 }
 .text_wrap h3 {
-  font-size: 20px;
-  font-weight: 800;
-  margin-bottom: 10px;
-  line-height: 32px;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  /* line-height: 32px; */
 }
 
 .bottom_text span {
-  color: var(--default-gr);
+  color: var(--default-wh);
   font-size: 14px;
   font-weight: 500;
   line-height: var(--xs-line-height);
@@ -677,6 +690,11 @@ section {
   width: 100%;
   height: 320px;
   object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+
+.sec4_card:hover > img {
+  scale: 1.01;
 }
 
 /* 카드1 설정 */
@@ -693,7 +711,7 @@ section {
   width: fit-content;
   height: fit-content;
   position: absolute;
-  top: 39%;
+  top: 33%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 500;
@@ -710,6 +728,7 @@ section {
   font-size: var(--xs-font-size);
   border: 1px solid #d9d9d9;
   border-top: none;
+  border-radius: 0 0 5px 5px;
 }
 
 .sec4_card_txt h3 {
@@ -761,8 +780,6 @@ section {
 .banner2 p {
   margin-bottom: 30px;
 }
-/* ================================================================ */
-/* 카드 자동 슬라이더 효과 */
 /* 🌞🌞🌞🌞섹션5 */
 
 .sec5 {
@@ -781,7 +798,7 @@ section {
   background-color: #fff;
   box-sizing: border-box;
 }
-/* 섹션4 카드 top */
+/* 섹션5 카드 top */
 .card_top {
   width: 100%;
   display: flex;
