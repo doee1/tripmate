@@ -29,8 +29,6 @@ header {
   height: 80px;
   margin: 0 auto;
   display: flex;
-  /* justify-content: space-between; */
-  /* gap: 100px; */
 }
 
 h1 {
@@ -38,22 +36,22 @@ h1 {
 }
 
 /* 1차 메뉴 */
-#menu {
+#gnb {
   width: fit-content;
   line-height: 40px;
 }
-#menu > ul {
+#gnb > ul {
   width: fit-content;
   display: flex;
   text-align: center;
 }
 
-#menu > ul > li {
+#gnb > ul > li {
   width: fit-content;
   height: fit-content;
   position: relative;
 }
-#menu > ul > li > a {
+#gnb > ul > li > a {
   display: block;
   width: 100%;
   box-sizing: border-box;
@@ -63,15 +61,13 @@ h1 {
   line-height: 80px;
 }
 
-#menu > ul > li:hover > a {
+#gnb > ul > li:hover > a {
   color: var(--main-color);
   font-weight: 600;
 }
 
 /* 2차 메뉴 */
 .submenu {
-  /* width: fit-content;
-  height: fit-content; */
   gap: 40px;
   display: none;
   position: absolute;
@@ -110,12 +106,12 @@ h1 {
   transform: scaleX(1);
 }
 /* 1차메뉴에 hover하면 2차메뉴 나오기 */
-#menu:hover::after {
+#gnb:hover::after {
   height: 55px;
   border-top: 1px solid rgba(159, 158, 158, 0.3);
 }
 
-#menu::after {
+#gnb::after {
   content: "";
   background-color: transparent;
   width: 100%;
@@ -130,7 +126,7 @@ h1 {
   width: max-content;
   text-align: left;
 }
-#menu > ul > li:hover .submenu {
+#gnb > ul > li:hover .submenu {
   display: flex;
 }
 
