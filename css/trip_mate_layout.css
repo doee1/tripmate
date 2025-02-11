@@ -188,13 +188,15 @@ main {
   gap: 20px;
   padding: 20px;
   margin: 0 auto;
+  background-color: antiquewhite;
 }
 .filter-box {
-  width: fit-content;
+  width: 283px;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   height: fit-content;
+  background-color: #fff;
 }
 .filter-box h4 {
   font-size: 18px;
@@ -303,4 +305,12 @@ select {
   border-radius: 5px;
   cursor: pointer;
   font-size: 14px;
+}
+.hashtag-search {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  background-color: #616060;
 }
