@@ -252,13 +252,14 @@ section {
 }
 
 .sec2 li {
-  color: #cccccc; /* 기본 색상 */
+  color: #cccccc;
   cursor: pointer;
-  position: relative; /* 밑줄을 추가하기 위해 position을 상대적으로 설정 */
+  position: relative; 
 }
 
 .sec2 li.active {
-  color: #000000; /* 클릭된 항목 색상 */
+  color: var(--default-bk); 
+  font-weight: 600;
 }
 
 .sec2 li.active::after {
@@ -434,7 +435,7 @@ section {
   width: fit-content;
   height: fit-content;
   position: absolute;
-  top: 33%;
+  top: 23%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 500;
