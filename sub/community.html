@@ -10,14 +10,6 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
     />
-    <!-- 슬라이더 -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
     <!-- css -->
     <link rel="stylesheet" href="../css/community_layout.css" />
   </head>
@@ -56,7 +48,7 @@
                 <a href="#">커뮤니티</a>
                 <!-- 2차메뉴 -->
                 <ul class="submenu">
-                  <li><a href="#">후기/리뷰</a></li>
+                  <li><a href="./community.html">후기/리뷰</a></li>
                   <li><a href="#">실시간 소통</a></li>
                 </ul>
               </li>
@@ -108,63 +100,94 @@
             </div>
           </div>
         </section>
+        
+   <!-- 🌞🌞🌞섹션3 -->
+<section class="sec2">
+  <div class="sec2_contents">
+    <div class="sec2_main">
+      <!-- 좌측 이미지 -->
+      <div class="left_img">
+        <img id="reviewImage" src="../img/main/sec3/sec3_img1.jpg" alt="review1" />
+      </div>
 
-        <!-- Swiper -->
-        <section class="sec2">
-          <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="left_img">
-                  <img src="../img/main/sec3/sec3_img1.jpg" alt="review1" />
-                </div>
-                <div class="right_text">
-                  <!-- 리뷰 -->
-                  <div class="rivew">
-                    <div class="sec2_button">#내돈내산_리얼후기</div>
-                    <span>★★★★★</span>
-                    <h3>"가성비 루트 그대로 다녀온 후기!"</h3>
-                    <p>
-                      "배낭여행자"님의 발리 가성비 루트 그대로 빠진곳 없이
-                      알차게 다녀왔습니다! 근데 세번째 숙소는 거리가 좀 멀어서
-                      우버 부를 돈으로 공항 근처 호텔로 변경 추천드려요!!
-                    </p>
-                    <!-- 더보기 버튼 -->
-                    <div class="more_section">
-                      <div class="more">
-                        <i class="xi-external-link"></i>리뷰 더보기
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">Slide 2</div>
-              <div class="swiper-slide">Slide 3</div>
-              <div class="swiper-slide">Slide 4</div>
-              <div class="swiper-slide">Slide 5</div>
-            </div>
-            <div class="swiper-pagination"></div>
+      <!-- 우측 리뷰 카드 (3개) -->
+      <div class="right_text">
+        <!-- 페이지 버튼 -->
+        <div class="page_button">
+          <a href="#" class="page-link active" data-index="0">1</a>
+          <a href="#" class="page-link" data-index="1">2</a>
+          <a href="#" class="page-link" data-index="2">3</a>
+        </div>
+
+        <!-- 리뷰 카드 -->
+        <div class="review_card active">
+          <div class="sec2_button">#내돈내산_리얼후기</div>
+          <span>★★★★★</span>
+          <h3>"가성비 루트 그대로 다녀온 후기!"</h3>
+          <p>"배낭여행자"님의 발리 가성비 루트 그대로 빠진곳 없이 알차게 다녀왔습니다! 근데 세번째 숙소는 거리가 좀 멀어서 우버 부를 돈으로 공항 근처 호텔로 변경 추천드려요!!</p>
+        </div>
+
+        <div class="review_card">
+          <div class="sec2_button">#숨은명소_추천</div>
+          <span>★★★★☆</span>
+          <h3>"치앙마이 감성 카페 투어"</h3>
+          <p>치앙마이에서 감성 카페들만 골라 다녀왔어요. 핫플이라 사람이 많지만 분위기가 너무 좋아요. 추천!</p>
+        </div>
+
+        <div class="review_card">
+          <div class="sec2_button">#인생샷_스팟</div>
+          <span>★★★★★</span>
+          <h3>"세부 바다에서 스쿠버다이빙 후기!"</h3>
+          <p>바닷속이 정말 아름다웠어요. 물이 맑아서 사진도 예쁘게 나옵니다. 스쿠버 자격증 따는 것도 추천!</p>
+        </div>
+
+        <!-- 더보기 버튼 -->
+        <div class="more_section">
+          <div class="more">
+            <i class="xi-external-link"></i> 리뷰 더보기
           </div>
-        </section>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    
       </main>
       <!-- 푸터 -->
       <footer></footer>
     </div>
 
-    <!-- 스와이퍼 -->
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
     <script>
-      var swiper = new Swiper(".mySwiper", {
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-          renderBullet: function (index, className) {
-            return '<span class="' + className + '">' + (index + 1) + "</span>";
-          },
-        },
-      });
-    </script>
+      document.addEventListener("DOMContentLoaded", function () {
+    const pageLinks = document.querySelectorAll(".page-link");
+    const reviewCards = document.querySelectorAll(".review_card");
+    const reviewImage = document.getElementById("reviewImage");
+
+    // 이미지 배열 (순서대로 변경됨)
+    const images = [
+        "../img/main/sec3/sec3_img1.jpg",
+        "./img/main/sec3/sec3_img2.jpg",
+        "./img/main/sec3/sec3_img3.jpg"
+    ];
+
+    pageLinks.forEach((link, index) => {
+        link.addEventListener("click", function (event) {
+            event.preventDefault();
+
+            // 모든 버튼 초기화
+            pageLinks.forEach(btn => btn.classList.remove("active"));
+            reviewCards.forEach(card => card.classList.remove("active"));
+
+            // 현재 선택된 버튼, 리뷰 카드, 이미지 변경
+            link.classList.add("active");
+            reviewCards[index].classList.add("active");
+            reviewImage.src = images[index];
+        });
+    });
+});
+  </script>
+
   </body>
 </html>

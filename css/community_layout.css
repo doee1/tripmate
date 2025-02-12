@@ -176,64 +176,33 @@ h2 {
   font-size: 20px;
 }
 /* 🌞🌞섹션2 */
-.sec2 {
-  width: 100%;
+.sec2_contents {
+  width: 1200px;
   height: fit-content;
-  max-width: 1200px;
   margin: 0 auto;
-  box-sizing: border-box;
 }
 
-/* 스와이퍼 */
-
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  text-align: left;
-  background: #fff;
+/* sec2 메인 */
+.sec2_main {
   display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
-  gap: 50px;
+  padding: 120px 0;
 }
 
-.swiper-pagination-bullet {
-  width: 20px;
-  height: 20px;
-  display: inline-block;
-  border-radius: var(--swiper-pagination-bullet-border-radius, 50%);
-  background: none;
-  opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.2);
-}
-.swiper-pagination-bullet-active {
-  opacity: var(--swiper-pagination-bullet-opacity, 1);
-  background: var(--swiper-pagination-color, var(--main-color));
-  color: var(--default-wh);
-}
-/* sec2 - 리뷰 이미지 */
-.left_img {
-  width: 50%;
+/* sec2 이미지 */
+.left_img img {
+  width: 600px;
   height: 380px;
   border-radius: 15px;
-  overflow: hidden;
+  transition: opacity 0.3s ease-in-out;
 }
-.left_img img {
-  width: 100%;
-}
-/* sec2 - 리뷰 텍스트 */
+
+/* sec2 텍스트 */
 .right_text {
-  width: 50%;
+  width: 100%;
   height: 380px;
   overflow: hidden;
   margin-left: 50px;
-  padding: 30px;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
 }
 
 /* 리뷰섹션 */
@@ -248,33 +217,85 @@ h2 {
   border: 1px solid var(--main-color);
   padding: 3px 24px;
 }
-.rivew span {
+.review_card span {
   color: var(--main-color);
   font-size: 20px;
   line-height: var(--sm-line-height);
   margin-bottom: 5px;
 }
-.rivew h3 {
+.review_card h3 {
   font-size: 22px;
   line-height: var(--sm-line-height);
   font-weight: 700;
   margin-bottom: 30px;
   color: var(--default-bk);
 }
-.rivew p {
+.review_card p {
   font-size: 20px;
   line-height: 36px;
-  margin-bottom: 30px;
+  margin-bottom: 72px;
 }
 
-/* 더보기 버튼 */
+/* 페이지 버튼 */
+.page_button {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 16px;
+}
+
+.page_button a {
+  font-size: 16px;
+  line-height: var(--xs-line-height);
+  color: #d9d9d9;
+  position: relative;
+  text-decoration: none;
+  padding: 2px 9px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+/* 선택된 페이지 버튼 스타일 */
+.page_button a.active {
+  background-color: #ff7f00;
+  color: white;
+  font-weight: 700;
+}
+
+/* 리뷰 카드 */
+.review_card {
+  display: none;
+}
+
+.review_card.active {
+  display: block;
+}
+
+/* 버튼 */
+.more {
+  align-items: center;
+  justify-content: space-between;
+  width: 170px;
+  padding: 12px 38px;
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: var(--xs-line-height);
+  border-radius: 10px;
+}
+.more:hover {
+  color: var(--default-wh);
+  background-color: var(--main-color);
+  transition: 0.3s;
+} 
 .more_section {
   width: 100%;
-  height: 80px;
+  height: fit-content;
   display: flex;
   align-items: end;
   justify-content: end;
 }
+
 .right_text .more {
   width: fit-content;
   height: fit-content;
