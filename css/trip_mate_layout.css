@@ -149,7 +149,7 @@ main {
   width: 100%;
   padding-top: 80px;
 }
-
+/* 메인비주얼 */
 .main-visual {
   width: 100%;
   max-width: 1200px;
@@ -188,16 +188,15 @@ main {
   gap: 20px;
   padding: 20px;
   margin: 0 auto;
-  background-color: antiquewhite;
 }
+/* 필터박스 */
 .filter-box {
-  width: 283px;
+  width: 25%;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   height: fit-content;
   background-color: #fff;
-  
 }
 .filter-box h4 {
   font-size: 18px;
@@ -209,6 +208,31 @@ main {
 select {
   margin-bottom: 20px;
 }
+
+.hashtag-search {
+  width: 100%;
+  height: fit-content;
+  gap: 10px;
+  position: relative;
+  display: flex;
+}
+
+.hashtag-search input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#tag_btn {
+  border: none;
+  background: none;
+  position: absolute;
+  left: 121px;
+  top: 7px;
+  cursor: pointer;
+}
+
 /* 카드섹션 */
 .content-wrapper {
   display: flex;
@@ -223,7 +247,7 @@ select {
 }
 .card {
   width: 290px;
-  height: fit-content;
+  height: 395px;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -309,27 +333,3 @@ select {
   cursor: pointer;
   font-size: 14px;
 }
-.hashtag-search {
-  width: 100%;
-  height: fit-content;
-  gap: 10px;
-   position: relative;
-}
-
-.hashtag-search input {
-  width: 80%; 
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
- 
-}
-
-#tag_btn{
-  border: none;
-  background: none;
-  position: absolute;
-  left: 102px;
-  top: 7px;
-}
-
-
