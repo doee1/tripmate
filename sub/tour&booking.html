@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>예약 및 체험</title>
+    <!-- 아이콘 링크 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="../css/tour&booking.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- 헤더 -->
+      <header>
+        <div class="header_contents">
+          <!-- 로고 -->
+          <h1>
+            <a href="/"><img src="../img/header/logo.png" alt="logo" /></a>
+          </h1>
+          <!-- 메뉴 -->
+          <nav id="gnb">
+            <ul>
+              <!-- 1차메뉴_여행루트 -->
+              <li>
+                <a href="./travel_route.html">여행루트</a>
+                <!-- 2차메뉴 -->
+                <ul class="submenu">
+                  <li><a href="./travel_route.html">📆날짜별</a></li>
+                  <li><a href="#">📌장소별</a></li>
+                  <li><a href="#">👀테마별</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="./trip_mate.html">트립메이트</a>
+                <!-- 2차메뉴 -->
+                <ul class="submenu">
+                  <li><a href="./trip_mate.html">동행자 찾기</a></li>
+                  <li><a href="#">여행그룹</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="./community.html">커뮤니티</a>
+                <!-- 2차메뉴 -->
+                <ul class="submenu">
+                  <li><a href="./community.html">후기/리뷰</a></li>
+                  <li><a href="./community02.html">실시간 소통</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="./tour&booking.html">예약 및 체험</a>
+                <!-- 2차메뉴 -->
+                <ul class="submenu">
+                  <li><a href="./tour&booking.html">숙소찾기</a></li>
+                  <li><a href="#">투어&액티비티</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">프로모션</a>
+                <!-- 2차메뉴 -->
+                <ul class="submenu">
+                  <li><a href="#">이벤트</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <!-- 네비 끝! -->
+          <!-- 아이콘 -->
+          <div class="icons">
+            <a href="#"
+              ><img src="../img/header/favorite.png" width="24px" alt="하트"
+            /></a>
+            <a href="#"
+              ><img
+                src="../img/header/account_circle.png"
+                width="24px"
+                alt="유저"
+            /></a>
+          </div>
+          <!-- 아이콘 끝! -->
+        </div>
+      </header>
+
+      <main>
+        <section class="main-visual">
+            <img src="../img/tour&booking/1.jpg" alt="메인">
+        </section>
+
+        <section class="sec2">
+          <h3>어디로 가시나요?</h3>
+            <div class="search">
+              
+                <input
+                  type="text"
+                  placeholder="나라,지역명을 입력하세요"
+                  id="search_bar"
+                />
+                <button type="button" id="tag_btn">
+                  <img src="../img/community/search.png" alt="검색" />
+                </button>
+              </div>
+        </section>
+
+        <section class="sec3">
+            <h3>인기여행지</h3>
+        <div class="popular">
+            <div><img src="../img/tour&booking/1.jpg" alt="">
+              Destination 1</div>
+            <div><img src="../img/tour&booking/2.jpg" alt="">
+              Destination 2</div>
+            <div><img src="../img/tour&booking/3.jpg" alt="">
+              Destination 3</div>
+            <div><img src="../img/tour&booking/4.jpg" alt="">
+              Destination 4</div>
+            <div><img src="../img/tour&booking/5.jpg" alt="">
+              Destination 5</div>
+            
+        </div>
+        </section>
+
+        <section class="sec4">
+            <div class="section" id="accommodation">
+                <h3>숙소 찾기</h3>
+                <div class="content">
+                    <div class="content-item">
+                        <div class="card">
+                            <img src="../img/tour&booking/1.jpg" alt="숙소 이미지 1">
+                            <div class="card-body">
+                                <h2>해변 근처 리조트</h2>
+                                <p>조용한 해변가에서 편안하게 지낼 수 있는 리조트입니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-item">
+                        <div class="card">
+                            <img src="../img/tour&booking/2.jpg" alt="숙소 이미지 2">
+                            <div class="card-body">
+                                <h2>도시 중심 호텔</h2>
+                                <p>도시 중심에서 모든 편의시설을 이용할 수 있는 현대적인 호텔입니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-item">
+                        <div class="card">
+                            <img src="../img/tour&booking/3.jpg" alt="숙소 이미지 3">
+                            <div class="card-body">
+                                <h2>고급 빌라</h2>
+                                <p>프라이빗 풀과 함께 제공되는 고급 빌라입니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-item">
+                        <div class="card">
+                            <img src="../img/tour&booking/4.jpg" alt="숙소 이미지 4">
+                            <div class="card-body">
+                                <h2>편안한 호스텔</h2>
+                                <p>저렴한 가격으로 숙박할 수 있는 깔끔하고 안전한 호스텔입니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-item">
+                        <div class="card">
+                            <img src="../img/tour&booking/5.jpg" alt="숙소 이미지 5">
+                            <div class="card-body">
+                                <h2>산 속 휴양지</h2>
+                                <p>산 속에서의 조용한 휴식을 즐길 수 있는 숙소입니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="more">
+                <a href="#" class="view-more-btn">전체보기</a></div>
+            </div>
+        </section>
+
+        <section class="sec5">
+            <ul>
+              <li data-content="content1">전체</li>
+              <li data-content="content2">입장권</li>
+              <li data-content="content3">데이투어</li>
+              <li data-content="content4">테머파크</li>
+              <li data-content="content5">랜드마크</li>
+              <li data-content="content6">레스토랑</li>
+
+            </ul>
+
+
+
+            <div class="content-area">
+                <div id="content1" class="content">
+                    <div class="list-header">
+                        <div class="left_con">
+                        <span class="total-count">전체 1,624개</span>
+                        <label>
+                          <input type="checkbox" > 할인쿠폰
+                        </label>
+                        <label>
+                          <input type="checkbox" > 품절제외
+                        </label>
+                        </div>
+                        <select name="sort-options" class="sort-select">
+                          <option value="recommended">추천순</option>
+                          <option value="popular">인기순</option>
+                          <option value="latest">최신순</option>
+                          <option value="high-price">높은가격순</option>
+                          <option value="low-price">낮은가격순</option>
+                          <option value="name">상품명순</option>
+                        </select>
+                      </div>  
+                    <!-- 섹션5 카드 -->
+                <div class="sec5_card_wrap">
+                    <!-- 카드1 -->
+                    <div class="sec5_card">
+                      <img
+                        src="../img/travel_route/sec4/card1.jpg"
+                        alt="프라하"
+                      />
+                      <div class="sec5_card_txt">
+                        <div class="sec5_buttons">
+                          <div class="txt_button">유럽여행</div>
+                          <div class="txt_button">인기</div>
+                        </div>
+                        <p>[파리 IN 프라하 OUT]</p>
+                        <p>02월 일정(02/04 ~ 02/15) 12박 13일</p>
+                        <p class="price_sec">
+                          <span id="price">2,49,000</span>원~
+                        </p>
+                      </div>
+                    </div>
+                    <!-- 카드2 -->
+                    <div class="sec5_card">
+                      <img
+                        src="../img/travel_route/sec4/card1.jpg"
+                        alt="프라하"
+                      />
+                      <div class="sec5_card_txt">
+                        <div class="sec5_buttons">
+                          <div class="txt_button">유럽여행</div>
+                          <div class="txt_button">인기</div>
+                        </div>
+                        <p>[파리 IN 프라하 OUT]</p>
+                        <p>02월 일정(02/04 ~ 02/15) 12박 13일</p>
+                        <p class="price_sec">
+                          <span id="price">2,49,000</span>원~
+                        </p>
+                      </div>
+                    </div>
+                    <!-- 카드3 -->
+                    <div class="sec5_card">
+                      <img
+                        src="../img/travel_route/sec4/card1.jpg"
+                        alt="프라하"
+                      />
+                      <div class="sec5_card_txt">
+                        <div class="sec5_buttons">
+                          <div class="txt_button">유럽여행</div>
+                          <div class="txt_button">인기</div>
+                        </div>
+                        <p>[파리 IN 프라하 OUT]</p>
+                        <p>02월 일정(02/04 ~ 02/15) 12박 13일</p>
+                        <p class="price_sec">
+                          <span id="price">2,49,000</span>원~
+                        </p>
+                      </div>
+                    </div>
+                    <!-- 카드4 -->
+                    <div class="sec5_card">
+                      <img
+                        src="../img/travel_route/sec4/card1.jpg"
+                        alt="프라하"
+                      />
+                      <div class="sec5_card_txt">
+                        <div class="sec5_buttons">
+                          <div class="txt_button">유럽여행</div>
+                          <div class="txt_button">인기</div>
+                        </div>
+                        <p>[파리 IN 프라하 OUT]</p>
+                        <p>02월 일정(02/04 ~ 02/15) 12박 13일</p>
+                        <p class="price_sec">
+                          <span id="price">2,49,000</span>원~
+                        </p>
+                      </div>
+                    </div>
+                    <!-- 카드5 -->
+                    <div class="sec5_card">
+                      <img
+                        src="../img/travel_route/sec4/card1.jpg"
+                        alt="프라하"
+                      />
+                      <div class="sec5_card_txt">
+                        <div class="sec5_buttons">
+                          <div class="txt_button">유럽여행</div>
+                          <div class="txt_button">인기</div>
+                        </div>
+                        <p>[파리 IN 프라하 OUT]</p>
+                        <p>02월 일정(02/04 ~ 02/15) 12박 13일</p>
+                        <p class="price_sec">
+                          <span id="price">2,49,000</span>원~
+                        </p>
+                      </div>
+                    </div>
+                    <!-- 카드6 -->
+                    <div class="sec5_card">
+                      <img
+                        src="../img/travel_route/sec4/card1.jpg"
+                        alt="프라하"
+                      />
+                      <div class="sec5_card_txt">
+                        <div class="sec5_buttons">
+                          <div class="txt_button">유럽여행</div>
+                          <div class="txt_button">인기</div>
+                        </div>
+                        <p>[파리 IN 프라하 OUT]</p>
+                        <p>02월 일정(02/04 ~ 02/15) 12박 13일</p>
+                        <p class="price_sec">
+                          <span id="price">2,49,000</span>원~
+                        </p>
+                      </div>
+                    </div>
+                    <!-- 카드7 -->
+                    <div class="sec5_card">
+                      <img
+                        src="../img/travel_route/sec4/card1.jpg"
+                        alt="프라하"
+                      />
+                      <div class="sec5_card_txt">
+                        <div class="sec5_buttons">
+                          <div class="txt_button">유럽여행</div>
+                          <div class="txt_button">인기</div>
+                        </div>
+                        <p>[파리 IN 프라하 OUT]</p>
+                        <p>02월 일정(02/04 ~ 02/15) 12박 13일</p>
+                        <p class="price_sec">
+                          <span id="price">2,49,000</span>원~
+                        </p>
+                      </div>
+                    </div>
+                    <!-- 카드8 -->
+                    <div class="sec5_card">
+                      <img
+                        src="../img/travel_route/sec4/card1.jpg"
+                        alt="프라하"
+                      />
+                      <div class="sec5_card_txt">
+                        <div class="sec5_buttons">
+                          <div class="txt_button">유럽여행</div>
+                          <div class="txt_button">인기</div>
+                        </div>
+                        <p>[파리 IN 프라하 OUT]</p>
+                        <p>02월 일정(02/04 ~ 02/15) 12박 13일</p>
+                        <p class="price_sec">
+                          <span id="price">2,49,000</span>원~
+                        </p>
+                      </div>
+                    </div>
+                    
+                    
+                  </div>
+                </div>
+                <div id="content2" class="content">
+                    <!-- 섹션5 카드 -->
+                <div class="sec5_card_wrap">
+                    <!-- 카드1 -->
+                    <div class="sec5_card">
+                      <img
+                        src="../img/travel_route/sec4/card1.jpg"
+                        alt="프라하"
+                      />
+                      <div class="sec5_card_txt">
+                        <div class="sec5_buttons">
+                          <div class="txt_button">유럽여행</div>
+                          <div class="txt_button">인기</div>
+                        </div>
+                        <p>[파리 IN 프라하 OUT]</p>
+                        <p>02월 일정(02/04 ~ 02/15) 12박 13일</p>
+                        <p class="price_sec">
+                          <span id="price">2,49,000</span>원~
+                        </p>
+                      </div>
+                    </div>
+                    <!-- 카드2 -->
+                    <div class="sec5_card">
+                      <img
+                        src="../img/travel_route/sec4/card1.jpg"
+                        alt="프라하"
+                      />
+                      <div class="sec5_card_txt">
+                        <div class="sec5_buttons">
+                          <div class="txt_button">유럽여행</div>
+                          <div class="txt_button">인기</div>
+                        </div>
+                        <p>[파리 IN 프라하 OUT]</p>
+                        <p>02월 일정(02/04 ~ 02/15) 12박 13일</p>
+                        <p class="price_sec">
+                          <span id="price">2,49,000</span>원~
+                        </p>
+                      </div>
+                    </div>
+                    <!-- 카드3 -->
+                    <div class="sec5_card">
+                      <img
+                        src="../img/travel_route/sec4/card1.jpg"
+                        alt="프라하"
+                      />
+                      <div class="sec5_card_txt">
+                        <div class="sec5_buttons">
+                          <div class="txt_button">유럽여행</div>
+                          <div class="txt_button">인기</div>
+                        </div>
+                        <p>[파리 IN 프라하 OUT]</p>
+                        <p>02월 일정(02/04 ~ 02/15) 12박 13일</p>
+                        <p class="price_sec">
+                          <span id="price">2,49,000</span>원~
+                        </p>
+                      </div>
+                    </div>
+                    <!-- 카드4 -->
+                    <div class="sec5_card">
+                      <img
+                        src="../img/travel_route/sec4/card1.jpg"
+                        alt="프라하"
+                      />
+                      <div class="sec5_card_txt">
+                        <div class="sec5_buttons">
+                          <div class="txt_button">유럽여행</div>
+                          <div class="txt_button">인기</div>
+                        </div>
+                        <p>[파리 IN 프라하 OUT]</p>
+                        <p>02월 일정(02/04 ~ 02/15) 12박 13일</p>
+                        <p class="price_sec">
+                          <span id="price">2,49,000</span>원~
+                        </p>
+                      </div>
+                    </div>
+                    <!-- 카드5 -->
+                    <div class="sec5_card">
+                      <img
+                        src="../img/travel_route/sec4/card1.jpg"
+                        alt="프라하"
+                      />
+                      <div class="sec5_card_txt">
+                        <div class="sec5_buttons">
+                          <div class="txt_button">유럽여행</div>
+                          <div class="txt_button">인기</div>
+                        </div>
+                        <p>[파리 IN 프라하 OUT]</p>
+                        <p>02월 일정(02/04 ~ 02/15) 12박 13일</p>
+                        <p class="price_sec">
+                          <span id="price">2,49,000</span>원~
+                        </p>
+                      </div>
+                    </div>
+                    <!-- 카드6 -->
+                    <div class="sec5_card">
+                      <img
+                        src="../img/travel_route/sec4/card1.jpg"
+                        alt="프라하"
+                      />
+                      <div class="sec5_card_txt">
+                        <div class="sec5_buttons">
+                          <div class="txt_button">유럽여행</div>
+                          <div class="txt_button">인기</div>
+                        </div>
+                        <p>[파리 IN 프라하 OUT]</p>
+                        <p>02월 일정(02/04 ~ 02/15) 12박 13일</p>
+                        <p class="price_sec">
+                          <span id="price">2,49,000</span>원~
+                        </p>
+                      </div>
+                    </div>
+                    <!-- 카드7 -->
+                    <div class="sec5_card">
+                      <img
+                        src="../img/travel_route/sec4/card1.jpg"
+                        alt="프라하"
+                      />
+                      <div class="sec5_card_txt">
+                        <div class="sec5_buttons">
+                          <div class="txt_button">유럽여행</div>
+                          <div class="txt_button">인기</div>
+                        </div>
+                        <p>[파리 IN 프라하 OUT]</p>
+                        <p>02월 일정(02/04 ~ 02/15) 12박 13일</p>
+                        <p class="price_sec">
+                          <span id="price">2,49,000</span>원~
+                        </p>
+                      </div>
+                    </div>
+                    <!-- 카드8 -->
+                    <div class="sec5_card">
+                      <img
+                        src="../img/travel_route/sec4/card1.jpg"
+                        alt="프라하"
+                      />
+                      <div class="sec5_card_txt">
+                        <div class="sec5_buttons">
+                          <div class="txt_button">유럽여행</div>
+                          <div class="txt_button">인기</div>
+                        </div>
+                        <p>[파리 IN 프라하 OUT]</p>
+                        <p>02월 일정(02/04 ~ 02/15) 12박 13일</p>
+                        <p class="price_sec">
+                          <span id="price">2,49,000</span>원~
+                        </p>
+                      </div>
+                    </div>
+                    
+                    
+                  </div>
+                </div>
+                        
+                
+                <div id="content3" class="content">
+                    <p>장소별 루트 찾기</p>
+                  </div>
+                <div id="content4" class="content">
+                    <p>테마별 루트 찾기</p>
+                  </div>
+            </div>       
+      </main>
+    </div>
+    <script>
+        // 페이지 로드 시 첫 번째 콘텐츠를 기본적으로 표시
+        document.addEventListener("DOMContentLoaded", function () {
+          const firstLi = document.querySelector(".sec5 li");
+          const firstContent = document.getElementById(
+            firstLi.getAttribute("data-content")
+          );
+          firstContent.classList.add("active");
+        });
+  
+        // 메뉴 클릭 시 콘텐츠 변경
+        document.querySelectorAll(".sec5 li").forEach((li) => {
+          li.addEventListener("click", () => {
+            // 모든 콘텐츠를 숨기기
+            document.querySelectorAll(".content").forEach((content) => {
+              content.classList.remove("active");
+            });
+  
+            // 클릭된 항목에 맞는 콘텐츠 표시
+            const contentId = li.getAttribute("data-content");
+            const content = document.getElementById(contentId);
+            if (content) {
+              content.classList.add("active");
+            }
+  
+            // 모든 li에서 active 클래스 제거 후 클릭된 li에만 active 클래스 추가
+            document.querySelectorAll(".sec5 li").forEach((item) => {
+              item.classList.remove("active");
+            });
+            li.classList.add("active");
+          });
+        });
+      </script>
+  </body>
+</html>

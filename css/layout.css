@@ -243,7 +243,7 @@ section {
 .slide-track {
   display: flex;
   width: calc(528px * 12);
-  animation: scroll 30s linear infinite;
+  animation: scroll 60s linear infinite;
 }
 
 .slide-track:hover {
