@@ -212,122 +212,32 @@ section {
   text-align: center;
   margin-top: 10px;
 }
-/* 카드 슬라이드 영역 sec5 */
 
-.slider {
-  height: 100%;
-  margin: auto;
-  position: relative;
-  width: 100%;
-  display: grid;
-  place-items: center;
-  overflow: hidden;
-}
-.slide {
-  max-width: 100%;
-  height: 265px;
-  margin: 80px auto;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  border: 1px solid #d9d9d9;
-  border-radius: 12px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03), 0 3px 8px rgba(0, 0, 0, 0.03);
-  /* transition: transform 0.3s; */
-}
-
-.sec5 .slide:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 16px rgba(0, 0, 0, 0.1);
-}
-
-.slide-track {
-  display: flex;
-  width: calc(528px * 12);
-  animation: scroll 60s linear infinite;
-}
-
-.slide-track:hover {
-  animation-play-state: paused;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-528px * 6));
-  }
-}
-
-.train-card {
-  width: fit-content;
-  border-radius: 10px;
-  overflow: hidden;
-  box-sizing: border-box;
-}
-
-.sec5 .slide:hover {
-  transform: scale(1.03);
-}
-
-/* 카드 슬라이드 영역 sec1 */
-
-.sec1 .slide {
-  width: fit-content;
-  height: fit-content;
-  border: none;
-  box-shadow: none;
-}
-
-.sec1 .slide-track {
-  width: calc(334px * 12);
-  animation: scroll2 100s linear infinite;
-  position: relative;
-}
-
-.sec1 .slide-track:hover {
-  animation-play-state: paused;
-}
-
-@keyframes scroll2 {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-334px * 6));
-  }
-}
 
 /* 🌞섹션1  */
-.sec1 {
-  box-sizing: border-box;
-  padding: 120px 0;
-  overflow: hidden;
-}
-.sec1_contents {
-  width: fit-content;
-  height: fit-content;
+.sec1{
+  width: 100%;
   display: flex;
+  justify-content: space-between;
+  background-color: #fff;
 }
-/* sec1_left_text영역 */
+
 .sec1_left_text {
   display: flex;
   align-items: center;
-  width: 456px;
+  width: 30%;
   height: 745px;
-  position: absolute;
   z-index: 555;
-  background-color: #fff;
   padding: 0 100px;
 }
-/* Best 여행 일정 및 루트 */
+
 .sec1 .text_box h4 {
   color: var(--main-color);
   font-size: var(--sm-font-size);
   font-weight: 700;
   margin-bottom: 20px;
 }
-/* sec1-title */
+
 .sec1 .text_box h2 {
   color: var(--default-blk);
   font-size: 50px;
@@ -336,13 +246,13 @@ section {
   line-height: 70px;
   letter-spacing: -1px;
 }
-/* sec1-subtitle */
+
 .sec1 .text_box p {
   color: var(--default-gr);
   font-size: 18px;
   margin-bottom: 73px;
 }
-/* 버튼 */
+
 .more {
   align-items: center;
   justify-content: space-between;
@@ -355,16 +265,13 @@ section {
   line-height: var(--xs-line-height);
   border-radius: 10px;
 }
+
 .more:hover {
   color: var(--default-wh);
   background-color: var(--main-color);
   transition: 0.3s;
 }
-/* 카드 */
-.card {
-  width: 100%;
-  height: fit-content;
-}
+
 
 /* 이미지 영역 */
 .img_area {
@@ -373,14 +280,8 @@ section {
   overflow: hidden;
   border-radius: 25px;
   position: relative;
-
-  /* transform: scale(0.95); */
-  /* border-radius: 10px; */
 }
 
-.slide:hover img {
-  transform: scale(1.05);
-}
 .img_area img {
   width: 100%;
   height: 100%;
@@ -389,26 +290,29 @@ section {
   object-position: bottom;
 }
 
-.img_area .sydney_img {
-  object-position: -293px;
+.img_area .sanfrancisco_img{
+  object-position: 3%;
 }
-.img_area .sanfrancisco_img {
-  object-position: -5px;
+.img_area .sydney_img{
+  object-position: 79%;
 }
 
+
+/* 텍스트 영역 */
 .text_wrap {
   padding: 12px 20px;
   box-sizing: border-box;
   position: absolute;
-  top: 438px;
-  color: #fff;
+  bottom: 0; /* 이미지의 하단에 위치 */
+  left: 0;
+  width: 100%;
   background: linear-gradient(
     to top,
     rgba(0, 0, 0, 0.8),
     rgba(0, 0, 0, 0) 100%
   );
-  width: 334px;
-  border-radius: 0 0 25px 25px;
+  color: white;
+  z-index: 2; /* 이미지 위에 텍스트가 오도록 설정 */
 }
 
 .text_wrap h4 {
@@ -416,11 +320,11 @@ section {
   margin-bottom: 2px;
   line-height: var(--sm-line-height);
 }
+
 .text_wrap h3 {
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 15px;
-  /* line-height: 32px; */
 }
 
 .bottom_text span {
@@ -429,6 +333,30 @@ section {
   font-weight: 500;
   line-height: var(--xs-line-height);
   margin-right: 10px;
+}
+
+.slide_wrap{
+  padding:100px 50px;  
+  width: 70%;
+  overflow: hidden;
+ 
+}
+
+.card {
+margin-right: 35px; 
+margin-left: 15px;
+}
+.slick-dots {
+  height: 8px;
+}
+
+.slick-prev:before {
+  content: '👈';
+  margin-right: 30px;
+}
+
+.slick-next:before {
+  content: '👉';
 }
 
 /* 🌞🌞sec2 */
@@ -870,6 +798,65 @@ section {
   background-color: #f5f4f4;
   border-radius: 8px;
 }
+
+/* 카드 슬라이드 영역 sec5 */
+
+.slider {
+  height: 100%;
+  margin: auto;
+  position: relative;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+.slide {
+  max-width: 100%;
+  height: 265px;
+  margin: 80px auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  border: 1px solid #d9d9d9;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03), 0 3px 8px rgba(0, 0, 0, 0.03);
+  /* transition: transform 0.3s; */
+}
+
+.sec5 .slide:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.slide-track {
+  display: flex;
+  width: calc(528px * 12);
+  animation: scroll 60s linear infinite;
+}
+
+.slide-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-528px * 6));
+  }
+}
+
+.train-card {
+  width: fit-content;
+  border-radius: 10px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.sec5 .slide:hover {
+  transform: scale(1.03);
+}
+
 
 /* 🦶푸터 */
 footer {

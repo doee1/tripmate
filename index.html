@@ -9,6 +9,15 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
     />
+
+    <!-- 제이쿼리 불러오기 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+ 
+<!-- Slick 불러오기 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+
     <!-- css -->
     <link rel="stylesheet" href="./css/layout.css" />
   </head>
@@ -94,243 +103,117 @@
 
         <!-- 🌞섹션1 -->
         <section class="sec1">
-          <div class="sec1_contents">
-            <div class="sec1_left_text">
+          <div class="sec1_left_text">
               <div class="text_box">
                 <h4>Best 여행 일정 및 루트</h4>
-                <h2>
-                  지금 트립메이트에서<br />
-                  가장 인기있는 여행지!
-                </h2>
+                <h2>지금 트립메이트에서<br />가장 인기있는 여행지!</h2>
                 <p>트립메이트에서 가장 인기있는 여행지를 확인해보세요.</p>
                 <a href="#" class="more">전체보기</a>
               </div>
+            </div>   
+      <div class="slide_wrap" >
+          <div id="slider-div"  >
+            <div>
+              <!-- 카드1 -->
+              <div class="card">
+                  <div class="img_area">
+                    <a href="#"
+                      ><img src="../img/main/sec1/paris2.jpg" alt="paris"
+                    /></a>
+                    <div class="text_wrap">
+                      <h4>파리</h4>
+                      <h3>best 1위 여행지</h3>
+                      <div class="bottom_text">
+                        <span>📌루트 378</span>
+                        <span>📝후기 1,080</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
             </div>
-            <div class="slider">
-              <div class="slide-track">
-                <div class="slide">
-                  <div class="train-card">
-                    <!-- card1 -->
-                    <div class="card">
-                      <div class="img_area">
-                        <a href="#"
-                          ><img src="./img/main/sec1/paris2.jpg" alt="paris"
-                        /></a>
-                      </div>
-                      <div class="text_wrap">
-                        <h4>파리</h4>
-                        <h3>best 1위 여행지</h3>
-                        <div class="bottom_text">
-                          <span>📌루트 378</span>
-                          <span>📝후기 1,080</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="slide">
-                  <div class="train-card">
-                    <!-- card2 -->
-                    <div class="card">
-                      <div class="img_area">
-                        <a href="#"
-                          ><img
-                            class="sanfrancisco_img"
-                            src="./img/main/sec1/sanfrancisco.jpg"
-                            alt="샌프란시스코"
-                        /></a>
-                      </div>
-                      <div class="text_wrap">
-                        <h4>샌프란시스코</h4>
-                        <h3>첨단 산업 중심도시</h3>
-                        <div class="bottom_text">
-                          <span>📌루트 108</span>
-                          <span>📝후기 184</span>
-                        </div>
+  
+            <div>
+              <!-- 카드2  -->
+              <div class="card">
+                  <div class="img_area">
+                    <a href="#"
+                      ><img
+                        class="sanfrancisco_img"
+                        src="../img/main/sec1/sanfrancisco.jpg"
+                        alt="샌프란시스코"
+                    /></a>
+                    <div class="text_wrap">
+                      <h4>샌프란시스코</h4>
+                      <h3>첨단 산업 중심도시</h3>
+                      <div class="bottom_text">
+                        <span>📌루트 108</span>
+                        <span>📝후기 184</span>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="slide">
-                  <div class="train-card">
-                    <!-- card3 -->
-                    <div class="card">
-                      <div class="img_area">
-                        <a href="#">
-                          <img
-                            class="sydney_img"
-                            src="./img/main/sec1/sydney.jpg"
-                            alt="sydney"
-                        /></a>
-                      </div>
-                      <div class="text_wrap">
-                        <h4>시드니</h4>
-                        <h3>도심과 자연, 힐링여행</h3>
-                        <div class="bottom_text">
-                          <span>📌루트 285</span>
-                          <span>📝후기 1,206</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="slide">
-                  <div class="train-card">
-                    <!-- card4 -->
-                    <div class="card">
-                      <div class="img_area">
-                        <a href="#"
-                          ><img
-                            src="./img/main/sec1/Switzerland1.png"
-                            alt="스위스"
-                        /></a>
-                      </div>
-                      <div class="text_wrap">
-                        <h4>스위스</h4>
-                        <h3>자연의 아름다움이 펼쳐진 곳</h3>
-                        <div class="bottom_text">
-                          <span>📌루트 86</span>
-                          <span>📝후기 156</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="slide">
-                  <div class="train-card">
-                    <!-- card5 -->
-                    <div class="card">
-                      <div class="img_area">
-                        <a href="#"
-                          ><img src="./img/main/sec1/newyork.jpg" alt="뉴욕"
-                        /></a>
-                      </div>
-                      <div class="text_wrap">
-                        <h4>뉴욕</h4>
-                        <h3>활기찬 문화의 도시</h3>
-                        <div class="bottom_text">
-                          <span>📌루트 196</span>
-                          <span>📝후기 556</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- 한번 더 반복하기 -->
-
-                <div class="slide">
-                  <div class="train-card">
-                    <!-- card1 -->
-                    <div class="card">
-                      <div class="img_area">
-                        <a href="#"
-                          ><img src="./img/main/sec1/paris2.jpg" alt="paris"
-                        /></a>
-                      </div>
-                      <div class="text_wrap">
-                        <h4>파리</h4>
-                        <h3>best 1위 여행지</h3>
-                        <div class="bottom_text">
-                          <span>📌루트 378</span>
-                          <span>📝후기 1,080</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="slide">
-                  <div class="train-card">
-                    <!-- card2 -->
-                    <div class="card">
-                      <div class="img_area">
-                        <a href="#"
-                          ><img
-                            class="sanfrancisco_img"
-                            src="./img/main/sec1/sanfrancisco.jpg"
-                            alt="paris"
-                        /></a>
-                      </div>
-                      <div class="text_wrap">
-                        <h4>샌프란시스코</h4>
-                        <h3>첨단 산업 중심도시</h3>
-                        <div class="bottom_text">
-                          <span>📌루트 108</span>
-                          <span>📝후기 184</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="slide">
-                  <div class="train-card">
-                    <!-- card3 -->
-                    <div class="card">
-                      <div class="img_area">
-                        <a href="#">
-                          <img
-                            class="sydney_img"
-                            src="./img/main/sec1/sydney.jpg"
-                            alt="sydney"
-                        /></a>
-                      </div>
-                      <div class="text_wrap">
-                        <h4>시드니</h4>
-                        <h3>도심과 자연, 힐링여행</h3>
-                        <div class="bottom_text">
-                          <span>📌루트 285</span>
-                          <span>📝후기 1,206</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="slide">
-                  <div class="train-card">
-                    <!-- card4 -->
-                    <div class="card">
-                      <div class="img_area">
-                        <a href="#"
-                          ><img
-                            src="./img/main/sec1/Switzerland1.png"
-                            alt="스위스"
-                        /></a>
-                      </div>
-                      <div class="text_wrap">
-                        <h4>스위스</h4>
-                        <h3>자연의 아름다움이 펼쳐진 곳</h3>
-                        <div class="bottom_text">
-                          <span>📌루트 86</span>
-                          <span>📝후기 156</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="slide">
-                  <div class="train-card">
-                    <!-- card5 -->
-                    <div class="card">
-                      <div class="img_area">
-                        <a href="#"
-                          ><img src="./img/main/sec1/newyork.jpg" alt="뉴욕"
-                        /></a>
-                      </div>
-                      <div class="text_wrap">
-                        <h4>뉴욕</h4>
-                        <h3>활기찬 문화의 도시</h3>
-                        <div class="bottom_text">
-                          <span>📌루트 196</span>
-                          <span>📝후기 556</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
+  
+            <div>
+              <!-- 카드3 -->
+              <div class="card">
+                  <div class="img_area">
+                    <a href="#"
+                      ><img class="sydney_img" src="../img/main/sec1/sydney.jpg" alt="sydney"
+                    /></a>
+                    <div class="text_wrap">
+                      <h4>시드니</h4>
+                      <h3>도심과 자연, 힐링여행</h3>
+                      <div class="bottom_text">
+                        <span>📌루트 285</span>
+                        <span>📝후기 1,206</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+  
+            <div>
+              <!-- 카드4 -->
+              <div class="card">
+                  <div class="img_area">
+                    <a href="#"
+                      ><img src="../img/main/sec1/Switzerland1.png" alt="스위스"
+                    /></a>
+                    <div class="text_wrap">
+                      <h4>스위스</h4>
+                      <h3>자연의 아름다움이 펼쳐진 곳</h3>
+                      <div class="bottom_text">
+                        <span>📌루트 86</span>
+                        <span>📝후기 156</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            
+            <div>
+              <!-- 카드5 -->
+              <div class="card">
+                  <div class="img_area">
+                    <a href="#"
+                      ><img src="../img/main/sec1/newyork.jpg" alt="뉴욕"
+                    /></a>
+                    <div class="text_wrap">
+                      <h4>뉴욕</h4>
+                      <h3>활기찬 문화의 도시</h3>
+                      <div class="bottom_text">
+                        <span>📌루트 196</span>
+                        <span>📝후기 556</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+  
           </div>
-        </section>
+    </div>
+    </section>
         <!-- 🌞🌞섹션2 -->
         <section class="sec2">
           <div class="sec2_contents">
@@ -1034,5 +917,50 @@
         <span>Copyright ⓒ TripMate All Rights Reserved</span>
       </footer>
     </div>
+
+    <script>
+      $(function(){
+        $('#slider-div').slick({
+            slide: 'div',        //슬라이드 되어야 할 태그 ex) div, li 
+            infinite : true,     //무한 반복 옵션     
+            slidesToShow : 4,        // 한 화면에 보여질 컨텐츠 개수
+            slidesToScroll : 1,        //스크롤 한번에 움직일 컨텐츠 개수
+            speed : 100,     // 다음 버튼 누르고 다음 화면 뜨는데까지 걸리는 시간(ms)
+            arrows : true,         // 옆으로 이동하는 화살표 표시 여부
+            dots : true,         // 스크롤바 아래 점으로 페이지네이션 여부
+            autoplay : true,            // 자동 스크롤 사용 여부
+            autoplaySpeed : 10000,         // 자동 스크롤 시 다음으로 넘어가는데 걸리는 시간 (ms)
+            pauseOnHover : true,        // 슬라이드 이동    시 마우스 호버하면 슬라이더 멈추게 설정
+            vertical : false,        // 세로 방향 슬라이드 옵션
+            prevArrow : "<button type='button' class='slick-prev'>Previous</button>",        // 이전 화살표 모양 설정
+            nextArrow : "<button type='button' class='slick-next'>Next</button>",        // 다음 화살표 모양 설정
+            dotsClass : "slick-dots",     //아래 나오는 페이지네이션(점) css class 지정
+            draggable : true,     //드래그 가능 여부 
+            variableWidth: true,
+            
+            responsive: [ // 반응형 웹 구현 옵션
+                {  
+                    breakpoint: 960, //화면 사이즈 960px
+                    settings: {
+                        //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+                        slidesToShow:3 
+                    } 
+                },
+                { 
+                    breakpoint: 768, //화면 사이즈 768px
+                    settings: {    
+                        //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+                        slidesToShow:2 
+                    } 
+                }
+            ]
+  
+        });
+      })
+      
+      
+      
+      
+  </script>
   </body>
 </html>
