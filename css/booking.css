@@ -1,0 +1,415 @@
+@import "utf-8";
+@import url(./reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  line-height: 1;
+  width: 100%;
+  height: fit-content;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  background-color: white;
+  z-index: 999;
+}
+
+.header_contents {
+  width: 1600px;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+}
+
+h1 {
+  padding: 21px 0;
+}
+
+/* 1차 메뉴 */
+#gnb {
+  width: fit-content;
+  line-height: 40px;
+}
+#gnb > ul {
+  width: fit-content;
+  display: flex;
+  text-align: center;
+}
+
+#gnb > ul > li {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+}
+#gnb > ul > li > a {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 40px;
+  color: #616060;
+  font-size: 16px;
+  line-height: 80px;
+}
+
+#gnb > ul > li:hover > a {
+  color: var(--main-color);
+  font-weight: 600;
+}
+
+/* 2차 메뉴 */
+.submenu {
+  gap: 40px;
+  display: none;
+  position: absolute;
+  z-index: 100;
+  left: 50%;
+  transform: translateX(-50%);
+  line-height: 50px;
+}
+
+/* hover하면 서브메뉴 글자색상 변경 */
+.submenu li:hover a {
+  color: var(--main-color);
+  font-weight: 600;
+}
+
+/* 서브메뉴에 hover하면 밑줄 */
+.submenu li a {
+  position: relative;
+  display: block;
+}
+
+.submenu li a::after {
+  display: block;
+  content: "line";
+  font-size: 0px;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  background-color: var(--main-color);
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+.submenu li a:hover:after {
+  transform: scaleX(1);
+}
+/* 1차메뉴에 hover하면 2차메뉴 나오기 */
+#gnb:hover::after {
+  height: 55px;
+  border-top: 1px solid rgba(159, 158, 158, 0.3);
+}
+
+#gnb::after {
+  content: "";
+  background-color: transparent;
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  background-color: #fff;
+}
+
+.submenu > li {
+  width: max-content;
+  text-align: left;
+}
+#gnb > ul > li:hover .submenu {
+  display: flex;
+}
+
+/* 아이콘 */
+.icons {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: auto;
+}
+
+section {
+  width: 100%;
+  height: fit-content;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 메인 */
+.sec1 {
+  width: 100%;
+  padding-top: 80px;
+}
+/* 메인비주얼 */
+.main-visual {
+  width: 100%;
+  max-width: 1200px;
+  height: 300px;
+  background: url(../img/trip_mate/main/main.jpg) center/cover no-repeat;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+.main-visual .overlay {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.main-visual h1 {
+  font-size: 36px;
+}
+.main-visual p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* 🌞🌞🌞섹션2 */
+
+.sec2 {
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.sec2 h3 {
+  margin-top: 100px;
+}
+
+.popular {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+.popular div {
+  width: calc(100% / 5);
+  height: 200px;
+  text-align: center;
+}
+
+.popular img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.sec2_icon {
+  width: 50px;
+  position: absolute;
+  top: 46px;
+  left: -15px;
+  overflow: hidden;
+}
+
+.sec2_icon > img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* 🌞🌞섹션3 */
+.sec3 {
+  width: 100%;
+  height: fit-content;
+  padding: 30px 0px;
+  box-sizing: border-box;
+  margin-bottom: 100px;
+}
+h3 {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+}
+
+/* 🌞🌞🌞섹션3 */
+
+.sec3 {
+  margin-top: 100px;
+}
+/* 메뉴 */
+.content h3 {
+  width: fit-content;
+  font-size: 32px;
+  font-weight: 800;
+  margin: 0px auto;
+  color: var(--default-bk);
+}
+
+/* 리스트 헤더 */
+
+.list-header {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0 50px 0;
+  border-bottom: 1px solid rgba(209, 209, 209, 0.7);
+}
+
+.total-count {
+  font-size: 20px;
+  font-weight: 500;
+  margin-right: 20px;
+}
+
+.list-header input {
+  accent-color: gray;
+}
+
+.right_con {
+  width: 50%;
+  display: flex;
+  gap: 10px;
+}
+
+/* 서치바 */
+.search {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  height: fit-content;
+  position: relative;
+  box-sizing: border-box;
+}
+#search_bar {
+  width: 60%;
+  height: 40px;
+  padding: 0 20px;
+  font-size: 12px;
+  border-radius: 3px;
+  border: 1px solid rgba(189, 188, 188, 0.8);
+}
+
+#tag_btn {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  left: 394px;
+  top: 8px;
+  cursor: pointer;
+}
+
+/* 셀렉트박스 */
+select {
+  -webkit-appearance: none; /* 네이티브 외형 감추기 */
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* IE 10, 11의 네이티브 화살표 숨기기 */
+select::-ms-expand {
+  display: none;
+}
+
+select {
+  width: 200px; /* 원하는 너비설정 */
+  padding: 0.8em 0.5em; /* 여백으로 높이 설정 */
+  font-family: inherit; /* 폰트 상속 */
+  background: url(https://farm1.staticflickr.com/379/19928272501_4ef877c265_t.jpg)
+    no-repeat 95% 50%; /* 네이티브 화살표 대체 */
+  border: 1px solid rgba(189, 188, 188, 0.8);
+  border-radius: 3px; /* iOS 둥근모서리 제거 */
+  -webkit-appearance: none; /* 네이티브 외형 감추기 */
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* 섹션3 카드 */
+.sec3_card_wrap {
+  display: flex;
+  width: 100%;
+  gap: 40px;
+  margin-top: 85px;
+  flex-wrap: wrap;
+}
+/* 섹션3 카드 */
+.sec3_card {
+  width: 270px;
+  height: fit-content;
+  position: relative;
+}
+
+.sec3_card > img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.sec3_card:hover > img {
+  scale: 1.01;
+}
+
+/* 카드1 설정 */
+.sec3_card:first-child > img {
+  filter: brightness(32%);
+}
+
+.sec3_card:first-child::after {
+  content: "모집마감";
+  color: var(--default-wh);
+  font-size: 16px;
+  padding: 10px 20px;
+  border: 1px solid var(--default-wh);
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  top: 23%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 500;
+}
+
+/* 섹션3 카드 텍스트 */
+.sec3_card_txt {
+  padding: 10px 10px;
+  font-size: var(--xs-font-size);
+  border: 1px solid #d9d9d9;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+}
+
+.sec3_card_txt h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.sec3_card_txt p {
+  margin-bottom: 5px;
+}
+.sec3_buttons {
+  display: flex;
+  gap: 10px;
+}
+.txt_button {
+  width: fit-content;
+  font-size: var(--xs-font-size);
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+  padding: 5px 20px;
+  margin-bottom: 15px;
+}
+
+.price_sec {
+  margin-top: 50px;
+}
+
+#price {
+  font-size: 16px;
+  font-weight: 800;
+}

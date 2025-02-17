@@ -52,11 +52,13 @@
                 </ul>
               </li>
               <li>
-                <a href="./tour&booking.html">예약 및 체험</a>
+                <a href="./booking.html">예약 및 체험</a>
                 <!-- 2차메뉴 -->
                 <ul class="submenu">
-                  <li><a href="./tour&booking.html">숙소찾기</a></li>
-                  <li><a href="#">투어&액티비티</a></li>
+                  <li><a href="./booking.html">입장권</a></li>
+                  <li><a href="#">데이투어</a></li>
+                  <li><a href="#">액티비티</a></li>
+                  <li><a href="#">티켓</a></li>
                 </ul>
               </li>
               <li>
@@ -88,11 +90,10 @@
       <main>
         <!-- 메인비주얼 - sec1 🌞-->
         <section class="sec1">
-          <div class="main_visual">
-            <div class="main_text">
-              <h4>당신의 여행 파트너 Trip Mate!</h4>
-              <h2>나만의 여행 루트를 찾아보세요!</h2>
-              <h3>TripMate에서 맞춤형 여행 추천받고, 예약까지 간편하게!</h3>
+          <div class="main-visual">
+            <div class="overlay">
+              <h1>여행 동행자를 찾아보세요</h1>
+              <p>함께 여행할 친구를 찾아 새로운 경험을 만들어보세요!</p>
             </div>
           </div>
         </section>
@@ -124,36 +125,36 @@
                   <div class="sec2_button">#내돈내산_리얼후기</div>
                   <span>★★★★★</span>
                   <div class="review_card_content">
-                  <h3>"가성비 루트 그대로 다녀온 후기!"</h3>
-                  <p>
-                    "배낭여행자"님의 발리 가성비 루트 그대로 빠진곳 없이 알차게
-                    다녀왔습니다! 숙소도 가격대비 깨끗하고 편했어요~
-                  </p>
-                </div>
+                    <h3>"가성비 루트 그대로 다녀온 후기!"</h3>
+                    <p>
+                      "배낭여행자"님의 발리 가성비 루트 그대로 빠진곳 없이
+                      알차게 다녀왔습니다! 숙소도 가격대비 깨끗하고 편했어요~
+                    </p>
+                  </div>
                 </div>
 
                 <div class="review_card">
                   <div class="sec2_button">#숨은명소_추천</div>
                   <span>★★★★☆</span>
                   <div class="review_card_content">
-                  <h3>"치앙마이 감성 카페 투어"</h3>
-                  <p>
-                    치앙마이에서 감성 카페들만 골라 다녀왔어요. 핫플이라 사람이
-                    많지만 분위기가 너무 좋아요. 추천!
-                  </p>
-                </div>
+                    <h3>"치앙마이 감성 카페 투어"</h3>
+                    <p>
+                      치앙마이에서 감성 카페들만 골라 다녀왔어요. 핫플이라
+                      사람이 많지만 분위기가 너무 좋아요. 추천!
+                    </p>
+                  </div>
                 </div>
 
                 <div class="review_card">
                   <div class="sec2_button">#인생샷_스팟</div>
                   <span>★★★★★</span>
                   <div class="review_card_content">
-                  <h3>"세부 바다에서 스쿠버다이빙 후기!"</h3>
-                  <p>
-                    바닷속이 정말 아름다웠어요. 물이 맑아서 사진도 예쁘게
-                    나옵니다. 스쿠버 자격증 따는 것도 추천!
-                  </p>
-                </div>
+                    <h3>"세부 바다에서 스쿠버다이빙 후기!"</h3>
+                    <p>
+                      바닷속이 정말 아름다웠어요. 물이 맑아서 사진도 예쁘게
+                      나옵니다. 스쿠버 자격증 따는 것도 추천!
+                    </p>
+                  </div>
                 </div>
 
                 <!-- 더보기 버튼 -->
@@ -170,8 +171,6 @@
         <!-- 🌞🌞🌞섹션3 -->
         <section class="sec3">
           <div class="sec3_contents">
-            
-
             <ul>
               <li data-content="content1">전체</li>
               <li data-content="content2">미국</li>
@@ -184,25 +183,22 @@
             <div class="content-area">
               <!-- 전체 리뷰 -->
               <div id="content1" class="content">
-              
-                     <div class="search">
-                    <select>
-                <option> 제목</option>
-                <option>내용</option>
-                <option>제목+내용</option>
-
-              </select>  
-              <input
-                type="text"
-                placeholder="검색어를 입력해주세요."
-                id="search_bar"
-              />
-              <button type="button" id="tag_btn">
-                <img src="../img/community/search.png" alt="검색" />
-              </button>
-            </div>
+                <div class="search">
+                  <select>
+                    <option>제목</option>
+                    <option>내용</option>
+                    <option>제목+내용</option>
+                  </select>
+                  <input
+                    type="text"
+                    placeholder="검색어를 입력해주세요."
+                    id="search_bar"
+                  />
+                  <button type="button" id="tag_btn">
+                    <img src="../img/community/search.png" alt="검색" />
+                  </button>
+                </div>
                 <div class="review_wrap">
-             
                   <!-- 리뷰1 -->
                   <div class="sec3_review">
                     <div class="review_img">
@@ -213,10 +209,8 @@
                     </div>
                     <h3>11월 동유럽 세미패키지 여행 후기</h3>
                     <p id="review_content">
-                      뒤늦은 후기! 
-                      여행을 다녀온 지 한 달 지났지만 벌써 동유럽이
+                      뒤늦은 후기! 여행을 다녀온 지 한 달 지났지만 벌써 동유럽이
                       그리워지네요ㅠ.ㅠ
-                      
                     </p>
                     <div class="review_icons">
                       <div class="sec3_icon">
@@ -226,7 +220,7 @@
                     </div>
                     <p>파리지엔느</p>
                     <p>2024-12-16 조회 1,058</p>
-                  </div>                 
+                  </div>
                   <!-- 리뷰2 -->
                   <div class="sec3_review">
                     <div class="review_img">
@@ -237,9 +231,9 @@
                     </div>
                     <h3>후회 없던 유럽 여행ㅎㅎ!</h3>
                     <p id="review_content">
-                      드디어 후기를 남기네요!<br/>
-                      막연하게 유럽여행 가고싶다고 생각은 했지만 어떻게 준비해서 가야할지 막막하던 차에,
-                      
+                      드디어 후기를 남기네요!<br />
+                      막연하게 유럽여행 가고싶다고 생각은 했지만 어떻게 준비해서
+                      가야할지 막막하던 차에,
                     </p>
                     <div class="review_icons">
                       <div class="sec3_icon">
@@ -258,10 +252,10 @@
                         alt="리뷰1"
                       />
                     </div>
-                    <h3>베스트 루트따라 다녀온 자유여행💕 </h3>
+                    <h3>베스트 루트따라 다녀온 자유여행💕</h3>
                     <p id="review_content">
-                      세미패키지랑 고민하다가 그냥 친구들끼리 트립메이트 베스트루트따라 자유여행 다녀왔어요!
-                      
+                      세미패키지랑 고민하다가 그냥 친구들끼리 트립메이트
+                      베스트루트따라 자유여행 다녀왔어요!
                     </p>
                     <div class="review_icons">
                       <div class="sec3_icon">
@@ -280,10 +274,10 @@
                         alt="리뷰1"
                       />
                     </div>
-                    <h3>베스트 루트따라 다녀온 자유여행💕 </h3>
+                    <h3>베스트 루트따라 다녀온 자유여행💕</h3>
                     <p id="review_content">
-                      세미패키지랑 고민하다가 그냥 친구들끼리 트립메이트 베스트루트따라 자유여행 다녀왔어요!
-                      
+                      세미패키지랑 고민하다가 그냥 친구들끼리 트립메이트
+                      베스트루트따라 자유여행 다녀왔어요!
                     </p>
                     <div class="review_icons">
                       <div class="sec3_icon">
@@ -302,10 +296,10 @@
                         alt="리뷰1"
                       />
                     </div>
-                    <h3>베스트 루트따라 다녀온 자유여행💕 </h3>
+                    <h3>베스트 루트따라 다녀온 자유여행💕</h3>
                     <p id="review_content">
-                      세미패키지랑 고민하다가 그냥 친구들끼리 트립메이트 베스트루트따라 자유여행 다녀왔어요!
-                      
+                      세미패키지랑 고민하다가 그냥 친구들끼리 트립메이트
+                      베스트루트따라 자유여행 다녀왔어요!
                     </p>
                     <div class="review_icons">
                       <div class="sec3_icon">
@@ -324,10 +318,10 @@
                         alt="리뷰1"
                       />
                     </div>
-                    <h3>베스트 루트따라 다녀온 자유여행💕 </h3>
+                    <h3>베스트 루트따라 다녀온 자유여행💕</h3>
                     <p id="review_content">
-                      세미패키지랑 고민하다가 그냥 친구들끼리 트립메이트 베스트루트따라 자유여행 다녀왔어요!
-                      
+                      세미패키지랑 고민하다가 그냥 친구들끼리 트립메이트
+                      베스트루트따라 자유여행 다녀왔어요!
                     </p>
                     <div class="review_icons">
                       <div class="sec3_icon">
@@ -338,7 +332,6 @@
                     <p>파리지엔느</p>
                     <p>2024-12-16 조회 1,058</p>
                   </div>
-                  
                 </div>
               </div>
               <!-- 컨텐츠1 끝-->

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: "Noto Sans KR", sans-serif;
+        line-height: 1;
+        width: 100%;
+        height: fit-content;
+      }
+
+      .sec1 {
+        box-sizing: border-box;
+        padding: 120px 0;
+        overflow: hidden;
+      }
+
+      .sec1_contents {
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+      }
+
+      .sec1_left_text {
+        display: flex;
+        align-items: center;
+        width: 456px;
+        height: 745px;
+        position: absolute;
+        z-index: 555;
+        background-color: #fff;
+        padding: 0 100px;
+      }
+
+      .sec1 .text_box h4 {
+        color: var(--main-color);
+        font-size: var(--sm-font-size);
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+
+      .sec1 .text_box h2 {
+        color: var(--default-blk);
+        font-size: 50px;
+        font-weight: 700;
+        margin-bottom: 40px;
+        line-height: 70px;
+        letter-spacing: -1px;
+      }
+
+      .sec1 .text_box p {
+        color: var(--default-gr);
+        font-size: 18px;
+        margin-bottom: 73px;
+      }
+
+      .more {
+        align-items: center;
+        justify-content: space-between;
+        width: 170px;
+        padding: 12px 38px;
+        border: 1px solid var(--main-color);
+        color: var(--main-color);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: var(--xs-line-height);
+        border-radius: 10px;
+      }
+
+      .more:hover {
+        color: var(--default-wh);
+        background-color: var(--main-color);
+        transition: 0.3s;
+      }
+
+      .card {
+        width: 100%;
+        height: fit-content;
+      }
+
+      /* 이미지 영역 */
+      .img_area {
+        width: 334px;
+        height: 470px;
+        overflow: hidden;
+        border-radius: 25px;
+        position: relative;
+      }
+
+      .img_area img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease-in-out;
+        object-position: bottom;
+      }
+
+      /* 텍스트 영역 */
+      .text_wrap {
+        padding: 12px 20px;
+        box-sizing: border-box;
+        position: absolute;
+        bottom: 0; /* 이미지의 하단에 위치 */
+        left: 0;
+        width: 100%;
+        background: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.8),
+          rgba(0, 0, 0, 0) 100%
+        );
+        color: white;
+        z-index: 2; /* 이미지 위에 텍스트가 오도록 설정 */
+      }
+
+      .text_wrap h4 {
+        font-size: 15px;
+        margin-bottom: 2px;
+        line-height: var(--sm-line-height);
+      }
+
+      .text_wrap h3 {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 15px;
+      }
+
+      .bottom_text span {
+        color: var(--default-wh);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: var(--xs-line-height);
+        margin-right: 10px;
+      }
+
+      button.prev,
+      button.next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: transparent;
+        border: none;
+        font-size: 30px;
+        cursor: pointer;
+        color: #333;
+        z-index: 10;
+      }
+
+      button.prev {
+        left: 10px;
+      }
+
+      button.next {
+        right: 10px;
+      }
+
+      .slider {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        width: calc(
+          1920px - 456px
+        ); /* 1920px에서 left_text 영역 456px을 빼서 슬라이드 영역 넓이 설정 */
+        margin-left: 456px; /* 슬라이드가 456px 떨어져 시작되도록 설정 */
+      }
+
+      .slide-track {
+        display: flex;
+        transition: transform 0.3s ease;
+      }
+
+      .slide {
+        min-width: 334px;
+        margin-right: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="sec1">
+      <div class="sec1_contents">
+        <div class="sec1_left_text">
+          <div class="text_box">
+            <h4>Best 여행 일정 및 루트</h4>
+            <h2>지금 트립메이트에서<br />가장 인기있는 여행지!</h2>
+            <p>트립메이트에서 가장 인기있는 여행지를 확인해보세요.</p>
+            <a href="#" class="more">전체보기</a>
+          </div>
+        </div>
+
+        <!-- 슬라이드 -->
+        <div class="slider">
+          <button class="prev">←</button>
+          <div class="slide-track">
+            <div class="slide">
+              <div class="card">
+                <div class="img_area">
+                  <a href="#"
+                    ><img src="../img/main/sec1/paris2.jpg" alt="paris"
+                  /></a>
+                  <div class="text_wrap">
+                    <h4>파리</h4>
+                    <h3>best 1위 여행지</h3>
+                    <div class="bottom_text">
+                      <span>📌루트 378</span>
+                      <span>📝후기 1,080</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="card">
+                <div class="img_area">
+                  <a href="#"
+                    ><img
+                      class="sanfrancisco_img"
+                      src="../img/main/sec1/sanfrancisco.jpg"
+                      alt="샌프란시스코"
+                  /></a>
+                  <div class="text_wrap">
+                    <h4>샌프란시스코</h4>
+                    <h3>첨단 산업 중심도시</h3>
+                    <div class="bottom_text">
+                      <span>📌루트 108</span>
+                      <span>📝후기 184</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="card">
+                <div class="img_area">
+                  <a href="#"
+                    ><img src="../img/main/sec1/sydney.jpg" alt="sydney"
+                  /></a>
+                  <div class="text_wrap">
+                    <h4>시드니</h4>
+                    <h3>도심과 자연, 힐링여행</h3>
+                    <div class="bottom_text">
+                      <span>📌루트 285</span>
+                      <span>📝후기 1,206</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="card">
+                <div class="img_area">
+                  <a href="#"
+                    ><img src="../img/main/sec1/Switzerland1.png" alt="스위스"
+                  /></a>
+                  <div class="text_wrap">
+                    <h4>스위스</h4>
+                    <h3>자연의 아름다움이 펼쳐진 곳</h3>
+                    <div class="bottom_text">
+                      <span>📌루트 86</span>
+                      <span>📝후기 156</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="card">
+                <div class="img_area">
+                  <a href="#"
+                    ><img src="../img/main/sec1/newyork.jpg" alt="뉴욕"
+                  /></a>
+                  <div class="text_wrap">
+                    <h4>뉴욕</h4>
+                    <h3>활기찬 문화의 도시</h3>
+                    <div class="bottom_text">
+                      <span>📌루트 196</span>
+                      <span>📝후기 556</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="next">→</button>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const prevButton = document.querySelector(".prev");
+      const nextButton = document.querySelector(".next");
+      const slideTrack = document.querySelector(".slide-track");
+      const slides = document.querySelectorAll(".slide");
+      let currentIndex = 0;
+
+      function updateSlidePosition() {
+        const slideWidth = slides[0].offsetWidth;
+        slideTrack.style.transform = `translateX(-${
+          slideWidth * currentIndex
+        }px)`;
+      }
+
+      prevButton.addEventListener("click", () => {
+        if (currentIndex > 0) {
+          currentIndex--;
+        } else {
+          currentIndex = slides.length - 1;
+        }
+        updateSlidePosition();
+      });
+
+      nextButton.addEventListener("click", () => {
+        if (currentIndex < slides.length - 1) {
+          currentIndex++;
+        } else {
+          currentIndex = 0;
+        }
+        updateSlidePosition();
+      });
+    </script>
+  </body>
+</html>

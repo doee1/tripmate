@@ -144,36 +144,37 @@ main {
   width: 100%;
   padding-top: 80px;
 }
-.main_visual {
+/* 메인비주얼 */
+.main-visual {
   width: 100%;
-  height: 250px;
-  background-image: url(../img/travel_route/main/main.jpg);
-  background-size: cover;
-  background-position: 0px -26px;
-  box-sizing: border-box;
-  display: flex;
+  max-width: 1200px;
+  height: 300px;
+  background: url(../img/trip_mate/main/main.jpg) center/cover no-repeat;
   align-items: center;
-  padding: 0 50px;
-  box-sizing: border-box;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 10px;
+  margin: 0 auto;
 }
-
-.main_text {
-  width: fit-content;
-  height: fit-content;
+.main-visual .overlay {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
 }
-.main_visual h4,
-h3,
-h2 {
-  font-size: var(--sm-font-size);
-  color: var(--default-wh);
-  font-weight: 600;
-  margin-bottom: 30px;
+.main-visual h1 {
+  font-size: 36px;
 }
-.main_visual h2 {
-  font-size: var(--xl-font-size);
-}
-.main_visual h3 {
-  font-size: 20px;
+.main-visual p {
+  font-size: 18px;
+  margin-top: 10px;
 }
 /* 🌞🌞섹션2 */
 .sec2 {
@@ -244,7 +245,7 @@ h2 {
   line-height: 36px;
   margin-bottom: 60px;
 }
-.review_card_content{
+.review_card_content {
   padding: 10px;
 }
 /* 페이지 버튼 */
@@ -333,7 +334,7 @@ h2 {
 .sec3 ul {
   width: 100%;
   display: flex;
-  border-bottom:1px solid #575757cc;
+  border-bottom: 1px solid #575757cc;
   padding: 60px 0px;
   cursor: pointer;
 }
@@ -375,7 +376,8 @@ h2 {
   box-sizing: border-box;
 }
 
-#search_bar , select{
+#search_bar,
+select {
   width: 20%;
   height: 30px;
   padding: 0 20px;
@@ -384,7 +386,7 @@ h2 {
   border: none;
   border-bottom: 1px solid rgba(189, 188, 188, 0.8);
 }
-.search select{
+.search select {
   width: 8%;
   padding: 0px;
 }
@@ -407,7 +409,7 @@ h2 {
   gap: 50px;
 }
 .sec3_review {
-  width: calc(100% / 3 - 35px );
+  width: calc(100% / 3 - 35px);
   height: 683px;
   padding: 10px;
   overflow: hidden;
@@ -436,18 +438,15 @@ h2 {
   color: var(--default-gr);
 }
 
-#review_content{
+#review_content {
   display: block;
   height: 130px;
 }
 
 .review_icons {
   display: flex;
-  gap: 10px; 
+  gap: 10px;
   height: fit-content;
   align-items: center;
-  text-align: center ;
-
+  text-align: center;
 }
-
-
