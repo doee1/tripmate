@@ -11,12 +11,24 @@
     />
 
     <!-- 제이쿼리 불러오기 -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
- 
-<!-- Slick 불러오기 -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <!-- Slick 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+    />
+
+    <!-- 제이쿼리 -->
+    <script src="./js/layout_jq.js"></script>
+
+    <!-- 자바스크립트 -->
+    <script src="./js/layout.js"></script>
 
     <!-- css -->
     <link rel="stylesheet" href="./css/layout.css" />
@@ -104,18 +116,18 @@
         <!-- 🌞섹션1 -->
         <section class="sec1">
           <div class="sec1_left_text">
-              <div class="text_box">
-                <h4>Best 여행 일정 및 루트</h4>
-                <h2>지금 트립메이트에서<br />가장 인기있는 여행지!</h2>
-                <p>트립메이트에서 가장 인기있는 여행지를 확인해보세요.</p>
-                <a href="#" class="more">전체보기</a>
-              </div>
-            </div>   
-      <div class="slide_wrap" >
-          <div id="slider-div"  >
-            <div>
-              <!-- 카드1 -->
-              <div class="card">
+            <div class="text_box">
+              <h4>Best 여행 일정 및 루트</h4>
+              <h2>지금 트립메이트에서<br />가장 인기있는 여행지!</h2>
+              <p>트립메이트에서 가장 인기있는 여행지를 확인해보세요.</p>
+              <a href="#" class="more">전체보기</a>
+            </div>
+          </div>
+          <div class="slide_wrap">
+            <div id="slider-div">
+              <div>
+                <!-- 카드1 -->
+                <div class="card">
                   <div class="img_area">
                     <a href="#"
                       ><img src="../img/main/sec1/paris2.jpg" alt="paris"
@@ -130,11 +142,11 @@
                     </div>
                   </div>
                 </div>
-            </div>
-  
-            <div>
-              <!-- 카드2  -->
-              <div class="card">
+              </div>
+
+              <div>
+                <!-- 카드2  -->
+                <div class="card">
                   <div class="img_area">
                     <a href="#"
                       ><img
@@ -152,14 +164,17 @@
                     </div>
                   </div>
                 </div>
-            </div>
-  
-            <div>
-              <!-- 카드3 -->
-              <div class="card">
+              </div>
+
+              <div>
+                <!-- 카드3 -->
+                <div class="card">
                   <div class="img_area">
                     <a href="#"
-                      ><img class="sydney_img" src="../img/main/sec1/sydney.jpg" alt="sydney"
+                      ><img
+                        class="sydney_img"
+                        src="../img/main/sec1/sydney.jpg"
+                        alt="sydney"
                     /></a>
                     <div class="text_wrap">
                       <h4>시드니</h4>
@@ -171,14 +186,16 @@
                     </div>
                   </div>
                 </div>
-            </div>
-  
-            <div>
-              <!-- 카드4 -->
-              <div class="card">
+              </div>
+
+              <div>
+                <!-- 카드4 -->
+                <div class="card">
                   <div class="img_area">
                     <a href="#"
-                      ><img src="../img/main/sec1/Switzerland1.png" alt="스위스"
+                      ><img
+                        src="../img/main/sec1/Switzerland1.png"
+                        alt="스위스"
                     /></a>
                     <div class="text_wrap">
                       <h4>스위스</h4>
@@ -190,11 +207,11 @@
                     </div>
                   </div>
                 </div>
-            </div>
-            
-            <div>
-              <!-- 카드5 -->
-              <div class="card">
+              </div>
+
+              <div>
+                <!-- 카드5 -->
+                <div class="card">
                   <div class="img_area">
                     <a href="#"
                       ><img src="../img/main/sec1/newyork.jpg" alt="뉴욕"
@@ -209,11 +226,10 @@
                     </div>
                   </div>
                 </div>
+              </div>
             </div>
-  
           </div>
-    </div>
-    </section>
+        </section>
         <!-- 🌞🌞섹션2 -->
         <section class="sec2">
           <div class="sec2_contents">
@@ -252,36 +268,79 @@
               <p>여행지 및 루트에 대한 100% 실제후기를 확인해보세요.</p>
             </div>
             <div class="sec3_main">
+              <!-- 좌측 이미지 -->
               <div class="left_img">
-                <img src="./img/main/sec3/sec3_img1.jpg" alt="review1" />
+                <img
+                  class="reviewImage active"
+                  src="./img/main/sec3/sec3_img1.jpg"
+                  alt="review1"
+                />
+                <img
+                  class="reviewImage"
+                  src="./img/main/sec3/sec3_img2.jpeg"
+                  alt="review2"
+                />
+                <img
+                  class="reviewImage"
+                  src="./img/main/sec3/sec3_img3.jpg"
+                  alt="review3"
+                />
               </div>
+
+              <!-- 우측 리뷰 카드 (3개) -->
               <div class="right_text">
                 <!-- 페이지 버튼 -->
                 <div class="page_button">
-                  <a href="#">1</a>
-                  <a href="#">2</a>
-                  <a href="#">3</a>
+                  <a href="#" class="page-link active" data-index="0">1</a>
+                  <a href="#" class="page-link" data-index="1">2</a>
+                  <a href="#" class="page-link" data-index="2">3</a>
                 </div>
-                <!-- 리뷰 -->
-                <div class="rivew1">
+
+                <!-- 리뷰 카드 -->
+                <div class="review_card active">
                   <div class="sec3_button">#내돈내산_리얼후기</div>
                   <span>★★★★★</span>
-                  <h3>"가성비 루트 그대로 다녀온 후기!"</h3>
-                  <p>
-                    "배낭여행자"님의 발리 가성비 루트 그대로 빠진곳 없이 알차게
-                    다녀왔습니다! 근데 세번째 숙소는 거리가 좀 멀어서 우버 부를
-                    돈으로 공항 근처 호텔로 변경 추천드려요!!
-                  </p>
+                  <div class="review_card_content">
+                    <h3>"가성비 루트 그대로 다녀온 후기!"</h3>
+                    <p>
+                      "배낭여행자"님의 발리 가성비 루트 그대로 빠진곳 없이
+                      알차게 다녀왔습니다! 숙소도 가격대비 깨끗하고 편했어요~
+                    </p>
+                  </div>
                 </div>
+
+                <div class="review_card">
+                  <div class="sec3_button">#숨은명소_추천</div>
+                  <span>★★★★☆</span>
+                  <div class="review_card_content">
+                    <h3>"치앙마이 감성 카페 투어"</h3>
+                    <p>
+                      치앙마이에서 감성 카페들만 골라 다녀왔어요. 핫플이라
+                      사람이 많지만 분위기가 너무 좋아요. 추천!
+                    </p>
+                  </div>
+                </div>
+
+                <div class="review_card">
+                  <div class="sec3_button">#인생샷_스팟</div>
+                  <span>★★★★★</span>
+                  <div class="review_card_content">
+                    <h3>"세부 바다에서 스쿠버다이빙 후기!"</h3>
+                    <p>
+                      바닷속이 정말 아름다웠어요. 물이 맑아서 사진도 예쁘게
+                      나옵니다. 스쿠버 자격증 따는 것도 추천!
+                    </p>
+                  </div>
+                </div>
+
                 <!-- 더보기 버튼 -->
                 <div class="more_section">
                   <div class="more">
-                    <i class="xi-external-link"></i>리뷰 더보기
+                    <i class="xi-external-link"></i> 리뷰 더보기
                   </div>
                 </div>
               </div>
             </div>
-            <!--  섹션3 메인 끝!-->
           </div>
         </section>
         <!-- 🎀베너1 -->
@@ -917,50 +976,5 @@
         <span>Copyright ⓒ TripMate All Rights Reserved</span>
       </footer>
     </div>
-
-    <script>
-      $(function(){
-        $('#slider-div').slick({
-            slide: 'div',        //슬라이드 되어야 할 태그 ex) div, li 
-            infinite : true,     //무한 반복 옵션     
-            slidesToShow : 4,        // 한 화면에 보여질 컨텐츠 개수
-            slidesToScroll : 1,        //스크롤 한번에 움직일 컨텐츠 개수
-            speed : 100,     // 다음 버튼 누르고 다음 화면 뜨는데까지 걸리는 시간(ms)
-            arrows : true,         // 옆으로 이동하는 화살표 표시 여부
-            dots : true,         // 스크롤바 아래 점으로 페이지네이션 여부
-            autoplay : true,            // 자동 스크롤 사용 여부
-            autoplaySpeed : 10000,         // 자동 스크롤 시 다음으로 넘어가는데 걸리는 시간 (ms)
-            pauseOnHover : true,        // 슬라이드 이동    시 마우스 호버하면 슬라이더 멈추게 설정
-            vertical : false,        // 세로 방향 슬라이드 옵션
-            prevArrow : "<button type='button' class='slick-prev'>Previous</button>",        // 이전 화살표 모양 설정
-            nextArrow : "<button type='button' class='slick-next'>Next</button>",        // 다음 화살표 모양 설정
-            dotsClass : "slick-dots",     //아래 나오는 페이지네이션(점) css class 지정
-            draggable : true,     //드래그 가능 여부 
-            variableWidth: true,
-            
-            responsive: [ // 반응형 웹 구현 옵션
-                {  
-                    breakpoint: 960, //화면 사이즈 960px
-                    settings: {
-                        //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
-                        slidesToShow:3 
-                    } 
-                },
-                { 
-                    breakpoint: 768, //화면 사이즈 768px
-                    settings: {    
-                        //위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
-                        slidesToShow:2 
-                    } 
-                }
-            ]
-  
-        });
-      })
-      
-      
-      
-      
-  </script>
   </body>
 </html>
