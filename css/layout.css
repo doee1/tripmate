@@ -14,6 +14,7 @@ body {
   height: auto;
 }
 /* 헤더 */
+
 header {
   width: 100%;
   height: 80px;
@@ -39,6 +40,7 @@ h1 {
 #gnb {
   width: fit-content;
   line-height: 40px;
+  background-color: tomato;
 }
 #gnb > ul {
   width: fit-content;
@@ -72,7 +74,6 @@ h1 {
   display: none;
   position: absolute;
   z-index: 100;
-  /* top: 100%; */
   left: 50%;
   transform: translateX(-50%);
   line-height: 50px;
@@ -137,6 +138,35 @@ h1 {
   align-items: center;
   gap: 20px;
   margin-left: auto;
+}
+
+/* 모바일==================================== */
+
+/* 모바일 메뉴 */
+#mobile_menu {
+  display: none;
+  width: 200px;
+  height: 500pxt;
+  background-color: rgb(206, 174, 132);
+  position: absolute;
+  top: 80px;
+  right: 0;
+}
+
+#mobile_menu > ul {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 200px;
+  height: fit-content;
+}
+
+#mobile_menu > li {
+  padding: 20px;
+}
+
+#hamburger-icon {
+  display: none;
 }
 
 /* 메인 */

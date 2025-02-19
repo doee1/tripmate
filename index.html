@@ -24,14 +24,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
     />
 
-    <!-- 제이쿼리 -->
-    <script src="./js/layout_jq.js"></script>
-
-    <!-- 자바스크립트 -->
-    <script src="./js/layout.js"></script>
-
     <!-- css -->
     <link rel="stylesheet" href="./css/layout.css" />
+
+    <!-- 반응형 -->
+    <link rel="stylesheet" href="./responsive/layout_rs.css" />
   </head>
   <body>
     <div class="wrap">
@@ -40,9 +37,59 @@
         <div class="header_contents">
           <!-- 로고 -->
           <h1>
-            <a href="/"><img src="./img/header/logo.png" alt="logo" /></a>
+            <a href="/"><img src="./img/header/logo.svg" alt="logo" /></a>
           </h1>
           <!-- 메뉴 -->
+          <!-- 모바일 햄버거 gnb -->
+          <nav id="mobile_menu">
+            <ul>
+              <!-- 1차메뉴_여행루트 -->
+              <li>
+                <a href="./sub/travel_route.html">여행루트</a>
+                <!-- 2차메뉴 -->
+                <ul class="submenu">
+                  <li><a href="./sub/travel_route.html">📆날짜별</a></li>
+                  <li><a href="#">📌장소별</a></li>
+                  <li><a href="#">👀테마별</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="./sub/trip_mate.html">트립메이트</a>
+                <!-- 2차메뉴 -->
+                <ul class="submenu">
+                  <li><a href="./sub/trip_mate.html">동행자 찾기</a></li>
+                  <li><a href="#">여행그룹</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="./sub/community.html">커뮤니티</a>
+                <!-- 2차메뉴 -->
+                <ul class="submenu">
+                  <li><a href="./sub/community.html">후기/리뷰</a></li>
+                  <li><a href="./sub/community02.html">실시간 소통</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="./sub/booking.html">예약 및 체험</a>
+                <!-- 2차메뉴 -->
+                <ul class="submenu">
+                  <li><a href="./sub/booking.html">입장권</a></li>
+                  <li><a href="#">데이투어</a></li>
+                  <li><a href="#">액티비티</a></li>
+                  <li><a href="#">티켓</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">프로모션</a>
+                <!-- 2차메뉴 -->
+                <ul class="submenu">
+                  <li><a href="#">이벤트</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- pc gnb -->
           <nav id="gnb">
             <ul>
               <!-- 1차메뉴_여행루트 -->
@@ -101,6 +148,12 @@
                 src="./img/header/account_circle.png"
                 width="24px"
                 alt="유저"
+            /></a>
+            <a href="#" id="hamburger-icon"
+              ><img
+                src="./img/header/mobile_menu.png"
+                width="24px"
+                alt="햄버거메뉴"
             /></a>
           </div>
           <!-- 아이콘 끝! -->
@@ -976,5 +1029,11 @@
         <span>Copyright ⓒ TripMate All Rights Reserved</span>
       </footer>
     </div>
+
+    <!-- 제이쿼리 -->
+    <script src="./js/layout_jq.js"></script>
+
+    <!-- 자바스크립트 -->
+    <script src="./js/layout.js"></script>
   </body>
 </html>

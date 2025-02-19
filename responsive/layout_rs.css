@@ -1,5 +1,28 @@
 @charset "utf-8";
+@import url(../responsive/layout_rs.css);
+@import url(../css/layout.css);
 
 /* mobile */
 @media screen and (min-width: 320px) and (max-width: 768px) {
+  #gnb {
+    display: none;
+  }
+
+  #mobile_menu {
+    display: block;
+  }
+
+  #hamburger-icon {
+    display: block;
+  }
+
+  .header_contents {
+    width: 100%;
+  }
+  main {
+    display: none;
+  }
+  footer {
+    display: none;
+  }
 }
