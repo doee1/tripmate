@@ -174,7 +174,7 @@ main {
   width: 100%;
   height: 100%;
 }
-/* 메인비주얼 */
+/* ===================================메인비주얼 */
 .main_visual {
   width: 100%;
   height: 700px;
@@ -186,6 +186,9 @@ main {
   object-fit: cover;
 }
 /* 공통설정 */
+.mobile_title {
+  display: none;
+}
 section {
   width: 100%;
   height: fit-content;
@@ -242,7 +245,7 @@ section {
   margin-top: 10px;
 }
 
-/* 🌞섹션1  */
+/* =====================================🌞섹션1  */
 .sec1 {
   width: 100%;
   display: flex;
@@ -266,7 +269,7 @@ section {
   margin-bottom: 20px;
 }
 
-.sec1 .text_box h2 {
+.sec1 .text_box h3 {
   color: var(--default-blk);
   font-size: 49px;
   font-weight: 700;
@@ -284,7 +287,7 @@ section {
 .more {
   align-items: center;
   justify-content: space-between;
-  width: 170px;
+  width: fit-content;
   padding: 12px 38px;
   border: 1px solid var(--main-color);
   color: var(--main-color);
@@ -298,6 +301,13 @@ section {
   color: var(--default-wh);
   background-color: var(--main-color);
   transition: 0.3s;
+}
+
+.mobile_more {
+  width: fit-content;
+  text-align: center;
+  margin: 0 auto;
+  display: none;
 }
 
 .card {
@@ -374,14 +384,14 @@ section {
   height: 8px;
 }
 
-.slick-prev:before {
+/* .slick-prev:before {
   content: "👈";
   margin-right: 30px;
 }
 
 .slick-next:before {
   content: "👉";
-}
+} */
 
 /* 🌞🌞sec2 */
 .sec2 {
@@ -393,7 +403,7 @@ section {
   margin: 0 auto;
 }
 
-.sec2 .sec2_contents .sec2_img {
+.sec2_img {
   width: 100%;
   height: fit-content;
   display: flex;
