@@ -198,6 +198,7 @@ section {
 /* 섹션 2,3 타이틀 */
 .sec_title {
   margin-bottom: 60px;
+  width: 100%;
 }
 
 .sec_title h2 {
@@ -410,26 +411,6 @@ section {
   gap: 15px;
 }
 
-/* 혼자여행 */
-.sec2_img .solo_trip {
-  width: 390px;
-  height: 480px;
-  background-image: url(/img/main/sec2/img1.png);
-  background-repeat: no-repeat;
-  color: var(--default-wh);
-  display: flex;
-  align-items: end;
-  padding: 20px;
-  box-sizing: border-box;
-  transition: 0.3s;
-  filter: brightness(80%);
-}
-
-.sec2_img .solo_trip:hover {
-  transform: scale(1.01);
-  filter: brightness(100%);
-}
-
 .sec2_img2 {
   width: 795px;
   height: 480px;
@@ -440,42 +421,40 @@ section {
 
 /* 작은이미지 박스들 */
 
-.sec2_img2 div {
+.sec2_card {
   width: 390px;
   height: 232.5px;
-  color: var(--default-wh);
-  display: flex;
-  align-items: end;
-  padding: 20px;
-  box-sizing: border-box;
+  border-radius: 24px;
+  position: relative;
+}
+
+.sec2_card > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(78%);
+  scale: 0.99;
   transition: 0.3s;
-  filter: brightness(80%);
 }
 
-/* 효도여행 */
-.sec2_img2 a:first-child div {
-  background-image: url(/img/main/sec2/효도여행.png);
-  background-repeat: no-repeat;
-}
-/* 가족여행 */
-.sec2_img2 a:nth-child(2) div {
-  background-image: url(/img/main/sec2/가족여행.png);
-  background-repeat: no-repeat;
-}
-/* 저예산 */
-.sec2_img2 a:nth-child(3) div {
-  background-image: url(/img/main/sec2/저예산.png);
-  background-repeat: no-repeat;
-}
-/* 미식여행 */
-.sec2_img2 a:nth-child(4) div {
-  background-image: url(/img/main/sec2/미식여행.png);
-  background-repeat: no-repeat;
+.sec2_card > .mobile_title {
+  text-align: center;
 }
 
-.sec2_img2 a:hover div {
+.sec2_card p {
+  color: var(--default-wh);
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.sec2_card:hover img {
   transform: scale(1.01);
   filter: brightness(100%);
+}
+/* 혼자여행 */
+.solo_trip {
+  height: 480px;
 }
 
 /* 🌞🌞🌞섹션3 */
@@ -487,7 +466,6 @@ section {
   width: 100%;
   height: fit-content;
   margin: 0 auto;
-  max-width: 1200px;
   /* box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   padding: 50px; */
 }
