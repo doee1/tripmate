@@ -154,161 +154,322 @@
     display: none;
   }
 
-  /* sec3 */
-  .sec3 {
-    padding-top: none;
-  }
-
-  .sec3_contents {
-    width: 100%;
-    height: fit-content;
-    margin: 0 auto;
-    /* box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-    padding: 50px; */
-  }
+  /* ==================sec3 */
 
   /* sec3 메인 */
-  .sec3_main {
-    display: flex;
-    width: 100%;
+  .sec3_contents {
+    width: 90%;
+  }
+
+  .left_img {
+    width: 50%;
   }
 
   /* sec3 이미지 */
   .left_img img {
-    width: 50%;
-    height: 380px;
-    border-radius: 15px;
-    transition: opacity 0.3s ease-in-out;
+    width: 100%;
+    height: 220px;
   }
 
   /* sec3 텍스트 */
   .right_text {
     width: 50%;
-    height: fit-content;
-    overflow: hidden;
-    margin-left: 50px;
+    height: 220px;
+    margin-left: 5px;
   }
 
   /* 리뷰섹션 */
   .sec3_button {
-    width: fit-content;
-    height: fit-content;
-    font-size: 12px;
-    line-height: var(--xs-line-height);
-    font-weight: 700;
-    color: var(--main-color);
-    border-radius: 17px;
-    border: 1px solid var(--main-color);
-    padding: 3px 24px;
-    margin-bottom: 5px;
+    font-size: 10px;
+    line-height: 10px;
+    padding: 5px 5px;
+    margin-bottom: 10px;
   }
   .review_card span {
-    display: block;
-    color: var(--main-color);
-    font-size: 20px;
-    line-height: var(--sm-line-height);
-    margin-bottom: 20px;
+    font-size: 12px;
+    line-height: 10px;
+    margin-bottom: 10px;
   }
 
   .review_card h3 {
-    font-size: 22px;
-    line-height: var(--sm-line-height);
-    font-weight: 700;
-    margin-bottom: 30px;
-    color: var(--default-bk);
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 10px;
   }
   .review_card p {
-    font-size: 18px;
-    line-height: 36px;
-    margin-bottom: 60px;
-  }
-  .review_card_content {
-    padding: 10px;
+    font-size: 10px;
+    line-height: 14px;
+    margin-bottom: 11px;
   }
   /* 페이지 버튼 */
   .page_button {
-    display: flex;
-    gap: 15px;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
   }
 
   .page_button a {
-    font-size: 16px;
-    line-height: var(--xs-line-height);
-    color: #d9d9d9;
-    position: relative;
-    text-decoration: none;
-    padding: 2px 9px;
-    border-radius: 50%;
-    transition: 0.3s;
-  }
-
-  /* 선택된 페이지 버튼 스타일 */
-  .page_button a.active {
-    background-color: #ff7f00;
-    color: white;
-    font-weight: 700;
-  }
-
-  /* 리뷰 카드 */
-  .review_card {
-    display: none;
-  }
-
-  .review_card.active {
-    display: block;
-  }
-  /* 리뷰이미지 */
-  .reviewImage {
-    display: none; /* 기본적으로 모든 이미지는 숨깁니다. */
-  }
-
-  .reviewImage.active {
-    display: block; /* active 클래스가 있는 이미지만 보이게 합니다. */
+    font-size: 10px;
+    line-height: 15px;
+    padding: 2px 6px;
   }
 
   /* 버튼 */
-  .more {
-    align-items: center;
-    justify-content: space-between;
-    width: 170px;
-    padding: 12px 38px;
-    border: 1px solid var(--main-color);
-    color: var(--main-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: var(--xs-line-height);
-    border-radius: 10px;
-  }
-  .more:hover {
-    color: var(--default-wh);
-    background-color: var(--main-color);
-    transition: 0.3s;
-  }
-  .more_section {
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    align-items: end;
-    justify-content: end;
-  }
 
   .right_text .more {
+    font-size: 10px;
+    padding: 5px 10px;
+    line-height: 16px;
+  }
+
+  /* =========================베너1 */
+
+  /*🎀베너1 */
+  .banner1 {
+    width: 90%;
+    height: 70px;
+    margin: 0 auto;
+    padding: 0 0;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  .banner1_img {
+    width: 100%;
+    height: 100%;
+    background-position: bottom;
+    padding: 0 0;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+  /* 베너1 텍스트 */
+  .banner1_textbox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  .banner1_button {
+    display: none;
+  }
+
+  .banner1 br {
+    display: block;
+  }
+
+  .banner1 h3 {
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 10px;
+  }
+
+  .banner1 span {
+    font-size: 14px;
+  }
+
+  .banner1 p {
+    display: none;
+  }
+
+  /* ==========================섹션4 */
+
+  /* 섹션4,5 타이틀 */
+
+  .sec_title2 h2 {
+    font-size: 16px;
+  }
+  .sec_title2 h3 {
+    display: none;
+  }
+
+  .sec4_contents {
+    width: 90%;
+    overflow: hidden;
+  }
+
+  .sec4_card_wrap {
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  /* 섹션4 카드 */
+  .sec4_card {
+    width: calc((100% - 15px) / 2);
+    height: 300px;
+    overflow: hidden;
+  }
+
+  .sec4_card img {
+    height: 150px;
+  }
+
+  /* 카드1 설정 */
+
+  .sec4_card:first-child::after {
+    font-size: 10px;
+    padding: 2px 5px;
+  }
+
+  /* 섹션4 카드 텍스트 */
+
+  .sec4_card_txt h3 {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .txt_button {
+    display: none;
+  }
+
+  .sec4_card_txt p {
+    font-size: 10px;
+    margin-bottom: 0px;
+  }
+  .user {
+    align-items: center;
+  }
+
+  .user_info img {
+    width: 14px;
+    height: 14px;
+  }
+
+  /* ==================섹션5 */
+  /* 🌞🌞🌞🌞섹션5 */
+
+  .sec5_contents {
+    width: 90%;
+  }
+  /* 카드 */
+
+  .sec5_card {
+    width: 300px;
+    height: fit-content;
+    padding: 30px 10px;
+  }
+  /* 섹션5 카드 top */
+  .card_top {
+    gap: 15px;
+  }
+  .sec5_main_txt h3 {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .sec5_main_txt p {
+    font-size: 10px;
+    color: #7b7a7a;
+    margin-top: 0px;
+    line-height: 14px;
+  }
+  .sec5_main_img img {
+    width: 60px;
+    height: 60px;
+  }
+  /* 섹션5 카드 middle */
+  .card_mid {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .sec5 .card_mid > .user_info {
+    font-size: 10px;
+    line-height: 14px;
+    color: var(--default-gr);
+    display: flex;
+    gap: 3px;
+    align-items: center;
+  }
+
+  .date {
+    font-size: 10px;
+    line-height: var(--xs-line-height);
+    font-weight: 700;
+  }
+  .sec5_icon {
+    width: fit-content;
+    display: flex;
+    gap: 3px;
+  }
+
+  .sec5_icon span {
+    font-size: 10px;
+  }
+  /* 섹션5 카드 바텀 칩들 */
+  .sec5_bottom {
+    display: flex;
+    margin-top: 10px;
+    gap: 0px;
+    justify-content: space-evenly;
+  }
+
+  .sec5_bottom div {
     width: fit-content;
     height: fit-content;
-    font-size: 15px;
-    padding: 5px 30px;
-    border-radius: 5px;
-    cursor: pointer;
+    padding: 2px 5px;
+    font-size: 10px;
+    line-height: var(--xs-line-height);
+    background-color: #f5f4f4;
+    border-radius: 8px;
   }
-  .banner1 {
-    display: none;
+
+  /* 카드 슬라이드 영역 sec5 */
+
+  .slider {
+    height: 100%;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
   }
-  .sec4 {
-    display: none;
+  .slide {
+    max-width: 100%;
+    height: fit-content;
+    margin: 80px auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border: 1px solid #d9d9d9;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03), 0 3px 8px rgba(0, 0, 0, 0.03);
+    /* transition: transform 0.3s; */
   }
-  .sec5 {
-    display: none;
+
+  .sec5 .slide:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  .slide-track {
+    display: flex;
+    width: calc(330px * 12);
+    animation: scroll 60s linear infinite;
+  }
+
+  .slide-track:hover {
+    animation-play-state: paused;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-330px * 6));
+    }
+  }
+
+  .train-card {
+    width: fit-content;
+    border-radius: 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+
+  .sec5 .slide:hover {
+    transform: scale(1.03);
   }
 
   footer {
