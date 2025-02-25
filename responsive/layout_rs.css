@@ -159,6 +159,7 @@
   /* sec3 메인 */
   .sec3_contents {
     width: 90%;
+    background-color: bisque;
   }
 
   .left_img {
@@ -168,13 +169,13 @@
   /* sec3 이미지 */
   .left_img img {
     width: 100%;
-    height: 220px;
+    height: 240px;
   }
 
   /* sec3 텍스트 */
   .right_text {
     width: 50%;
-    height: 220px;
+    height: 240px;
     margin-left: 5px;
   }
 
@@ -338,6 +339,7 @@
 
   .sec5_contents {
     width: 90%;
+    margin: 0 auto;
   }
   /* 카드 */
 
@@ -472,7 +474,32 @@
     transform: scale(1.03);
   }
 
+  /* 🦶푸터 */
   footer {
-    display: none;
+    width: 90%;
+    height: fit-content;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: left;
+    padding: 20px 0px;
+    border-top: 1px solid rgba(217, 217, 217, 0.8);
+    font-size: 15px;
+    color: var(--default-gr);
+    margin: 0 auto;
+  }
+
+  footer img {
+    height: 20px;
+    opacity: 80%;
+  }
+  footer ul {
+    display: flex;
+    gap: 5px;
+    font-size: 8px;
+  }
+  footer span {
+    font-size: 10px;
   }
 }
