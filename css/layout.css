@@ -40,7 +40,7 @@ h1 {
 #gnb {
   width: fit-content;
   line-height: 40px;
-  background-color: tomato;
+  background-color: #fff;
 }
 #gnb > ul {
   width: fit-content;
@@ -239,6 +239,7 @@ section {
 .sec_title2 h3 {
   font-size: 20px;
   font-weight: 800;
+  margin-top: 20px;
 }
 
 .sec_title2 p {
@@ -385,15 +386,6 @@ section {
   height: 8px;
 }
 
-/* .slick-prev:before {
-  content: "👈";
-  margin-right: 30px;
-}
-
-.slick-next:before {
-  content: "👉";
-} */
-
 /* 🌞🌞sec2 */
 .sec2 {
   background-color: #f7f7f7;
@@ -459,15 +451,16 @@ section {
 
 /* 🌞🌞🌞섹션3 */
 .sec3 {
-  padding-top: none;
+  padding-bottom: 120px;
+  width: 100%;
+  border-bottom: 2px solid #c5c5c533;
 }
 
 .sec3_contents {
   width: 100%;
   height: fit-content;
   margin: 0 auto;
-  /* box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-  padding: 50px; */
+  max-width: 1200px;
 }
 
 /* sec3 메인 */
@@ -780,20 +773,39 @@ section {
 /* 🌞🌞🌞🌞섹션5 */
 
 .sec5 {
-  overflow: hidden;
+  width: 100%;
 }
 .sec5_contents {
   width: 100%;
 }
 /* 카드 */
 
+#sec5_slider-div > div {
+  height: 300px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 35px;
+}
+
 .sec5_card {
   width: 500px;
-  height: fit-content;
-  padding: 35px 50px;
+  height: 260px;
+  padding: 20px 50px;
   border-radius: 12px;
-  background-color: #fff;
+  background-color: fff;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #d9d9d9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03), 0 3px 8px rgba(0, 0, 0, 0.03);
+  transition: 0.2s;
+  margin: 20px 20px 0 20px;
+}
+
+.sec5_card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 16px rgba(0, 0, 0, 0.1);
+  transform: scale(1.03);
 }
 /* 섹션5 카드 top */
 .card_top {
@@ -824,7 +836,6 @@ section {
   align-items: center;
   width: 100%;
   justify-content: space-between;
-  margin-top: 30px;
 }
 .user_info {
   font-size: 10px;
@@ -871,62 +882,9 @@ section {
   border-radius: 8px;
 }
 
-/* 카드 슬라이드 영역 sec5 */
-
-.slider {
-  height: 100%;
-  margin: auto;
-  position: relative;
+.slide_wrap2 {
   width: 100%;
-  display: grid;
-  place-items: center;
-  overflow: hidden;
-}
-.slide {
-  max-width: 100%;
-  height: 265px;
-  margin: 80px auto;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  border: 1px solid #d9d9d9;
-  border-radius: 12px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03), 0 3px 8px rgba(0, 0, 0, 0.03);
-  /* transition: transform 0.3s; */
-}
-
-.sec5 .slide:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 16px rgba(0, 0, 0, 0.1);
-}
-
-.slide-track {
-  display: flex;
-  width: calc(528px * 12);
-  animation: scroll 60s linear infinite;
-}
-
-.slide-track:hover {
-  animation-play-state: paused;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-528px * 6));
-  }
-}
-
-.train-card {
-  width: fit-content;
-  border-radius: 10px;
-  overflow: hidden;
-  box-sizing: border-box;
-}
-
-.sec5 .slide:hover {
-  transform: scale(1.03);
+  background-color: #fff;
 }
 
 /* 🦶푸터 */

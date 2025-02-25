@@ -474,6 +474,9 @@
     transform: scale(1.03);
   }
 
+  #slider-div {
+    display: flex;
+  }
   /* 🦶푸터 */
   footer {
     width: 90%;
