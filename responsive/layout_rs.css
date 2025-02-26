@@ -31,6 +31,7 @@
 
   section {
     padding: 50px 0;
+    background-color: #fff;
   }
 
   /* sec1 */
@@ -62,10 +63,9 @@
 
   .mobile_title {
     display: block;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     margin-bottom: 20px;
-    background-color: antiquewhite;
   }
 
   /* 슬라이더 */
@@ -93,21 +93,21 @@
   }
 
   /* 섹션2 */
+
   /* 섹션 2,3 타이틀 */
   .sec_title {
     margin-bottom: 0px;
     width: 100%;
-    background-color: aqua;
   }
 
   .sec_title h2 {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
     line-height: var(--sm-line-height);
   }
   .sec_title h3 {
-    font-size: 16px;
-    line-height: 17px;
+    font-size: 18px;
+    line-height: 20px;
   }
 
   /* sec2 이미지 */
@@ -124,12 +124,13 @@
   .sec2_img2 {
     width: 100%;
     height: fit-content;
+    gap: 10px;
   }
 
   /* 작은이미지 박스들 */
 
   .sec2_card {
-    width: calc((100% - 15px) / 2);
+    width: calc((100% - 10px) / 2);
     height: 60px;
     overflow: hidden;
   }
@@ -146,24 +147,34 @@
   .sec2_card p {
     color: var(--default-wh);
     position: absolute;
-    transform: translate(50%, -50%);
-    font-size: 10px;
+    font-size: 14px;
+    top: 50%; /* 세로 중앙 */
+    left: 50%; /* 가로 중앙 */
+    transform: translate(-50%, -50%); /* 정확하게 가운데 정렬 */
+    text-align: center;
   }
   /* 혼자여행 */
   .solo_trip {
     display: none;
   }
 
-  /* ==================sec3 */
+  /* ============ sec3 ========== */
 
+  .sec3 {
+    padding-bottom: 50px;
+  }
   /* sec3 메인 */
   .sec3_contents {
     width: 90%;
-    background-color: bisque;
   }
 
   .left_img {
-    width: 50%;
+    width: 100%;
+  }
+
+  .sec3_main {
+    flex-direction: column;
+    gap: 20px;
   }
 
   /* sec3 이미지 */
@@ -174,41 +185,42 @@
 
   /* sec3 텍스트 */
   .right_text {
-    width: 50%;
-    height: 240px;
+    width: 100%;
+    height: fit-content;
     margin-left: 5px;
   }
 
   /* 리뷰섹션 */
   .sec3_button {
-    font-size: 10px;
+    font-size: 12px;
     line-height: 10px;
     padding: 5px 5px;
     margin-bottom: 10px;
   }
   .review_card span {
     font-size: 12px;
-    line-height: 10px;
+    line-height: 18px;
     margin-bottom: 10px;
   }
 
   .review_card h3 {
-    font-size: 12px;
-    line-height: 14px;
-    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 20px;
   }
   .review_card p {
-    font-size: 10px;
-    line-height: 14px;
+    font-size: 12px;
+    line-height: 18px;
     margin-bottom: 11px;
   }
   /* 페이지 버튼 */
+
   .page_button {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 
   .page_button a {
-    font-size: 10px;
+    font-size: 11px;
     line-height: 15px;
     padding: 2px 6px;
   }
@@ -216,9 +228,10 @@
   /* 버튼 */
 
   .right_text .more {
-    font-size: 10px;
+    font-size: 12px;
     padding: 5px 10px;
-    line-height: 16px;
+    margin: 0 auto;
+    display: none;
   }
 
   /* =========================베너1 */
@@ -231,6 +244,7 @@
     padding: 0 0;
     overflow: hidden;
     box-sizing: border-box;
+    margin-bottom: 50px;
   }
   .banner1_img {
     width: 100%;
@@ -276,7 +290,7 @@
   /* 섹션4,5 타이틀 */
 
   .sec_title2 h2 {
-    font-size: 16px;
+    font-size: 18px;
   }
   .sec_title2 h3 {
     display: none;
@@ -306,8 +320,13 @@
   /* 카드1 설정 */
 
   .sec4_card:first-child::after {
-    font-size: 10px;
-    padding: 2px 5px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 5px 7px;
+    top: 50%; /* 세로 중앙 */
+    left: 50%; /* 가로 중앙 */
+    transform: translate(-50%, -350%); /* 정확하게 가운데 정렬 */
+    text-align: center;
   }
 
   /* 섹션4 카드 텍스트 */
@@ -322,11 +341,16 @@
   }
 
   .sec4_card_txt p {
-    font-size: 10px;
-    margin-bottom: 0px;
+    display: none;
   }
   .user {
     align-items: center;
+    font-size: 12px;
+  }
+  .sec4_card_txt .user_info {
+    align-items: center;
+    font-size: 12px;
+    flex-direction: column;
   }
 
   .user_info img {
@@ -337,6 +361,15 @@
   /* ==================섹션5 */
   /* 🌞🌞🌞🌞섹션5 */
 
+  .sec5 > .sec_title2 {
+    width: 90%;
+  }
+  .sec5 {
+    height: fit-content;
+    background-color: #ffffff;
+    border-bottom: 1px solid rgba(217, 217, 217, 0.8);
+  }
+
   .sec5_contents {
     width: 90%;
     margin: 0 auto;
@@ -346,163 +379,461 @@
   .sec5_card {
     width: 300px;
     height: fit-content;
-    padding: 30px 10px;
+    padding: 30px 20px;
   }
   /* 섹션5 카드 top */
   .card_top {
-    gap: 15px;
+    gap: 30px;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
   }
   .sec5_main_txt h3 {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
     margin-bottom: 10px;
   }
   .sec5_main_txt p {
-    font-size: 10px;
+    font-size: 12px;
     color: #7b7a7a;
     margin-top: 0px;
-    line-height: 14px;
+    line-height: 18px;
   }
   .sec5_main_img img {
-    width: 60px;
-    height: 60px;
+    width: 200px;
   }
   /* 섹션5 카드 middle */
   .card_mid {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 40px;
+    gap: 10px;
   }
   .sec5 .card_mid > .user_info {
-    font-size: 10px;
-    line-height: 14px;
+    font-size: 12px;
+    line-height: 18px;
     color: var(--default-gr);
     display: flex;
     gap: 3px;
     align-items: center;
   }
 
-  .date {
-    font-size: 10px;
-    line-height: var(--xs-line-height);
-    font-weight: 700;
-  }
   .sec5_icon {
-    width: fit-content;
-    display: flex;
-    gap: 3px;
+    display: none;
   }
 
-  .sec5_icon span {
-    font-size: 10px;
-  }
   /* 섹션5 카드 바텀 칩들 */
   .sec5_bottom {
-    display: flex;
-    margin-top: 10px;
-    gap: 0px;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin-top: 15px;
   }
 
   .sec5_bottom div {
     width: fit-content;
     height: fit-content;
     padding: 2px 5px;
-    font-size: 10px;
+    font-size: 12px;
     line-height: var(--xs-line-height);
     background-color: #f5f4f4;
     border-radius: 8px;
   }
-
-  /* 카드 슬라이드 영역 sec5 */
-
-  .slider {
-    height: 100%;
-    margin: auto;
-    position: relative;
-    width: 100%;
-    display: grid;
-    place-items: center;
-    overflow: hidden;
-  }
-  .slide {
-    max-width: 100%;
-    height: fit-content;
-    margin: 80px auto;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    border: 1px solid #d9d9d9;
-    border-radius: 12px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03), 0 3px 8px rgba(0, 0, 0, 0.03);
-    /* transition: transform 0.3s; */
-  }
-
-  .sec5 .slide:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 16px rgba(0, 0, 0, 0.1);
-  }
-
-  .slide-track {
-    display: flex;
-    width: calc(330px * 12);
-    animation: scroll 60s linear infinite;
-  }
-
-  .slide-track:hover {
-    animation-play-state: paused;
-  }
-
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(calc(-330px * 6));
-    }
-  }
-
-  .train-card {
-    width: fit-content;
-    border-radius: 10px;
-    overflow: hidden;
-    box-sizing: border-box;
-  }
-
-  .sec5 .slide:hover {
-    transform: scale(1.03);
+  .date {
+    font-size: 12px;
   }
 
   #slider-div {
     display: flex;
   }
+
+  .slide_wrap2 {
+    width: 100%;
+    background-color: #fff;
+  }
+
+  #sec5_slider-div > div {
+    height: fit-content;
+  }
   /* 🦶푸터 */
   footer {
     width: 90%;
     height: fit-content;
-    gap: 10px;
+    gap: 15px;
     display: flex;
     flex-direction: column;
     align-items: baseline;
     justify-content: left;
     padding: 20px 0px;
-    border-top: 1px solid rgba(217, 217, 217, 0.8);
     font-size: 15px;
     color: var(--default-gr);
     margin: 0 auto;
+    border-top: none;
   }
 
   footer img {
-    height: 20px;
+    height: 30px;
     opacity: 80%;
   }
   footer ul {
     display: flex;
-    gap: 5px;
-    font-size: 8px;
+    gap: 10px;
+    font-size: 11px;
+    flex-wrap: wrap;
   }
   footer span {
     font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .sec2_card {
+    width: calc((100% - 10px) / 2);
+    height: 150px;
+    overflow: hidden;
+  }
+  .sec2_card > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(78%);
+    scale: 0.99;
+    transition: 0.3s;
+  }
+
+  .sec2_card p {
+    margin: 0; /* 여백을 제거하여 정확한 가운데 정렬 */
+    width: 100%;
+    height: fit-content;
+  }
+
+  /* 섹션3 */
+  .left_img img:not(:first-child) {
+    object-position: 0px -389px;
+    object-fit: cover;
+  }
+  .left_img img:first-child {
+    object-position: bottom;
+    object-fit: cover;
+  }
+
+  /* 섹션4 */
+  .sec4_card > img {
+    height: 200px;
+    margin-bottom: 15px;
+  }
+  .sec4_card {
+    height: fit-content;
+  }
+
+  .sec4_card:first-child::after {
+    font-size: 14px;
+    padding: 10px 15px;
+    transform: translate(-50%, -250%);
+  }
+  .sec4_card_txt h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+}
+
+/* laptop */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  #mobile_menu {
+    display: none;
+  }
+  .header_contents {
+    width: 100%;
+    padding: 0 10px;
+    justify-content: space-between;
+  }
+
+  /* 1차 메뉴 */
+
+  #gnb > ul {
+    height: 80px;
+    gap: 15px;
+  }
+
+  #gnb > ul > li > a {
+    padding: 0 10px;
+  }
+
+  /* 아이콘 */
+  .icons {
+    margin-left: 0px;
+  }
+
+  /* ==========섹션1 ===========*/
+
+  /* text */
+  .sec1 {
+    width: 100%;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 100px 0;
+  }
+
+  .pc_more,
+  .sec1 br {
+    display: none;
+  }
+
+  .sec1 .text_box h4 {
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  .sec1 .text_box p {
+    font-size: var(--sm-font-size);
+    line-height: var(--xs-line-height);
+    margin-bottom: 50px;
+  }
+
+  .sec1 .text_box h3 {
+    margin-bottom: 15px;
+  }
+
+  .sec1_left_text {
+    width: 100%;
+    height: fit-content;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  /* 슬라이더 */
+  .slide_wrap {
+    width: 100%;
+    margin: 0 auto;
+    overflow: visible;
+  }
+
+  .card {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  .img_area {
+    width: 288px;
+    height: 380px;
+  }
+
+  .mobile_more {
+    display: block;
+    margin-top: 30px;
+    padding: 12px 15px;
+    box-sizing: border-box;
+  }
+  .slick-dots {
+    bottom: -20px;
+    margin: 0 auto;
+  }
+
+  /* =========섹션2========= */
+
+  /* 섹션 2,3 타이틀 */
+
+  .sec_title h2,
+  .sec1 .text_box h4 {
+    color: var(--main-color);
+    font-size: var(--md-font-size);
+    font-weight: 600;
+    line-height: var(--sm-line-height);
+  }
+  .sec_title h3,
+  .sec1 .text_box h3 {
+    font-size: 35px;
+    font-weight: 600;
+    line-height: var(--lg-line-height);
+    letter-spacing: -1px;
+  }
+
+  .sec2 {
+    padding: 100px 0;
+    width: 100%;
+  }
+  .sec2_contents {
+    width: 90%;
+  }
+
+  .sec2_img2 {
+    width: calc((100% / 3) * 2);
+  }
+
+  /* 작은이미지 박스들 */
+
+  .sec2_card {
+    width: calc((100% - 15px) / 2);
+  }
+
+  .sec2_card > img {
+    border-radius: 24px;
+  }
+
+  .sec2_card p {
+    bottom: 20px; /* 세로 중앙 */
+    left: 10%; /* 가로 중앙 */
+    right: 10%;
+    text-align: center;
+  }
+
+  /* 혼자여행 */
+  .solo_trip {
+    width: calc(100% / 3);
+  }
+
+  /* =========섹션3======== */
+  .sec3 {
+    padding: 100px 0;
+  }
+  /* sec3 메인 */
+  .sec3_contents {
+    width: 90%;
+  }
+
+  .sec3_contents span {
+    display: none;
+  }
+
+  .left_img {
+    width: 100%;
+  }
+
+  .sec3_main {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* sec3 이미지 */
+  .left_img img {
+    width: 100%;
+    height: 320px;
+  }
+
+  .left_img img:not(:first-child) {
+    object-position: 0px -540px;
+    object-fit: cover;
+  }
+  .left_img img:first-child {
+    object-position: bottom;
+    object-fit: cover;
+  }
+
+  /* sec3 텍스트 */
+  .right_text {
+    width: 100%;
+    height: fit-content;
+    margin-left: 5px;
+  }
+
+  /* 리뷰섹션 */
+  .sec3_button {
+    font-size: 12px;
+    line-height: 10px;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+  }
+  .review_card span {
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 10px;
+  }
+
+  .review_card h3 {
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 20px;
+  }
+  .review_card p {
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 11px;
+  }
+  /* 페이지 버튼 */
+
+  .page_button {
+    margin-bottom: 20px;
+  }
+
+  .page_button a {
+    font-size: 14px;
+    line-height: 15px;
+    padding: 2px 6px;
+  }
+
+  /* 버튼 */
+
+  .right_text .more {
+    font-size: 12px;
+    padding: 5px 10px;
+    margin: 0 auto;
+    display: none;
+  }
+
+  /* ======베너====== */
+
+  .banner1 {
+    width: 90%;
+    padding: 0 0 100px 0;
+    margin: 0 auto;
+  }
+  .banner1_img {
+    width: 100%;
+    height: 150px;
+    padding: 0 80px;
+  }
+  .banner1_button {
+    display: none;
+  }
+
+  .banner1 h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .banner1 span {
+    font-size: 23px;
+  }
+
+  /* ================섹션4=================== */
+  .sec4 {
+    width: 100%;
+  }
+  .sec4_contents {
+    width: 90%;
+  }
+
+  .sec4_card_wrap {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  /* 섹션4 카드 */
+  .sec4_card {
+    width: calc((100% - 15px) / 2);
+  }
+
+  /* 섹션4 카드 텍스트 */
+  .sec4_card_txt {
+    padding: 10px 15px;
+  }
+
+  .user {
+    gap: 10px;
+    align-items: center;
+  }
+
+  .user img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  }
+
+  .sec4_card_txt .user_info {
+    font-size: 14px;
+    align-items: center;
+  }
+
+  .sec5,
+  footer {
+    display: none;
   }
 }

@@ -151,6 +151,7 @@ h1 {
   position: absolute;
   top: 80px;
   right: 0;
+  display: none;
 }
 
 #mobile_menu > ul {
@@ -386,7 +387,7 @@ section {
   height: 8px;
 }
 
-/* 🌞🌞sec2 */
+/* ==========🌞🌞sec2=============== */
 .sec2 {
   background-color: #f7f7f7;
 }
@@ -453,7 +454,6 @@ section {
 .sec3 {
   padding-bottom: 120px;
   width: 100%;
-  border-bottom: 2px solid #c5c5c533;
 }
 
 .sec3_contents {
@@ -523,7 +523,7 @@ section {
   margin-bottom: 60px;
 }
 .review_card_content {
-  padding: 10px;
+  padding: 5px;
 }
 /* 페이지 버튼 */
 .page_button {
@@ -602,14 +602,15 @@ section {
   cursor: pointer;
 }
 
-/*🎀베너1 */
+/*==========베너1=========== */
 .banner1 {
   width: 100%;
   height: fit-content;
   background-color: #fff;
-  padding: 100px 0;
+  padding: 0 0 120px 0;
   display: flex;
   justify-content: center;
+  border-radius: 15px;
 }
 .banner1_img {
   width: 1200px;
@@ -620,6 +621,7 @@ section {
   box-sizing: border-box;
   display: flex;
   align-items: center;
+  border-radius: 15px;
 }
 /* 베너1 텍스트 */
 .banner1_textbox {
@@ -654,7 +656,7 @@ section {
   line-height: 38px;
 }
 
-/* 🌞🌞🌞🌞🌞섹션4 */
+/* ================섹션4=============== */
 .sec4 {
   background-color: #f7f7f7;
 }
@@ -719,6 +721,7 @@ section {
   border: 1px solid #d9d9d9;
   border-top: none;
   border-radius: 0 0 5px 5px;
+  background-color: #fff;
 }
 
 .sec4_card_txt h3 {
