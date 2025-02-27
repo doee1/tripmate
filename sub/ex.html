@@ -1,87 +1,123 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>필터박스</title>
-    <link rel="stylesheet" href="../css/ex.css" />
-  </head>
-  <body>
-    <div class="filter-box">
-      <div class="filter-item">
-        <h4>
-          성별
-          <span class="arrow">&#x2193;</span>
-        </h4>
-        <div class="options">
-          <label>
-            <input type="checkbox" name="gender" value="male" /> 남성
-          </label>
-          <label>
-            <input type="checkbox" name="gender" value="female" /> 여성
-          </label>
-        </div>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>필터 박스</title>
+    <link rel="stylesheet" href="../css/ex.css">
+</head>
+<body>
 
-      <div class="filter-item">
-        <h4>
-          연령대
-          <span class="arrow">&#x2193;</span>
-        </h4>
-        <div class="options">
-          <label> <input type="checkbox" name="age" value="20s" /> 20대 </label>
-          <label> <input type="checkbox" name="age" value="30s" /> 30대 </label>
-          <label> <input type="checkbox" name="age" value="40s" /> 40대 </label>
-        </div>
-      </div>
+    <div class="container">
+        <div class="filter-box">
+            <div class="filter-container">
+                <div class="filter" data-filter="여행기간">
+                    <button class="filter-title">여행기간 <span class="arrow">▼</span></button>
+                    <div class="filter-options">
+                        <label><input type="checkbox"> 1주일 이하</label>
+                        <label><input type="checkbox"> 2주일</label>
+                        <label><input type="checkbox"> 3주일 이상</label>
+                    </div>
+                </div>
 
-      <div class="filter-item">
-        <h4>
-          동행스타일
-          <span class="arrow">&#x2193;</span>
-        </h4>
-        <div class="options">
-          <label>
-            <input type="checkbox" name="style" value="adventure" /> 모험적
-          </label>
-          <label>
-            <input type="checkbox" name="style" value="relaxation" /> 휴식
-          </label>
-          <label>
-            <input type="checkbox" name="style" value="luxury" /> 럭셔리
-          </label>
+                <div class="filter" data-filter="숙박스타일">
+                    <button class="filter-title">숙박스타일 <span class="arrow">▼</span></button>
+                    <div class="filter-options">
+                        <label><input type="checkbox"> 호텔</label>
+                        <label><input type="checkbox"> 호스텔</label>
+                        <label><input type="checkbox"> 에어비앤비</label>
+                    </div>
+                </div>
+
+                <div class="filter" data-filter="교통수단">
+                    <button class="filter-title">교통수단 <span class="arrow">▼</span></button>
+                    <div class="filter-options">
+                        <label><input type="checkbox"> 오토바이</label>
+                        <label><input type="checkbox"> 자동차</label>
+                        <label><input type="checkbox"> 대중교통</label>
+                    </div>
+                </div>
+
+                <div class="filter" data-filter="예산">
+                    <button class="filter-title">예산 <span class="arrow">▼</span></button>
+                    <div class="filter-options">
+                        <label><input type="checkbox"> 저예산</label>
+                        <label><input type="checkbox"> 중간</label>
+                        <label><input type="checkbox"> 고급</label>
+                    </div>
+                </div>
+
+                <div class="filter" data-filter="여행스타일">
+                    <button class="filter-title">여행스타일 <span class="arrow">▼</span></button>
+                    <div class="filter-options">
+                        <label><input type="checkbox"> 휴양</label>
+                        <label><input type="checkbox"> 액티비티</label>
+                        <label><input type="checkbox"> 문화탐방</label>
+                    </div>
+                </div>
+
+                <div class="search-bar">
+                    <input type="text" placeholder="검색...">
+                    <button>검색</button>
+                </div>
+            </div>
         </div>
-      </div>
+
+        <div class="profiles-container">
+            <div class="profile-card">
+                <img src="https://via.placeholder.com/100" alt="User">
+                <h3>유저 1</h3>
+                <p>여행 스타일: 액티비티</p>
+            </div>
+            <div class="profile-card">
+                <img src="https://via.placeholder.com/100" alt="User">
+                <h3>유저 2</h3>
+                <p>여행 스타일: 휴양</p>
+            </div>
+            <div class="profile-card">
+                <img src="https://via.placeholder.com/100" alt="User">
+                <h3>유저 3</h3>
+                <p>여행 스타일: 문화탐방</p>
+            </div>
+        </div>
+
+        <div class="pagination">
+            <button>&laquo; 이전</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>다음 &raquo;</button>
+        </div>
     </div>
 
-    <script>
-      // script.js
-      document.addEventListener("DOMContentLoaded", function () {
-        const filterItems = document.querySelectorAll(".filter-item");
+    <script >
+  document.addEventListener("DOMContentLoaded", function () {
+    const filters = document.querySelectorAll(".filter-title");
 
-        filterItems.forEach((item) => {
-          const heading = item.querySelector("h4");
-          const options = item.querySelector(".options");
-          const arrow = heading.querySelector(".arrow");
+    filters.forEach((filter) => {
+        filter.addEventListener("click", function () {
+            const parent = this.parentElement;
+            const options = parent.querySelector(".filter-options");
+            const arrow = this.querySelector(".arrow");
+            const isOpen = parent.classList.contains("open");
 
-          // 처음에 옵션을 숨김 (기본 상태)
-          options.style.display = "none";
+            // 모든 필터 닫기 (기존 열린 필터 닫기)
+            document.querySelectorAll(".filter").forEach((el) => {
+                el.classList.remove("open");
+                el.querySelector(".filter-options").style.display = "none";
+                el.querySelector(".arrow").textContent = "▼"; // 화살표 아래로 변경
+            });
 
-          heading.addEventListener("click", function () {
-            // 현재 상태가 visible이면 숨기고, 아니면 보이게 한다
-            if (
-              options.style.display === "none" ||
-              options.style.display === ""
-            ) {
-              options.style.display = "flex"; // 옵션을 보이게 설정
-              arrow.style.transform = "rotate(180deg)"; // 화살표 회전
-            } else {
-              options.style.display = "none"; // 옵션을 숨기기
-              arrow.style.transform = "rotate(0deg)"; // 화살표 원래 상태로
+            // 현재 필터만 열기
+            if (!isOpen) {
+                parent.classList.add("open");
+                options.style.display = "block";
+                arrow.textContent = "▲"; // 화살표 위로 변경
             }
-          });
         });
-      });
+    });
+});
+
     </script>
-  </body>
+</body>
 </html>

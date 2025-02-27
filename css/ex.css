@@ -1,64 +1,144 @@
-/* styles.css */
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #f4f4f4;
-}
-
-.filter-box {
-  width: 1200px;
-  height: 300px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  display: flex;
-  max-height: 400px; /* 필터박스 높이를 고정 */
-  overflow: hidden; /* 옵션이 나와도 박스의 높이가 변하지 않게 */
+  background: #f4f4f4;
 }
 
-.filter-item {
+.container {
+  width: 1200px;
+}
+
+/* 필터 박스: 옵션 박스를 내부에서 자연스럽게 표시 */
+.filter-box {
+  width: 100%;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
-  width: 100px;
+  position: relative; /* 옵션 박스 위치 조정 */
+  min-height: 120px; /* 제목 높이 유지 */
 }
 
-.filter-item h4 {
-  cursor: pointer;
+/* 필터 제목 한 줄 정렬 */
+.filter-container {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+.filter-title {
+  background: none;
+  border: none;
   font-size: 18px;
-  color: #333;
-  margin: 0;
-  padding: 10px 0;
-  background-color: #f9f9f9;
-  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  white-space: nowrap;
 }
 
+/* 제목 옆 아이콘 */
 .arrow {
-  font-size: 18px;
-  transition: transform 0.3s ease;
-}
-
-.options {
-  display: none; /* 처음에는 옵션을 숨깁니다 */
-  margin-top: 10px;
-  padding-left: 0;
-  display: flex;
-  gap: 20px;
-}
-
-.options label {
-  display: inline-block;
   font-size: 16px;
-  margin: 5px 0;
+  transition: transform 0.3s;
+  margin-left: 5px;
 }
 
-.options input {
-  margin-right: 10px;
+/* 옵션 박스를 필터 박스 내부에서 표시 */
+.filter-options {
+  position: absolute;
+  top: 60px; /* 제목 아래에 위치 */
+  left: 0;
+  width: 1200px; /* 필터 박스 내부 전체 사용 */
+  background: inherit; /* 필터 박스 배경색과 동일 */
+  padding: 15px 0;
+  display: none;
 }
+
+/* 활성화 시 옵션 박스 표시 */
+.filter.open .filter-options {
+  display: block;
+}
+
+/* 옵션 내부 정렬 */
+.filter-options label {
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+/* 검색 바 스타일 */
+.search-bar {
+  display: flex;
+  margin-left: auto;
+  gap: 10px;
+}
+
+.search-bar input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-bar button {
+  padding: 10px 15px;
+  border: none;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.pagination button {
+  padding: 12px 18px;
+  border: none;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pagination button:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.pagination button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pagination button.active {
+  background: #004494;
+  color: #fff;
+  border: 2px solid #003366;
+}
+
