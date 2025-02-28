@@ -9,11 +9,15 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
     />
+
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
     <!-- css -->
     <link rel="stylesheet" href="../css/sub/travel_route_layout.css" />
 
     <!-- responsive -->
-    <!-- <link rel="stylesheet" href="../responsive/travel_route_rs.css" /> -->
+    <link rel="stylesheet" href="../responsive/travel_route_rs.css" />
   </head>
   <body>
     <div class="wrap">
@@ -30,19 +34,17 @@
           <div id="menu-container">
             <ul class="menu-list accordion" style="display: none">
               <li class="toggle accordion-toggle">
-                <a class="menu-link" href="../sub/travel_route.html"
-                  >여행루트</a
-                >
+                <a class="menu-link" href="./sub/travel_route.html">여행루트</a>
                 <div>
                   <ul class="menu-submenu">
-                    <li><a href="../sub/travel_route.html">📆날짜별</a></li>
+                    <li><a href="./sub/travel_route.html">📆날짜별</a></li>
                     <li><a href="#">📌장소별</a></li>
                     <li><a href="#">👀테마별</a></li>
                   </ul>
                 </div>
               </li>
               <li class="toggle accordion-toggle">
-                <a class="menu-link" href="../sub/trip_mate.html">트립메이트</a>
+                <a class="menu-link" href="/mainmenu">트립메이트</a>
                 <div>
                   <ul class="menu-submenu">
                     <li><a href="/submenu1">✋동행자</a></li>
@@ -164,10 +166,10 @@
         <!-- 🌞🌞sec2 -->
         <section class="sec2">
           <ul>
-            <li data-content="content1">🌸봄</li>
-            <li data-content="content2">🌞여름</li>
-            <li data-content="content3">🍁가을</li>
-            <li data-content="content4">❄겨울</li>
+            <li data-content="content1">🌸&nbsp;봄</li>
+            <li data-content="content2">🌞&nbsp;여름</li>
+            <li data-content="content3">🍁&nbsp;가을</li>
+            <li data-content="content4">⛄&nbsp;겨울</li>
           </ul>
 
           <div class="content-area">
@@ -909,6 +911,9 @@
         </div>
       </footer>
     </div>
-    <script src="/js/travel_route.js"></script>
+
+    <script src="../js/travel_route.js"></script>
+
+    <script src="../js/header.js"></script>
   </body>
 </html>

@@ -1,9 +1,9 @@
 @charset "utf-8";
-@import url(../responsive/layout_rs.css);
-@import url(../css/layout.css);
+@import url(../css/sub/travel_route_layout.css);
 
 /* mobile */
 @media screen and (min-width: 320px) and (max-width: 768px) {
+  /* header */
   #gnb {
     display: none;
   }
@@ -15,6 +15,132 @@
   .header_contents {
     width: 100%;
     padding: 0 10px;
+  }
+
+  #menu-container > .menu-list {
+    width: 80vw;
+  }
+
+  .menu-submenu li {
+    font-size: 14px;
+    padding-right: 3px;
+  }
+
+  /* mainvisual */
+
+  .sec1 {
+    width: 100%;
+    padding-top: 80px;
+  }
+  .main_visual {
+    width: 100%;
+    height: 200px;
+    background: url(/img/travel_route/main/main.jpg) center/cover no-repeat;
+    padding: 50px;
+    box-sizing: border-box;
+  }
+
+  .main_visual > h4,
+  h3,
+  h2 {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .main_visual h2 {
+    font-size: 20px;
+  }
+  .main_visual h3 {
+    display: none;
+  }
+
+  /* 섹션2 */
+  section {
+    width: 90%;
+  }
+
+  .content h2 {
+    font-size: 20px;
+  }
+
+  .sec2 ul {
+    gap: 10px;
+    justify-content: space-evenly;
+    padding: 50px 0px 50px 0px;
+    background-color: #fff;
+  }
+
+  .sec2 ul li {
+    display: flex;
+  }
+
+  .sec2 li {
+    font-size: 15px;
+  }
+
+  .sec2 li.active {
+    color: var(--main-color);
+    font-size: 16px;
+  }
+
+  .sec2 li.active::after {
+    display: none;
+  }
+
+  /* 카드 */
+
+  .card_wrap {
+    gap: 10px;
+  }
+  .sec2_card:not(:first-child, :nth-child(2)) {
+    display: none;
+  }
+
+  .sec2_card {
+    width: calc((100% - 10px) / 2);
+  }
+
+  .sec2_card img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .sec2_card > p {
+    font-size: 64px;
+    font-weight: 700;
+    position: absolute;
+    top: 140px;
+    left: 7px;
+    color: var(--default-wh);
+  }
+
+  .sec2_card h3 {
+    color: var(--default-bk);
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .user {
+    display: flex;
+    align-items: center;
+  }
+  .user img {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    border-radius: 25px;
+    margin-right: 5px;
+  }
+
+  .user span {
+    color: var(--default-bk);
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  #check {
+    width: 18px;
+    height: 18px;
+    margin-left: 3px;
   }
 
   /* 🦶푸터 */
@@ -31,6 +157,7 @@
     color: var(--default-gr);
     margin: 0 auto;
     border-top: none;
+    display: none;
   }
 
   footer img {
