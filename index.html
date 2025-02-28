@@ -41,63 +41,58 @@
           </h1>
           <!-- 메뉴 -->
 
-          <!-- 모바일 햄버거 gnb -->
-          <nav id="mobile_menu">
-            <ul>
-              <!-- 1차메뉴_여행루트 -->
-              <li>
-                <a href="./sub/travel_route.html">여행루트</a>
-                <!-- 2차메뉴 -->
-                <ul class="submenu">
-                  <li><a href="./sub/travel_route.html">📆날짜별</a></li>
-                  <li><a href="#">📌장소별</a></li>
-                  <li><a href="#">👀테마별</a></li>
-                </ul>
+          <!-- 모바일 메뉴 -->
+          <div id="menu-container">
+            <ul class="menu-list accordion" style="display: none">
+              <li class="toggle accordion-toggle">
+                <a class="menu-link" href="./sub/travel_route.html">여행루트</a>
+                <div>
+                  <ul class="menu-submenu">
+                    <li><a href="./sub/travel_route.html">📆날짜별</a></li>
+                    <li><a href="#">📌장소별</a></li>
+                    <li><a href="#">👀테마별</a></li>
+                  </ul>
+                </div>
               </li>
-              <li>
-                <a href="./sub/trip_mate.html">트립메이트</a>
-                <!-- 2차메뉴 -->
-                <ul class="submenu">
-                  <li><a href="./sub/trip_mate.html">동행자 찾기</a></li>
-                  <li><a href="#">여행그룹</a></li>
-                </ul>
+              <li class="toggle accordion-toggle">
+                <a class="menu-link" href="/mainmenu">트립메이트</a>
+                <div>
+                  <ul class="menu-submenu">
+                    <li><a href="/submenu1">✋동행자</a></li>
+                    <li><a href="/submenu2">🙌여행그룹</a></li>
+                  </ul>
+                </div>
               </li>
-              <li>
-                <a href="./sub/community.html">커뮤니티</a>
-                <!-- 2차메뉴 -->
-                <ul class="submenu">
-                  <li><a href="./sub/community.html">후기/리뷰</a></li>
-                  <li><a href="./sub/community02.html">실시간 소통</a></li>
-                </ul>
+
+              <li class="toggle accordion-toggle">
+                <a class="menu-link" href="/mainmenu">커뮤니티</a>
+                <div>
+                  <ul class="menu-submenu">
+                    <li><a href="/submenu1">📝후기/리뷰</a></li>
+                    <li><a href="/submenu2">📢실시간소통</a></li>
+                  </ul>
+                </div>
               </li>
-              <li>
-                <a href="./sub/booking.html">예약 및 체험</a>
-                <!-- 2차메뉴 -->
-                <ul class="submenu">
-                  <li><a href="./sub/booking.html">입장권</a></li>
-                  <li><a href="#">데이투어</a></li>
-                  <li><a href="#">액티비티</a></li>
-                  <li><a href="#">티켓</a></li>
-                </ul>
+              <li class="toggle accordion-toggle">
+                <a class="menu-link" href="/mainmenu">예약 및 체험</a>
+                <div>
+                  <ul class="menu-submenu">
+                    <li><a href="/submenu1">🎫티켓</a></li>
+                    <li><a href="/submenu2">🚌데이투어</a></li>
+                    <li><a href="/submenu2">🏄‍♂️액티비티</a></li>
+                  </ul>
+                </div>
               </li>
-              <li>
-                <a href="#">프로모션</a>
-                <!-- 2차메뉴 -->
-                <ul class="submenu">
-                  <li><a href="#">이벤트</a></li>
-                </ul>
+              <li class="toggle accordion-toggle">
+                <a class="menu-link" href="/mainmenu">프로모션</a>
+                <div>
+                  <ul class="menu-submenu">
+                    <li><a href="/submenu1">✨이벤트</a></li>
+                  </ul>
+                </div>
               </li>
             </ul>
-          </nav>
-
-          <!-- 모바일 메뉴 -->
-          <!-- <input type="checkbox" id="mobile_menu" />
-          <label for="icon">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-          <div id="mobile_menu_list"></div> -->
+          </div>
 
           <!-- pc gnb -->
           <nav id="gnb">
@@ -107,16 +102,16 @@
                 <a href="./sub/travel_route.html">여행루트</a>
                 <!-- 2차메뉴 -->
                 <ul class="submenu">
-                  <li><a href="./sub/travel_route.html">📆날짜별</a></li>
-                  <li><a href="#">📌장소별</a></li>
-                  <li><a href="#">👀테마별</a></li>
+                  <li><a href="./sub/travel_route.html">날짜별</a></li>
+                  <li><a href="#">장소별</a></li>
+                  <li><a href="#">테마별</a></li>
                 </ul>
               </li>
               <li>
                 <a href="./sub/trip_mate.html">트립메이트</a>
                 <!-- 2차메뉴 -->
                 <ul class="submenu">
-                  <li><a href="./sub/trip_mate.html">동행자 찾기</a></li>
+                  <li><a href="./sub/trip_mate.html">동행자</a></li>
                   <li><a href="#">여행그룹</a></li>
                 </ul>
               </li>
@@ -132,10 +127,9 @@
                 <a href="./sub/booking.html">예약 및 체험</a>
                 <!-- 2차메뉴 -->
                 <ul class="submenu">
-                  <li><a href="./sub/booking.html">입장권</a></li>
+                  <li><a href="./sub/booking.html">티켓</a></li>
                   <li><a href="#">데이투어</a></li>
                   <li><a href="#">액티비티</a></li>
-                  <li><a href="#">티켓</a></li>
                 </ul>
               </li>
               <li>
@@ -164,11 +158,14 @@
                 src="./img/header/mobile_menu.png"
                 width="24px"
                 alt="햄버거메뉴"
+                id="hamburger-menu"
             /></a>
           </div>
           <!-- 아이콘 끝! -->
         </div>
       </header>
+      <!-- 종료 태그가 정확하게 한 번만 있습니다. -->
+
       <!-- 메인 -->
       <main>
         <!-- 메인비주얼 -->

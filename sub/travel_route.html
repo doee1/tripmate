@@ -10,7 +10,10 @@
       href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
     />
     <!-- css -->
-    <link rel="stylesheet" href="../css/travel_route_layout.css" />
+    <link rel="stylesheet" href="../css/sub/travel_route_layout.css" />
+
+    <!-- responsive -->
+    <!-- <link rel="stylesheet" href="../responsive/travel_route_rs.css" /> -->
   </head>
   <body>
     <div class="wrap">
@@ -19,45 +22,101 @@
         <div class="header_contents">
           <!-- 로고 -->
           <h1>
-            <a href="/"><img src="../img/header/logo.png" alt="logo" /></a>
+            <a href="/"><img src="../img/header/logo.svg" alt="logo" /></a>
           </h1>
           <!-- 메뉴 -->
+
+          <!-- 모바일 메뉴 -->
+          <div id="menu-container">
+            <ul class="menu-list accordion" style="display: none">
+              <li class="toggle accordion-toggle">
+                <a class="menu-link" href="../sub/travel_route.html"
+                  >여행루트</a
+                >
+                <div>
+                  <ul class="menu-submenu">
+                    <li><a href="../sub/travel_route.html">📆날짜별</a></li>
+                    <li><a href="#">📌장소별</a></li>
+                    <li><a href="#">👀테마별</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="toggle accordion-toggle">
+                <a class="menu-link" href="../sub/trip_mate.html">트립메이트</a>
+                <div>
+                  <ul class="menu-submenu">
+                    <li><a href="/submenu1">✋동행자</a></li>
+                    <li><a href="/submenu2">🙌여행그룹</a></li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="toggle accordion-toggle">
+                <a class="menu-link" href="/mainmenu">커뮤니티</a>
+                <div>
+                  <ul class="menu-submenu">
+                    <li><a href="/submenu1">📝후기/리뷰</a></li>
+                    <li><a href="/submenu2">📢실시간소통</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="toggle accordion-toggle">
+                <a class="menu-link" href="/mainmenu">예약 및 체험</a>
+                <div>
+                  <ul class="menu-submenu">
+                    <li><a href="/submenu1">🎫티켓</a></li>
+                    <li><a href="/submenu2">🚌데이투어</a></li>
+                    <li><a href="/submenu2">🏄‍♂️액티비티</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="toggle accordion-toggle">
+                <a class="menu-link" href="/mainmenu">프로모션</a>
+                <div>
+                  <ul class="menu-submenu">
+                    <li><a href="/submenu1">✨이벤트</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- pc gnb -->
           <nav id="gnb">
             <ul>
               <!-- 1차메뉴_여행루트 -->
               <li>
-                <a href="./travel_route.html">여행루트</a>
+                <a href="./sub/travel_route.html">여행루트</a>
                 <!-- 2차메뉴 -->
                 <ul class="submenu">
-                  <li><a href="./travel_route.html">📆날짜별</a></li>
-                  <li><a href="#">📌장소별</a></li>
-                  <li><a href="#">👀테마별</a></li>
+                  <li><a href="./sub/travel_route.html">날짜별</a></li>
+                  <li><a href="#">장소별</a></li>
+                  <li><a href="#">테마별</a></li>
                 </ul>
               </li>
               <li>
-                <a href="./trip_mate.html">트립메이트</a>
+                <a href="./sub/trip_mate.html">트립메이트</a>
                 <!-- 2차메뉴 -->
                 <ul class="submenu">
-                  <li><a href="./trip_mate.html">동행자 찾기</a></li>
+                  <li><a href="./sub/trip_mate.html">동행자</a></li>
                   <li><a href="#">여행그룹</a></li>
                 </ul>
               </li>
               <li>
-                <a href="#">커뮤니티</a>
+                <a href="./sub/community.html">커뮤니티</a>
                 <!-- 2차메뉴 -->
                 <ul class="submenu">
-                  <li><a href="#">후기/리뷰</a></li>
-                  <li><a href="./community02.html">실시간 소통</a></li>
+                  <li><a href="./sub/community.html">후기/리뷰</a></li>
+                  <li><a href="./sub/community02.html">실시간 소통</a></li>
                 </ul>
               </li>
               <li>
-                <a href="./booking.html">예약 및 체험</a>
+                <a href="./sub/booking.html">예약 및 체험</a>
                 <!-- 2차메뉴 -->
                 <ul class="submenu">
-                  <li><a href="./booking.html">입장권</a></li>
+                  <li><a href="./sub/booking.html">티켓</a></li>
                   <li><a href="#">데이투어</a></li>
                   <li><a href="#">액티비티</a></li>
-                  <li><a href="#">티켓</a></li>
                 </ul>
               </li>
               <li>
@@ -81,6 +140,13 @@
                 width="24px"
                 alt="유저"
             /></a>
+            <a href="#" id="hamburger-icon"
+              ><img
+                src="../img/header/mobile_menu.png"
+                width="24px"
+                alt="햄버거메뉴"
+                id="hamburger-menu"
+            /></a>
           </div>
           <!-- 아이콘 끝! -->
         </div>
@@ -94,21 +160,6 @@
             <h2>나만의 여행 루트를 찾아보세요!</h2>
             <h3>TripMate에서 맞춤형 여행 추천받고, 예약까지 간편하게!</h3>
           </div>
-          <!-- 서치바 -->
-          <!-- <div class="search_box">
-          <p>원하는 태그를 검색해보세요.</p>
-            <div class="search_bar">
-              <input type="text" />
-              <button class="search_btn" type="submit">검색</button>
-          </div>
-          <ul>
-            <li>가족여행</li>
-            <li>휴양지</li>
-            <li>액티비티</li>
-            <li>미국</li>
-            <li>BEST루트</li>
-          </ul>
-        </div> -->
         </section>
         <!-- 🌞🌞sec2 -->
         <section class="sec2">
@@ -841,39 +892,23 @@
           </div>
         </section>
       </main>
+
+      <!-- 푸터 -->
+      <footer>
+        <div class="footer_con">
+          <img src="../img/main/logo.png" alt="logo" />
+          <ul>
+            <li>광고/제휴문의</li>
+            <li>서비스문의</li>
+            <li>개인정보 취급방침</li>
+            <li>이용약관</li>
+            <li>여행자약관</li>
+            <li>가이드약관</li>
+          </ul>
+          <span>Copyright ⓒ TripMate All Rights Reserved</span>
+        </div>
+      </footer>
     </div>
-    <script>
-      // 페이지 로드 시 첫 번째 콘텐츠를 기본적으로 표시
-      document.addEventListener("DOMContentLoaded", function () {
-        const firstLi = document.querySelector(".sec2 li");
-        const firstContent = document.getElementById(
-          firstLi.getAttribute("data-content")
-        );
-        firstContent.classList.add("active");
-      });
-
-      // 메뉴 클릭 시 콘텐츠 변경
-      document.querySelectorAll(".sec2 li").forEach((li) => {
-        li.addEventListener("click", () => {
-          // 모든 콘텐츠를 숨기기
-          document.querySelectorAll(".content").forEach((content) => {
-            content.classList.remove("active");
-          });
-
-          // 클릭된 항목에 맞는 콘텐츠 표시
-          const contentId = li.getAttribute("data-content");
-          const content = document.getElementById(contentId);
-          if (content) {
-            content.classList.add("active");
-          }
-
-          // 모든 li에서 active 클래스 제거 후 클릭된 li에만 active 클래스 추가
-          document.querySelectorAll(".sec2 li").forEach((item) => {
-            item.classList.remove("active");
-          });
-          li.classList.add("active");
-        });
-      });
-    </script>
+    <script src="/js/travel_route.js"></script>
   </body>
 </html>
