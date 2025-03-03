@@ -366,19 +366,24 @@ section {
 
 /*🎀베너1 */
 .sec3 {
+  width: 100%;
+  height: fit-content;
+  background-color: #fff;
   padding: 120px 0;
   display: flex;
   justify-content: center;
+  border-radius: 15px;
 }
 .banner1_img {
   width: 100%;
   height: 200px;
   background-image: url(/img/travel_route/banner1/banner1.png);
   background-repeat: no-repeat;
-  padding: 58px 175px;
+  padding: 0 175px;
   box-sizing: border-box;
   display: flex;
   align-items: center;
+  border-radius: 15px;
 }
 /* 베너1 텍스트 */
 .banner1_textbox {
@@ -484,12 +489,6 @@ section {
   border-radius: 0 0 5px 5px;
 }
 
-.sec4_card_txt h3 {
-  font-size: 16px;
-  font-weight: 700;
-  margin-bottom: 15px;
-}
-
 .sec4_card_txt p {
   margin-bottom: 5px;
 }
@@ -529,6 +528,7 @@ section {
   padding: 10px 0;
   align-items: center;
 }
+
 
 /* ================================================ */
 .content-area .content {
