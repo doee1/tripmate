@@ -1,0 +1,394 @@
+@charset "utf-8";
+@import url(../css/sub/booking.css);
+
+/* mobile */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+
+    /* header */
+  #gnb {
+    display: none;
+  }
+
+  #hamburger-icon {
+    display: block;
+  }
+
+  .header_contents {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  #menu-container > .menu-list {
+    width: 80vw;
+  }
+
+  .menu-submenu li {
+    font-size: 14px;
+    padding-right: 3px;
+    font-weight: 500;
+  }
+   /* mainvisual - sec1  */
+  .main-visual {
+    height: 150px;
+    background: url(../img/trip_mate/main/main.jpg) center/cover no-repeat;
+  }
+  .main-visual h1 {
+    font-size: 20px;
+  }
+  .main-visual p {
+    font-size: 12px;
+  }
+
+  /* Sec2 */
+  .sec2 {
+    width: 90%;
+    margin-bottom: 100px;
+    position: relative;
+  }
+
+  .sec2 h3 {
+    margin-top: 50px;
+  }
+
+  .popular {
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+  }
+  .popular div:nth-child(3),
+  .popular div:nth-child(4),
+  .popular div:nth-child(5)
+   {
+    display: none;
+  }
+  .popular div {
+    width: calc((100% - 10px) / 2);
+    height: 200px;
+    text-align: center;
+  }
+
+  /* Sec3 */
+  .sec3 {
+    width: 90%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding: 0px;
+    overflow: hidden;
+  }
+  .list-header {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0 30px 0;
+    border-bottom: 1px solid rgba(209, 209, 209, 0.7);
+    flex-direction: column;
+  }
+  .left_con label{
+font-size: 14px;
+  }
+  .right_con {
+    display: none;
+  }
+
+  /* 섹션3 카드 */
+.sec3_card_wrap {
+    gap: 15px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+  }
+  /* 섹션3 카드 */
+  .sec3_card {
+    width: 100%;
+  }
+  .sec3_card:nth-child(5),
+  .sec3_card:nth-child(6),
+  .sec3_card:nth-child(7),
+  .sec3_card:nth-child(8){
+    display: none;
+  }
+
+  .sec3_card > img {
+    height: 150px;
+  }
+
+   /* 카드1 설정 */
+
+   .sec3_card:first-child::after {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 5px 7px;
+    top: 50%; /* 세로 중앙 */
+    left: 50%; /* 가로 중앙 */
+    transform: translate(-50%, -350%); /* 정확하게 가운데 정렬 */
+    text-align: center;
+  }
+
+  .txt_button {
+    font-size: 12px;
+    padding: 5px;
+    margin-bottom: 15px;
+  }
+  .sec3_card_txt p:first-of-type{
+    display: none;
+  }
+  
+  .price_sec {
+    margin-top: 30px;
+  }
+  
+  /* 🦶푸터 */
+  footer{
+    width: 100%;
+  }
+
+ .footer_con {
+  width: 90%;
+  height: fit-content;
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: left;
+  padding: 20px 0px;
+  font-size: 15px;
+  color: var(--default-gr);
+  margin: 0 auto;
+  border-top: none;
+}
+
+footer img {
+  height: 30px;
+  opacity: 80%;
+}
+footer ul {
+  display: flex;
+  gap: 10px;
+  font-size: 11px;
+  flex-wrap: wrap;
+}
+footer span {
+  font-size: 10px;
+}
+}
+
+@media screen and (min-width: 550px) and (max-width: 768px){
+    .popular {
+        display: flex;
+        gap: 15px;
+        margin-top: 30px;
+        flex-wrap: wrap;
+        width: 100%;
+      }
+      .popular div:nth-child(3) {
+        display: block;
+      }
+      .popular div {
+        width: calc((100% - 45px)/3);
+        height: 200px;
+        text-align: center;
+      }
+    .sec3_card {
+        width: calc((100% - 20px)/2);
+      }
+}
+
+/* laptop */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    #mobile_menu {
+      display: none;
+    }
+    .header_contents {
+      width: 100%;
+      padding: 0 10px;
+      justify-content: space-between;
+    }
+  
+    /* 1차 메뉴 */
+  
+    #gnb > ul {
+      height: 80px;
+      gap: 15px;
+    }
+  
+    #gnb > ul > li > a {
+      padding: 0 10px;
+    }
+  
+    /* 아이콘 */
+    .icons {
+      margin-left: 0px;
+    }
+
+    /* 메인비주얼 */
+.main-visual {
+    width: 100%;
+    height: 200px;
+    background: url(../img/trip_mate/main/main.jpg) center/cover no-repeat;
+  }
+  .main-visual h1 {
+    font-size: 30px;
+  }
+  .main-visual p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  /* 섹션2 */
+
+.sec2 {
+    width: 90%;
+    margin-bottom: 100px;
+    position: relative;
+  }
+
+  /* Sec3 */
+  #tag_btn{
+    display: none;
+  }
+  #mobile_tag_btn{
+    display: block;
+  }
+.sec3 {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* 섹션3 카드 */
+.sec3_card {
+    width:calc((100% - 40px)/2);
+  }
+
+  /* 🦶푸터 */
+.footer_con {
+    width: 90%;
+    height: fit-content;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: left;
+    padding: 20px 0px;
+    font-size: 15px;
+    color: var(--default-gr);
+    margin: 0 auto;
+    border-top: none;
+  }
+  
+  footer img {
+    height: 30px;
+    opacity: 80%;
+  }
+  footer ul {
+    display: flex;
+    gap: 10px;
+    font-size: 11px;
+    flex-wrap: wrap;
+  }
+  footer span {
+    font-size: 10px;
+  } 
+}
+
+@media screen and (min-width: 900px) and (max-width: 1440px){
+  /* 섹션3 카드 */
+  .sec3_card_wrap {
+    gap: 15px;
+    margin-top: 85px;
+    flex-wrap: wrap;
+  }
+  .sec3_card {
+    width: calc((100% - 30px) / 3);
+  }
+
+  .sec3_card:nth-child(7),
+  .sec3_card:nth-child(8){
+    display: none;
+  }
+}
+
+/* laptop */
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+    #mobile_menu {
+      display: none;
+    }
+    .header_contents {
+      width: 100%;
+      padding: 0 15px;
+      justify-content: space-between;
+    }
+  
+    /* 1차 메뉴 */
+  
+    #gnb > ul {
+      height: 80px;
+      gap: 15px;
+    }
+  
+    #gnb > ul > li > a {
+      padding: 0 30px;
+  }
+    /* 아이콘 */
+    .icons {
+      margin-left: 0px;
+    }
+
+    /* 메인비주얼 */
+.main-visual {
+    height: 280px;
+    background: url(../img/trip_mate/main/main.jpg) center/cover no-repeat;
+    
+  }
+
+  .sec2,
+  .sec3{
+    width: 90%;
+  }
+
+  #tag_btn{
+    display: none;
+  }
+  #mobile_tag_btn{
+    display: block;
+  }
+
+   /* 🦶푸터 */
+.footer_con {
+    width: 90%;
+    height: fit-content;
+    gap: 15px;
+  }
+  
+  footer img {
+    height: 30px;
+    opacity: 80%;
+  }
+  footer ul {
+    display: flex;
+    gap: 15px;
+    font-size: 13px;
+    flex-wrap: wrap;
+  }
+}
+
+
+@media screen and (min-width: 1200px) and (max-width: 1910px) {
+    .header_contents {
+      width: 100%;
+      padding: 0 30px;
+    }
+
+     /* 섹션3 카드 */
+  .sec3_card_wrap {
+    gap: 20px;
+    margin-top: 85px;
+    flex-wrap: wrap;
+  }
+  .sec3_card {
+    width: calc((100% - 60px) / 4);
+  }
+}
+

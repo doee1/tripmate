@@ -11,7 +11,10 @@
       href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
     />
     <!-- css -->
-    <link rel="stylesheet" href="../css/community02_layout.css" />
+    <link rel="stylesheet" href="../css/sub/community02_layout.css" />
+  
+    <!-- responsive -->
+     <link rel="stylesheet" href="../responsive/community_rs.css">
   </head>
   <body>
     <div class="wrap">
@@ -20,9 +23,64 @@
         <div class="header_contents">
           <!-- 로고 -->
           <h1>
-            <a href="/"><img src="../img/header/logo.png" alt="logo" /></a>
+            <a href="/"><img src="../img/header/logo.svg" alt="logo" /></a>
           </h1>
           <!-- 메뉴 -->
+
+          <!-- 모바일 메뉴 -->
+          <div id="menu-container">
+            <ul class="menu-list accordion" style="display: none">
+              <li class="toggle accordion-toggle">
+                <a class="menu-link" href="./travel_route.html">여행루트</a>
+                <div>
+                  <ul class="menu-submenu">
+                    <li><a href="./travel_route.html">📆날짜별</a></li>
+                    <li><a href="#">📌장소별</a></li>
+                    <li><a href="#">👀테마별</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="toggle accordion-toggle">
+                <a class="menu-link" href="/mainmenu">트립메이트</a>
+                <div>
+                  <ul class="menu-submenu">
+                    <li><a href="/submenu1">✋동행자</a></li>
+                    <li><a href="/submenu2">🙌여행그룹</a></li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="toggle accordion-toggle">
+                <a class="menu-link" href="./community.html">커뮤니티</a>
+                <div>
+                  <ul class="menu-submenu">
+                    <li><a href="./community.html">📝후기/리뷰</a></li>
+                    <li><a href="./community02.html">📢실시간소통</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="toggle accordion-toggle">
+                <a class="menu-link" href="./booking.html">예약 및 체험</a>
+                <div>
+                  <ul class="menu-submenu">
+                    <li><a href="./booking.html">🎫티켓</a></li>
+                    <li><a href="/submenu2">🚌데이투어</a></li>
+                    <li><a href="/submenu2">🏄‍♂️액티비티</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="toggle accordion-toggle">
+                <a class="menu-link" href="/mainmenu">프로모션</a>
+                <div>
+                  <ul class="menu-submenu">
+                    <li><a href="/submenu1">✨이벤트</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- pc gnb -->
           <nav id="gnb">
             <ul>
               <!-- 1차메뉴_여행루트 -->
@@ -30,21 +88,21 @@
                 <a href="./travel_route.html">여행루트</a>
                 <!-- 2차메뉴 -->
                 <ul class="submenu">
-                  <li><a href="./travel_route.html">📆날짜별</a></li>
-                  <li><a href="#">📌장소별</a></li>
-                  <li><a href="#">👀테마별</a></li>
+                  <li><a href="./travel_route.html">날짜별</a></li>
+                  <li><a href="#">장소별</a></li>
+                  <li><a href="#">테마별</a></li>
                 </ul>
               </li>
               <li>
                 <a href="./sub/trip_mate.html">트립메이트</a>
                 <!-- 2차메뉴 -->
                 <ul class="submenu">
-                  <li><a href="./sub/trip_mate.html">동행자 찾기</a></li>
+                  <li><a href="./sub/trip_mate.html">동행자</a></li>
                   <li><a href="#">여행그룹</a></li>
                 </ul>
               </li>
               <li>
-                <a href="#">커뮤니티</a>
+                <a href="./community.html">커뮤니티</a>
                 <!-- 2차메뉴 -->
                 <ul class="submenu">
                   <li><a href="./community.html">후기/리뷰</a></li>
@@ -55,10 +113,9 @@
                 <a href="./booking.html">예약 및 체험</a>
                 <!-- 2차메뉴 -->
                 <ul class="submenu">
-                  <li><a href="./booking.html">입장권</a></li>
+                  <li><a href="./booking.html">티켓</a></li>
                   <li><a href="#">데이투어</a></li>
                   <li><a href="#">액티비티</a></li>
-                  <li><a href="#">티켓</a></li>
                 </ul>
               </li>
               <li>
@@ -82,6 +139,13 @@
                 width="24px"
                 alt="유저"
             /></a>
+            <a href="#" id="hamburger-icon"
+              ><img
+                src="../img/header/mobile_menu.png"
+                width="24px"
+                alt="햄버거메뉴"
+                id="hamburger-menu"
+            /></a>
           </div>
           <!-- 아이콘 끝! -->
         </div>
@@ -90,153 +154,184 @@
       <main>
         <!-- 메인비주얼 - sec1 🌞-->
         <section class="sec1">
-          <div class="main_visual">
-            <div class="main_text">
-              <h4>당신의 여행 파트너 Trip Mate!</h4>
-              <h2>나만의 여행 루트를 찾아보세요!</h2>
-              <h3>TripMate에서 맞춤형 여행 추천받고, 예약까지 간편하게!</h3>
+          <div class="main-visual">
+            <div class="overlay">
+              <h1>여행 동행자를 찾아보세요</h1>
+              <p>함께 여행할 친구를 찾아 새로운 경험을 만들어보세요!</p>
             </div>
           </div>
         </section>
 
-        <!-- 🌞🌞섹션2 -->
-        <section class="sec2">
-          <div class="sec2_contents">
-            <div class="sec2_main">
-              <!-- 좌측 이미지 -->
-              <div class="left_img">
-                <img
-                  id="reviewImage"
-                  src="../img/main/sec3/sec3_img1.jpg"
-                  alt="review1"
-                />
-              </div>
-
-              <!-- 우측 리뷰 카드 (3개) -->
-              <div class="right_text">
-                <!-- 페이지 버튼 -->
-                <div class="page_button">
-                  <a href="#" class="page-link active" data-index="0">1</a>
-                  <a href="#" class="page-link" data-index="1">2</a>
-                  <a href="#" class="page-link" data-index="2">3</a>
-                </div>
-
-                <!-- 리뷰 카드 -->
-                <div class="review_card active">
-                  <div class="sec2_button">#내돈내산_리얼후기</div>
-                  <span>★★★★★</span>
-                  <h3>"가성비 루트 그대로 다녀온 후기!"</h3>
-                  <p>
-                    "배낭여행자"님의 발리 가성비 루트 그대로 빠진곳 없이 알차게
-                    다녀왔습니다! 숙소도 가격대비 깨끗하고 편했어요~
-                  </p>
-                </div>
-
-                <div class="review_card">
-                  <div class="sec2_button">#숨은명소_추천</div>
-                  <span>★★★★☆</span>
-                  <h3>"치앙마이 감성 카페 투어"</h3>
-                  <p>
-                    치앙마이에서 감성 카페들만 골라 다녀왔어요. 핫플이라 사람이
-                    많지만 분위기가 너무 좋아요. 추천!
-                  </p>
-                </div>
-
-                <div class="review_card">
-                  <div class="sec2_button">#인생샷_스팟</div>
-                  <span>★★★★★</span>
-                  <h3>"세부 바다에서 스쿠버다이빙 후기!"</h3>
-                  <p>
-                    바닷속이 정말 아름다웠어요. 물이 맑아서 사진도 예쁘게
-                    나옵니다. 스쿠버 자격증 따는 것도 추천!
-                  </p>
-                </div>
-
-                <!-- 더보기 버튼 -->
-                <div class="more_section">
-                  <div class="more">
-                    <i class="xi-external-link"></i> 리뷰 더보기
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        
 
         <!-- 🌞🌞🌞섹션3 -->
         <section class="sec3">
           <div class="sec3_contents">
-            <div class="search">
-              <input
-                type="text"
-                placeholder="검색어를 입력해주세요."
-                id="search_bar"
-              />
-              <button type="button" id="tag_btn">
-                <img src="../img/community/search.png" alt="검색" />
-              </button>
-            </div>
-
             <ul>
               <li data-content="content1">전체</li>
               <li data-content="content2">미국</li>
               <li data-content="content3">유럽</li>
               <li data-content="content4">아시아</li>
-              <li data-content="content5">오세아니아</li>
+              <li data-content="content5">호주</li>
               <li data-content="content6">그외</li>
             </ul>
 
             <div class="content-area">
               <!-- 전체 리뷰 -->
               <div id="content1" class="content">
-                <!-- 리뷰1 -->
-                <div class="review_wrap">
-                  <div class="review_img">
-                    <img src="../img/community/review/review1.jpeg" alt="" />
-                  </div>
-                  <div class="review_text">
-                    <h3>11월 동유럽 세미패키지 여행 후기</h3>
-                    <p>
-                      뒤늦은 후기! 여행을 다녀온 지 한 달 지났지만 벌써 동유럽이
-                      그리워지네요.<br />
-                      유럽여행은 처음이라 세미패키지를 선택했었고 사실 저는
-                      자유여행만 다녔기에 조금 걱정은 되었으나 트립메이트
-                      세미패키지는 최고의 선택이었다고 생각합니다!
-                    </p>
-                  </div>
-                  <div class="user">
-                    <span id="like"
-                      ><img src="../img/community/heart.png" alt="하트" />
-                      345</span
-                    >
-                    <p>파리지엔느</p>
-                    <p>2024-12-16 조회 1,058</p>
-                  </div>
+                <div class="search">
+                  <select>
+                    <option>제목</option>
+                    <option>내용</option>
+                    <option>제목+내용</option>
+                  </select>
+                  <input
+                    type="text"
+                    placeholder="검색어를 입력해주세요."
+                    id="search_bar"
+                  />
+                  <button type="button" id="tag_btn">
+                    <img src="../img/community/search.png" alt="검색" />
+                  </button>
+
+                  <button type="button" id="mobile_tag_btn">
+                    <img src="../img/community/search.png" alt="검색" />
+                  </button>
                 </div>
-                <!-- 리뷰2 -->
-                <div class="review_wrap">
-                  <div class="review_img">
-                    <img src="../img/community/review/review1.jpeg" alt="" />
+
+                 <!-- 리뷰1 -->
+                 <div class="community-post">
+                  <div class="user-info">
+                      <img src="../img/community/review/review1.jpeg" alt="User Photo" class="user-photo">
+                      <span class="user-name">User Name</span>
                   </div>
-                  <div class="review_text">
-                    <h3>11월 동유럽 세미패키지 여행 후기</h3>
-                    <p>
-                      뒤늦은 후기! 여행을 다녀온 지 한 달 지났지만 벌써 동유럽이
-                      그리워지네요.<br />
-                      유럽여행은 처음이라 세미패키지를 선택했었고 사실 저는
-                      자유여행만 다녔기에 조금 걱정은 되었으나 트립메이트
-                      세미패키지는 최고의 선택이었다고 생각합니다!
-                    </p>
+                  <div class="post-content">
+                      <h2 class="post-title">Post Title</h2>
+                      <p class="post-body">This is the content of the post. It can be multiple lines long...</p>
                   </div>
-                  <div class="user">
-                    <span id="like"
-                      ><img src="../img/community/heart.png" alt="하트" />
-                      345</span
-                    >
-                    <p>파리지엔느</p>
-                    <p>2024-12-16 조회 1,058</p>
+                  <div class="hashtags">
+                      <span>#hashtag1</span>
+                      <span>#hashtag2</span>
+                      <span>#hashtag3</span>
                   </div>
-                </div>
+                  
+                  <!-- 하트와 댓글 갯수 -->
+                  <div class="like-comment">
+                      <span class="like">
+                          <i class="heart-icon">&#10084;&#65039;</i> 12
+                      </span>
+                      <span class="comment-count">
+                          <i class="comment-icon">&#128172;</i> 5
+                      </span>
+                  </div>
+              
+                  <a href="#" class="comment-section">
+                      <input type="text" placeholder="로그인 후 댓글을 달아보세요!" class="comment-input">
+                  </a>
+              </div>
+                 <!-- 리뷰2 -->
+                 <div class="community-post">
+                  <div class="user-info">
+                      <img src="user-photo.jpg" alt="User Photo" class="user-photo">
+                      <span class="user-name">User Name</span>
+                  </div>
+                  <div class="post-content">
+                      <h2 class="post-title">Post Title</h2>
+                      <p class="post-body">This is the content of the post. It can be multiple lines long...</p>
+                  </div>
+                  <div class="hashtags">
+                      <span>#hashtag1</span>
+                      <span>#hashtag2</span>
+                      <span>#hashtag3</span>
+                  </div>
+                  
+                  <!-- 하트와 댓글 갯수 -->
+                  <div class="like-comment">
+                      <span class="like">
+                          <i class="heart-icon">&#10084;&#65039;</i> 12
+                      </span>
+                      <span class="comment-count">
+                          <i class="comment-icon">&#128172;</i> 5
+                      </span>
+                  </div>
+              
+                  <a href="#" class="comment-section">
+                      <input type="text" placeholder="로그인 후 댓글을 달아보세요!" class="comment-input">
+                  </a>
+              </div>
+                 <!-- 리뷰3 -->
+                 <div class="community-post">
+                  <div class="user-info">
+                      <img src="user-photo.jpg" alt="User Photo" class="user-photo">
+                      <span class="user-name">User Name</span>
+                  </div>
+                  <div class="post-content">
+                      <h2 class="post-title">Post Title</h2>
+                      <p class="post-body">This is the content of the post. It can be multiple lines long...</p>
+                  </div>
+                  <div class="hashtags">
+                      <span>#hashtag1</span>
+                      <span>#hashtag2</span>
+                      <span>#hashtag3</span>
+                  </div>
+                  
+                  <!-- 하트와 댓글 갯수 -->
+                  <div class="like-comment">
+                      <span class="like">
+                          <i class="heart-icon">&#10084;&#65039;</i> 12
+                      </span>
+                      <span class="comment-count">
+                          <i class="comment-icon">&#128172;</i> 5
+                      </span>
+                  </div>
+              
+                  <a href="#" class="comment-section">
+                      <input type="text" placeholder="로그인 후 댓글을 달아보세요!" class="comment-input">
+                  </a>
+              </div>
+                 <!-- 리뷰4 -->
+                 <div class="community-post">
+                  <div class="user-info">
+                      <img src="user-photo.jpg" alt="User Photo" class="user-photo">
+                      <span class="user-name">User Name</span>
+                  </div>
+                  <div class="post-content">
+                      <h2 class="post-title">Post Title</h2>
+                      <p class="post-body">This is the content of the post. It can be multiple lines long...</p>
+                  </div>
+                  <div class="hashtags">
+                      <span>#hashtag1</span>
+                      <span>#hashtag2</span>
+                      <span>#hashtag3</span>
+                  </div>
+                  
+                  <!-- 하트와 댓글 갯수 -->
+                  <div class="like-comment">
+                      <span class="like">
+                          <i class="heart-icon">&#10084;&#65039;</i> 12
+                      </span>
+                      <span class="comment-count">
+                          <i class="comment-icon">&#128172;</i> 5
+                      </span>
+                  </div>
+              
+                  <a href="#" class="comment-section">
+                      <input type="text" placeholder="로그인 후 댓글을 달아보세요!" class="comment-input">
+                  </a>
+              </div>
+
+              <div class="pagination">
+                <button class="prev"><<</button>
+                <button class="prev-page"><</button>
+                <button class="page-number active">1</button>
+                <button class="page-number">2</button>
+                <button class="page-number">3</button>
+                <button class="page-number">4</button>
+                <button class="page-number">5</button>
+                <button class="next-page">></button>
+                <button class="next">>></button>
+            </div>
+
               </div>
               <!-- 컨텐츠1 끝-->
 
@@ -251,72 +346,26 @@
       </main>
 
       <!-- 푸터 -->
-      <footer></footer>
+      <footer>
+        <div class="footer_con">
+          <img src="../img/main/logo.png" alt="logo" />
+          <ul>
+            <li>광고/제휴문의</li>
+            <li>서비스문의</li>
+            <li>개인정보 취급방침</li>
+            <li>이용약관</li>
+            <li>여행자약관</li>
+            <li>가이드약관</li>
+          </ul>
+          <span>Copyright ⓒ TripMate All Rights Reserved</span>
+        </div>
+      </footer>
     </div>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // 섹션3 메뉴
-        const menuItems = document.querySelectorAll(".sec3 li");
-        const contentSections = document.querySelectorAll(".content");
+    <script src="../js/community.js"></script>
 
-        // 첫 번째 li 메뉴와 첫 번째 콘텐츠 활성화
-        const firstLi = menuItems[0];
-        const firstContent = document.getElementById(
-          firstLi.getAttribute("data-content")
-        );
-
-        firstLi.classList.add("active"); // 첫 번째 메뉴 활성화 (밑줄 표시)
-        firstContent.classList.add("active"); // 첫 번째 콘텐츠 활성화 (봄 섹션 표시)
-
-        // 메뉴 클릭 시 섹션 전환 처리
-        menuItems.forEach((li) => {
-          li.addEventListener("click", function () {
-            // 모든 콘텐츠 숨기기
-            contentSections.forEach((content) =>
-              content.classList.remove("active")
-            );
-
-            // 클릭된 항목에 맞는 콘텐츠 표시
-            const contentId = li.getAttribute("data-content");
-            const content = document.getElementById(contentId);
-            if (content) {
-              content.classList.add("active");
-            }
-
-            // 모든 li에서 active 클래스 제거 후 클릭된 li에만 active 클래스 추가
-            menuItems.forEach((item) => item.classList.remove("active"));
-            li.classList.add("active");
-          });
-        });
-
-        // 페이지 링크와 리뷰 카드 활성화 코드
-        const pageLinks = document.querySelectorAll(".page-link");
-        const reviewCards = document.querySelectorAll(".review_card");
-        const reviewImage = document.getElementById("reviewImage");
-
-        // 이미지 배열 (순서대로 변경됨)
-        const images = [
-          "../img/main/sec3/sec3_img1.jpg",
-          "./img/main/sec3/sec3_img2.jpg",
-          "./img/main/sec3/sec3_img3.jpg",
-        ];
-
-        pageLinks.forEach((link, index) => {
-          link.addEventListener("click", function (event) {
-            event.preventDefault();
-
-            // 모든 버튼 초기화
-            pageLinks.forEach((btn) => btn.classList.remove("active"));
-            reviewCards.forEach((card) => card.classList.remove("active"));
-
-            // 현재 선택된 버튼, 리뷰 카드, 이미지 변경
-            link.classList.add("active");
-            reviewCards[index].classList.add("active");
-            reviewImage.src = images[index];
-          });
-        });
-      });
-    </script>
+    <script src="../js/header.js"></script>
+    
+  </body>
   </body>
 </html>

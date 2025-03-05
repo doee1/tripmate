@@ -6,7 +6,7 @@
     <title>동행자 찾기</title>
 
     <!-- css -->
-    <link rel="stylesheet" href="../css/sub/trip_mate_layout.css" />
+    <link rel="stylesheet" href="../css/sub/ex3.css" />
   </head>
   <body>
     <div class="wrap">
@@ -152,78 +152,45 @@
               <p>함께 여행할 친구를 찾아 새로운 경험을 만들어보세요!</p>
             </div>
           </div>
-          <div class="container">
-            <div class="filter-box">
-              <h4>성별</h4>
-              <label><input type="checkbox" />&nbsp;&nbsp;여자</label><br />
-              <label><input type="checkbox" />&nbsp;&nbsp;남자</label><br />
-              <label><input type="checkbox" />&nbsp;&nbsp;성별무관</label><br />
 
-              <h4>연령대</h4>
-              <label><input type="checkbox" />&nbsp;&nbsp;20대~30대</label
-              ><br />
-              <label><input type="checkbox" />&nbsp;&nbsp;40대~50대</label
-              ><br />
-              <label><input type="checkbox" />&nbsp;&nbsp;50대~60대</label
-              ><br />
-              <label><input type="checkbox" />&nbsp;&nbsp;나이무관</label><br />
-
-              <h4>동행스타일</h4>
-              <label><input type="checkbox" />&nbsp;&nbsp;전체동행</label><br />
-              <label><input type="checkbox" />&nbsp;&nbsp;부분동행</label><br />
-              <label><input type="checkbox" />&nbsp;&nbsp;투어동행</label><br />
-              <label><input type="checkbox" />&nbsp;&nbsp;숙소쉐어</label><br />
-              <label><input type="checkbox" />&nbsp;&nbsp;카쉐어</label><br />
-
-              <h4>여행날짜</h4>
-              <select>
-                <option>날짜무관</option>
-                <option>1월</option>
-                <option>2월</option>
-                <option>3월</option>
-                <option>4월</option>
-                <option>5월</option>
-                <option>6월</option>
-                <option>7월</option>
-                <option>8월</option>
-                <option>9월</option>
-                <option>10월</option>
-                <option>11월</option>
-                <option>12월</option>
-              </select>
-
-              <h4>여행 스타일</h4>
-              <label><input type="checkbox" /> 🌲 자연힐링</label><br />
-              <label><input type="checkbox" /> 🧭 모험여행</label><br />
-              <label><input type="checkbox" /> 🏄‍♀️ 액티비티</label><br />
-              <label><input type="checkbox" /> 🍨 맛집탐방</label><br />
-
-              <h4>여행지</h4>
-              <label><input type="checkbox" /> 🗽 미국 </label><br />
-              <label><input type="checkbox" /> 🗼 유럽 </label><br />
-              <label><input type="checkbox" /> 🛕 아시아 </label><br />
-              <label><input type="checkbox" /> 🦘 오세아니아</label><br />
-              <label><input type="checkbox" /> 🌍 그 외</label><br />
-
-              <h4>해시태그 검색</h4>
-              <div class="hashtag-search">
-                <input
-                  type="text"
-                  placeholder="해시태그 입력"
-                  id="hashtag-search"
-                />
-                <button type="button" id="tag_btn">
-                  <img src="../img/trip_mate/icon/search.png" alt="검색" />
-                </button>
-              </div>
+          <!-- 필터박스 -->
+           <div class="filter-box">
+                <div class="filter-container">
+                    <div class="filter" onclick="toggleFilter(this)">
+                        <span class="filter-title">여행기간 ✈️</span>
+                        <div class="filter-options">
+                            <label><input type="checkbox"> 1주일 이하</label>
+                            <label><input type="checkbox"> 2주일</label>
+                            <label><input type="checkbox"> 3주일 이상</label>
+                        </div>
+                    </div>
+                    <div class="filter" onclick="toggleFilter(this)">
+                        <span class="filter-title">숙박스타일 🏨</span>
+                        <div class="filter-options">
+                            <label><input type="checkbox"> 호텔</label>
+                            <label><input type="checkbox"> 호스텔</label>
+                            <label><input type="checkbox"> 에어비앤비</label>
+                        </div>
+                    </div>
+                    <div class="filter" onclick="toggleFilter(this)">
+                        <span class="filter-title">교통수단 🚗</span>
+                        <div class="filter-options">
+                            <label><input type="checkbox"> 오토바이</label>
+                            <label><input type="checkbox"> 자동차</label>
+                            <label><input type="checkbox"> 대중교통</label>
+                        </div>
+                    </div>
+                </div>
             </div>
+          <div class="container">
+            
 
             <!-- 프로필 -->
             <div class="content-wrapper">
               <div class="content">
                 <!-- 카드1 -->
                 <div class="card">
-                  <button class="save-btn" onclick="toggleSave(this)">☆</button>
+                  <!-- <button class="save-btn" onclick="toggleSave(this)">☆</button> -->
                   <div class="profile-pic">
                     <img src="../img/trip_mate/main/main.jpg" alt="유저1" />
                   </div>
@@ -241,7 +208,7 @@
                 </div>
                 <!-- 카드2 -->
                 <div class="card">
-                  <button class="save-btn" onclick="toggleSave(this)">☆</button>
+                  <!-- <button class="save-btn" onclick="toggleSave(this)">☆</button> -->
                   <div class="profile-pic">
                     <img src="../img/trip_mate/main/main.jpg" alt="유저1" />
                   </div>
@@ -259,7 +226,7 @@
                 </div>
                 <!-- 카드3 -->
                 <div class="card">
-                  <button class="save-btn" onclick="toggleSave(this)">☆</button>
+                  <!-- <button class="save-btn" onclick="toggleSave(this)">☆</button> -->
                   <div class="profile-pic">
                     <img src="../img/trip_mate/main/main.jpg" alt="유저1" />
                   </div>
@@ -277,7 +244,7 @@
                 </div>
                 <!-- 카드4 -->
                 <div class="card">
-                  <button class="save-btn" onclick="toggleSave(this)">☆</button>
+                  <!-- <button class="save-btn" onclick="toggleSave(this)">☆</button> -->
                   <div class="profile-pic">
                     <img src="../img/trip_mate/main/main.jpg" alt="유저1" />
                   </div>
@@ -295,7 +262,7 @@
                 </div>
                 <!-- 카드5 -->
                 <div class="card">
-                  <button class="save-btn" onclick="toggleSave(this)">☆</button>
+                  <!-- <button class="save-btn" onclick="toggleSave(this)">☆</button> -->
                   <div class="profile-pic">
                     <img src="../img/trip_mate/main/main.jpg" alt="유저1" />
                   </div>
@@ -313,7 +280,7 @@
                 </div>
                 <!-- 카드6 -->
                 <div class="card">
-                  <button class="save-btn" onclick="toggleSave(this)">☆</button>
+                  <!-- <button class="save-btn" onclick="toggleSave(this)">☆</button> -->
                   <div class="profile-pic">
                     <img src="../img/trip_mate/main/main.jpg" alt="유저1" />
                   </div>
@@ -331,13 +298,6 @@
                 </div>
               </div>
 
-              <div class="pagination-container">
-                <div class="pagination">
-                  <button>1</button>
-                  <button>2</button>
-                  <button>3</button>
-                </div>
-              </div>
             </div>
           </div>
         </section>
@@ -345,5 +305,12 @@
       <!-- 푸터 -->
       <footer></footer>
     </div>
+    <script>
+        function toggleFilter(element) {
+            const isOpen = element.classList.contains("open");
+            document.querySelectorAll(".filter").forEach(f => f.classList.remove("open"));
+            if (!isOpen) element.classList.add("open");
+        }
+    </script>
   </body>
 </html>
