@@ -7,6 +7,9 @@
 
     <!-- css -->
     <link rel="stylesheet" href="../css/sub/trip_mate_layout.css" />
+
+    <!-- responsive -->
+    <link rel="stylesheet" href="../responsive/trip_mate_rs.css" />
   </head>
   <body>
     <div class="wrap">
@@ -152,83 +155,110 @@
               <p>함께 여행할 친구를 찾아 새로운 경험을 만들어보세요!</p>
             </div>
           </div>
-          <div class="container">
-            <div class="filter-box">
-              <h4>성별</h4>
-              <label><input type="checkbox" />&nbsp;&nbsp;여자</label><br />
-              <label><input type="checkbox" />&nbsp;&nbsp;남자</label><br />
-              <label><input type="checkbox" />&nbsp;&nbsp;성별무관</label><br />
 
-              <h4>연령대</h4>
-              <label><input type="checkbox" />&nbsp;&nbsp;20대~30대</label
-              ><br />
-              <label><input type="checkbox" />&nbsp;&nbsp;40대~50대</label
-              ><br />
-              <label><input type="checkbox" />&nbsp;&nbsp;50대~60대</label
-              ><br />
-              <label><input type="checkbox" />&nbsp;&nbsp;나이무관</label><br />
-
-              <h4>동행스타일</h4>
-              <label><input type="checkbox" />&nbsp;&nbsp;전체동행</label><br />
-              <label><input type="checkbox" />&nbsp;&nbsp;부분동행</label><br />
-              <label><input type="checkbox" />&nbsp;&nbsp;투어동행</label><br />
-              <label><input type="checkbox" />&nbsp;&nbsp;숙소쉐어</label><br />
-              <label><input type="checkbox" />&nbsp;&nbsp;카쉐어</label><br />
-
-              <h4>여행날짜</h4>
-              <select>
-                <option>날짜무관</option>
-                <option>1월</option>
-                <option>2월</option>
-                <option>3월</option>
-                <option>4월</option>
-                <option>5월</option>
-                <option>6월</option>
-                <option>7월</option>
-                <option>8월</option>
-                <option>9월</option>
-                <option>10월</option>
-                <option>11월</option>
-                <option>12월</option>
-              </select>
-
-              <h4>여행 스타일</h4>
-              <label><input type="checkbox" /> 🌲 자연힐링</label><br />
-              <label><input type="checkbox" /> 🧭 모험여행</label><br />
-              <label><input type="checkbox" /> 🏄‍♀️ 액티비티</label><br />
-              <label><input type="checkbox" /> 🍨 맛집탐방</label><br />
-
-              <h4>여행지</h4>
-              <label><input type="checkbox" /> 🗽 미국 </label><br />
-              <label><input type="checkbox" /> 🗼 유럽 </label><br />
-              <label><input type="checkbox" /> 🛕 아시아 </label><br />
-              <label><input type="checkbox" /> 🦘 오세아니아</label><br />
-              <label><input type="checkbox" /> 🌍 그 외</label><br />
-
-              <h4>해시태그 검색</h4>
-              <div class="hashtag-search">
-                <input
-                  type="text"
-                  placeholder="해시태그 입력"
-                  id="hashtag-search"
-                />
-                <button type="button" id="tag_btn">
-                  <img src="../img/trip_mate/icon/search.png" alt="검색" />
-                </button>
+          <!-- 필터박스 -->
+          <div class="filter-box">
+            <div class="filter-container">
+              <div class="filter" onclick="toggleFilter(this)">
+                <span class="filter-title"
+                  >성별
+                  <p class="mobile_hide">👫</p></span
+                >
+                <div class="filter-options">
+                  <div class="list_wrap">
+                    <label><input type="checkbox" /> 여자</label>
+                    <label><input type="checkbox" /> 남자</label>
+                    <label><input type="checkbox" /> 남녀무관</label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter" onclick="toggleFilter(this)">
+                <span class="filter-title"
+                  >연령대
+                  <p class="mobile_hide">💪</p></span
+                >
+                <div class="filter-options">
+                  <div class="list_wrap">
+                    <label><input type="checkbox" /> 20~30대</label>
+                    <label><input type="checkbox" /> 40~50대</label>
+                    <label><input type="checkbox" /> 50~60대</label>
+                    <label><input type="checkbox" /> 나이무관</label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter" onclick="toggleFilter(this)">
+                <span class="filter-title"
+                  >여행지
+                  <p class="mobile_hide">🌍</p></span
+                >
+                <div class="filter-options">
+                  <div class="list_wrap">
+                    <label><input type="checkbox" /> 미국 </label>
+                    <label><input type="checkbox" /> 유럽 </label>
+                    <label><input type="checkbox" /> 아시아 </label>
+                    <label><input type="checkbox" /> 오세아니아 </label>
+                    <label><input type="checkbox" /> 그 외 </label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter" onclick="toggleFilter(this)">
+                <span class="filter-title"
+                  >여행기간
+                  <p class="mobile_hide">✈️</p></span
+                >
+                <div class="filter-options">
+                  <div class="list_wrap">
+                    <label><input type="checkbox" /> 1주일 이하</label>
+                    <label><input type="checkbox" /> 2주일</label>
+                    <label><input type="checkbox" /> 3주일 이상</label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter" onclick="toggleFilter(this)">
+                <span class="filter-title"
+                  >여행 스타일
+                  <p class="mobile_hide">🏄‍♀️</p></span
+                >
+                <div class="filter-options">
+                  <div class="list_wrap">
+                    <label><input type="checkbox" /> 자연힐링 </label>
+                    <label><input type="checkbox" /> 모험여행 </label>
+                    <label><input type="checkbox" /> 액티비티 </label>
+                    <label><input type="checkbox" /> 맛집탐방 </label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter" onclick="toggleFilter(this)">
+                <span class="filter-title"
+                  >숙박스타일
+                  <p class="mobile_hide">🏨</p></span
+                >
+                <div class="filter-options">
+                  <div class="list_wrap">
+                    <label><input type="checkbox" /> 호텔</label>
+                    <label><input type="checkbox" /> 호스텔</label>
+                    <label><input type="checkbox" /> 에어비앤비</label>
+                  </div>
+                </div>
               </div>
             </div>
+          </div>
 
+          <div class="container">
             <!-- 프로필 -->
             <div class="content-wrapper">
               <div class="content">
                 <!-- 카드1 -->
                 <div class="card">
-                  <button class="save-btn" onclick="toggleSave(this)">☆</button>
-                  <div class="profile-pic">
-                    <img src="../img/trip_mate/main/main.jpg" alt="유저1" />
+                  <div class="info">
+                    <div class="profile">
+                      <div class="profile-pic">
+                        <img src="../img/trip_mate/main/main.jpg" alt="유저1" />
+                      </div>
+                      <h4>여행조안</h4>
+                    </div>
+                    <h3>25.03.01-25.03.16</h3>
                   </div>
-                  <h4>여행조안</h4>
-                  <h3>25.03.01-25.03.16</h3>
                   <p>
                     3월 초 동유럽 여행 하실분! 전체동행 아니여도 상관없어요!
                   </p>
@@ -241,12 +271,15 @@
                 </div>
                 <!-- 카드2 -->
                 <div class="card">
-                  <button class="save-btn" onclick="toggleSave(this)">☆</button>
-                  <div class="profile-pic">
-                    <img src="../img/trip_mate/main/main.jpg" alt="유저1" />
+                  <div class="info">
+                    <div class="profile">
+                      <div class="profile-pic">
+                        <img src="../img/trip_mate/main/main.jpg" alt="유저1" />
+                      </div>
+                      <h4>여행조안</h4>
+                    </div>
+                    <h3>25.03.01-25.03.16</h3>
                   </div>
-                  <h4>여행조안</h4>
-                  <h3>25.03.01-25.03.16</h3>
                   <p>
                     3월 초 동유럽 여행 하실분! 전체동행 아니여도 상관없어요!
                   </p>
@@ -259,12 +292,15 @@
                 </div>
                 <!-- 카드3 -->
                 <div class="card">
-                  <button class="save-btn" onclick="toggleSave(this)">☆</button>
-                  <div class="profile-pic">
-                    <img src="../img/trip_mate/main/main.jpg" alt="유저1" />
+                  <div class="info">
+                    <div class="profile">
+                      <div class="profile-pic">
+                        <img src="../img/trip_mate/main/main.jpg" alt="유저1" />
+                      </div>
+                      <h4>여행조안</h4>
+                    </div>
+                    <h3>25.03.01-25.03.16</h3>
                   </div>
-                  <h4>여행조안</h4>
-                  <h3>25.03.01-25.03.16</h3>
                   <p>
                     3월 초 동유럽 여행 하실분! 전체동행 아니여도 상관없어요!
                   </p>
@@ -277,12 +313,15 @@
                 </div>
                 <!-- 카드4 -->
                 <div class="card">
-                  <button class="save-btn" onclick="toggleSave(this)">☆</button>
-                  <div class="profile-pic">
-                    <img src="../img/trip_mate/main/main.jpg" alt="유저1" />
+                  <div class="info">
+                    <div class="profile">
+                      <div class="profile-pic">
+                        <img src="../img/trip_mate/main/main.jpg" alt="유저1" />
+                      </div>
+                      <h4>여행조안</h4>
+                    </div>
+                    <h3>25.03.01-25.03.16</h3>
                   </div>
-                  <h4>여행조안</h4>
-                  <h3>25.03.01-25.03.16</h3>
                   <p>
                     3월 초 동유럽 여행 하실분! 전체동행 아니여도 상관없어요!
                   </p>
@@ -295,12 +334,15 @@
                 </div>
                 <!-- 카드5 -->
                 <div class="card">
-                  <button class="save-btn" onclick="toggleSave(this)">☆</button>
-                  <div class="profile-pic">
-                    <img src="../img/trip_mate/main/main.jpg" alt="유저1" />
+                  <div class="info">
+                    <div class="profile">
+                      <div class="profile-pic">
+                        <img src="../img/trip_mate/main/main.jpg" alt="유저1" />
+                      </div>
+                      <h4>여행조안</h4>
+                    </div>
+                    <h3>25.03.01-25.03.16</h3>
                   </div>
-                  <h4>여행조안</h4>
-                  <h3>25.03.01-25.03.16</h3>
                   <p>
                     3월 초 동유럽 여행 하실분! 전체동행 아니여도 상관없어요!
                   </p>
@@ -313,12 +355,15 @@
                 </div>
                 <!-- 카드6 -->
                 <div class="card">
-                  <button class="save-btn" onclick="toggleSave(this)">☆</button>
-                  <div class="profile-pic">
-                    <img src="../img/trip_mate/main/main.jpg" alt="유저1" />
+                  <div class="info">
+                    <div class="profile">
+                      <div class="profile-pic">
+                        <img src="../img/trip_mate/main/main.jpg" alt="유저1" />
+                      </div>
+                      <h4>여행조안</h4>
+                    </div>
+                    <h3>25.03.01-25.03.16</h3>
                   </div>
-                  <h4>여행조안</h4>
-                  <h3>25.03.01-25.03.16</h3>
                   <p>
                     3월 초 동유럽 여행 하실분! 전체동행 아니여도 상관없어요!
                   </p>
@@ -330,20 +375,41 @@
                   <button class="apply-btn">동행 신청</button>
                 </div>
               </div>
-
-              <div class="pagination-container">
-                <div class="pagination">
-                  <button>1</button>
-                  <button>2</button>
-                  <button>3</button>
-                </div>
-              </div>
             </div>
+          </div>
+
+          <div class="pagination">
+            <button class="prev"><<</button>
+            <button class="prev-page"><</button>
+            <button class="page-number active">1</button>
+            <button class="page-number">2</button>
+            <button class="page-number">3</button>
+            <button class="page-number">4</button>
+            <button class="page-number">5</button>
+            <button class="next-page">></button>
+            <button class="next">>></button>
           </div>
         </section>
       </main>
       <!-- 푸터 -->
-      <footer></footer>
+      <footer>
+        <div class="footer_con">
+          <img src="../img/main/logo.png" alt="logo" />
+          <ul>
+            <li>광고/제휴문의</li>
+            <li>서비스문의</li>
+            <li>개인정보 취급방침</li>
+            <li>이용약관</li>
+            <li>여행자약관</li>
+            <li>가이드약관</li>
+          </ul>
+          <span>Copyright ⓒ TripMate All Rights Reserved</span>
+        </div>
+      </footer>
     </div>
+
+    <script src="../js/trip_mate.js"></script>
+
+    <script src="../js/header.js"></script>
   </body>
 </html>
