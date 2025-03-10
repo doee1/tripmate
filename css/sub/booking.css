@@ -364,7 +364,7 @@ h3 {
   width: 60%;
   height: 40px;
   padding: 0 20px;
-  font-size: 12px;
+  font-size: 14px;
   border-radius: 3px;
   border: 1px solid rgba(189, 188, 188, 0.8);
 }
@@ -403,14 +403,18 @@ select {
   appearance: none;
 }
 
+.left_con label {
+  font-size: 20px;
+}
+
 /* 섹션3 카드 */
-#mobile_tag_btn{
+#mobile_tag_btn {
   display: none;
   border: none;
   background-color: #ebeaea;
 }
 
-#mobile_tag_btn img{
+#mobile_tag_btn img {
   width: 18px;
 }
 
@@ -462,7 +466,7 @@ select {
 /* 섹션3 카드 텍스트 */
 .sec3_card_txt {
   padding: 10px 10px;
-  font-size: var(--xs-font-size);
+  font-size: 16px;
   border: 2px solid #d9d9d9;
   border-top: none;
   border-radius: 0 0 5px 5px;
@@ -476,6 +480,7 @@ select {
 
 .sec3_card_txt p {
   margin-bottom: 5px;
+  font-size: 16px;
 }
 .sec3_buttons {
   display: flex;
@@ -525,13 +530,13 @@ select {
 
 .page-number.active {
   color: var(--main-color);
-    font-weight: bold;
+  font-weight: bold;
 }
 
-button.prev, button.next {
+button.prev,
+button.next {
   font-size: 16px;
 }
-
 
 /* 🦶푸터 */
 footer {
@@ -544,7 +549,7 @@ footer {
   align-items: center;
   justify-content: space-between;
   padding: 30px 60px;
-  font-size: var(--xs-font-size);
+  font-size: 15px;
   color: var(--default-gr);
 }
 

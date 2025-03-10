@@ -7,6 +7,7 @@ body {
   line-height: 1;
   width: 100%;
   height: fit-content;
+  background-color: #fff;
 }
 
 .container {
@@ -746,8 +747,9 @@ p .sec3_rs_content {
   border-radius: 5px 5px 0 0;
 }
 
-.sec4_card:hover > img {
-  scale: 1.01;
+.sec4_card:hover {
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 16px rgba(0, 0, 0, 0.1);
 }
 
 /* 카드1 설정 */
@@ -821,19 +823,6 @@ p .sec3_rs_content {
   border-top: 1px solid #d9d9d9;
   padding: 10px 0;
 }
-/* 🎀🎀베너2 */
-.banner2 {
-  background-image: url(/img/main/banner3/banner2.png);
-  background-repeat: no-repeat;
-}
-
-.banner2 h3 {
-  margin-bottom: 0;
-}
-
-.banner2 p {
-  margin-bottom: 30px;
-}
 /* 🌞🌞🌞🌞섹션5 */
 
 .sec5 {
@@ -884,7 +873,7 @@ p .sec3_rs_content {
   margin-bottom: 15px;
 }
 .sec5_main_txt p {
-  font-size: var(--xs-font-size);
+  font-size: 15px;
   color: #7b7a7a;
   margin-top: 30px;
   line-height: 16px;
@@ -961,6 +950,7 @@ footer {
   padding: 30px 60px;
   font-size: var(--xs-font-size);
   color: var(--default-gr);
+  background-color: #fff;
 }
 
 footer img {

@@ -344,8 +344,8 @@ section {
   align-items: center;
 }
 .user img {
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
   object-fit: cover;
   border-radius: 25px;
   margin-right: 5px;
@@ -527,7 +527,6 @@ section {
   padding: 10px 0;
   align-items: center;
 }
-
 
 /* ================================================ */
 .content-area .content {

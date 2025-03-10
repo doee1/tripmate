@@ -152,7 +152,7 @@
   .sec2_card p {
     color: var(--default-wh);
     position: absolute;
-    font-size: 14px;
+    font-size: 16px;
     top: 50%; /* 세로 중앙 */
     left: 50%; /* 가로 중앙 */
     transform: translate(-50%, -50%); /* 정확하게 가운데 정렬 */
@@ -193,7 +193,9 @@
   .right_text {
     width: 100%;
     height: fit-content;
-    margin-left: 5px;
+    margin-left: 0px;
+    overflow: hidden;
+    padding: 20px;
   }
 
   /* 리뷰섹션 */
@@ -210,12 +212,12 @@
   }
 
   .review_card h3 {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 18px;
     margin-bottom: 20px;
   }
   .review_card p {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 18px;
     margin-bottom: 11px;
   }
@@ -283,13 +285,13 @@
   }
 
   .banner1 h3 {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 14px;
     margin-bottom: 10px;
   }
 
   .banner1 span {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   /* ==========================섹션4 */
@@ -316,7 +318,7 @@
   /* 섹션4 카드 */
   .sec4_card {
     width: calc((100% - 15px) / 2);
-    height: 300px;
+    height: fit-content;
     overflow: hidden;
   }
 
@@ -339,12 +341,17 @@
   /* 섹션4 카드 텍스트 */
 
   .sec4_card_txt h3 {
-    font-size: 12px;
+    font-size: 15px;
     margin-bottom: 10px;
+    line-height: 20px;
   }
 
   .txt_button {
     display: none;
+  }
+
+  .sec4_card_txt {
+    height: 135px;
   }
 
   .sec4_card_txt p {
@@ -352,7 +359,7 @@
   }
   .user {
     align-items: center;
-    font-size: 12px;
+    font-size: 14px;
   }
   .sec4_card_txt .user_info {
     align-items: center;
@@ -383,7 +390,7 @@
 
   .sec5_card {
     width: 300px;
-    height: fit-content;
+    height: 350px;
     padding: 30px 20px;
   }
   /* 섹션5 카드 top */
@@ -394,12 +401,12 @@
     align-items: center;
   }
   .sec5_main_txt h3 {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     margin-bottom: 10px;
   }
   .sec5_main_txt p {
-    font-size: 12px;
+    font-size: 14px;
     color: #7b7a7a;
     margin-top: 0px;
     line-height: 18px;
@@ -565,7 +572,7 @@
   /* 섹션4 */
   .sec4_card > img {
     height: 200px;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
   }
   .sec4_card {
     height: fit-content;
@@ -579,6 +586,12 @@
   .sec4_card_txt h3 {
     font-size: 16px;
     margin-bottom: 10px;
+  }
+
+  @media (min-width: 600px) {
+    #menu-container > .menu-list {
+      width: 55vw;
+    }
   }
 }
 
@@ -778,13 +791,13 @@
   /* 리뷰섹션 */
 
   .sec3_button {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 10px;
     padding: 8px 12px;
     margin-bottom: 10px;
   }
   .review_card span {
-    font-size: 12px;
+    font-size: 16px;
     line-height: 18px;
     margin-bottom: 10px;
   }
@@ -808,9 +821,9 @@
   }
 
   .page_button a {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 15px;
-    padding: 2px 6px;
+    padding: 4px 6px;
   }
 
   /* 버튼 */
@@ -854,12 +867,12 @@
   }
 
   .sec4_card_wrap {
-    gap: 15px;
+    gap: 20px;
     flex-wrap: wrap;
   }
   /* 섹션4 카드 */
   .sec4_card {
-    width: calc((100% - 15px) / 2);
+    width: calc((100% - 20px) / 2);
   }
 
   /* 섹션4 카드 텍스트 */
@@ -914,13 +927,44 @@
   }
 }
 
+@media screen and (min-width: 769px) and (max-width: 870px) {
+  #gnb {
+    display: none;
+  }
+
+  #hamburger-icon {
+    display: block;
+  }
+
+  .header_contents {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  #menu-container > .menu-list {
+    width: 40vw;
+  }
+
+  .menu-submenu li {
+    font-size: 18px;
+    padding-right: 3px;
+    font-weight: 500;
+  }
+}
+
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
   #mobile_menu {
     display: none;
   }
   .header_contents {
     width: 100%;
-    padding: 0 15px;
+    padding: 0 30px;
+    display: flex;
+  }
+
+  #gnb {
+    width: 100%;
+    display: flex;
     justify-content: space-between;
   }
 
@@ -928,7 +972,8 @@
 
   #gnb > ul {
     height: 80px;
-    gap: 15px;
+    gap: 50px;
+    margin: 0 auto;
   }
 
   #gnb > ul > li > a {
@@ -941,7 +986,6 @@
   }
 
   /* =================sec1============= */
-  /* text */
 
   /* 섹션 1,2,3 타이틀 */
 
@@ -1089,6 +1133,7 @@
 
   .sec4_card_txt {
     padding: 10px 15px;
+    box-sizing: border-box;
   }
 
   .sec4_card_txt h3 {
@@ -1121,6 +1166,7 @@
     width: 100%;
     padding: 0 30px;
   }
+
   /* 섹션1 */
   .sec1 .text_box h3 {
     font-size: 40px;
