@@ -224,7 +224,7 @@ main {
   height: 100%;
 }
 
-/* 메인비주얼 - sec1 🌞 */
+/* 메인비주얼 - sec1  */
 .sec1 {
   width: 100%;
   padding-top: 80px;
@@ -242,7 +242,7 @@ main {
 .main_visual > h4,
 h3,
 h2 {
-  font-size: var(--sm-font-size);
+  font-size: 16px;
   color: var(--default-wh);
   font-weight: 600;
   margin-bottom: 30px;
@@ -254,7 +254,7 @@ h2 {
   font-size: 20px;
 }
 
-/* 🌞🌞sec2 */
+/* sec2 */
 section {
   width: 1200px;
   height: fit-content;
@@ -284,6 +284,7 @@ section {
   color: #cccccc;
   cursor: pointer;
   position: relative;
+  font-size: 18px;
 }
 
 .sec2 li.active {
@@ -363,7 +364,7 @@ section {
   margin-left: 3px;
 }
 
-/*🎀베너1 */
+/*베너1 */
 .sec3 {
   width: 100%;
   height: fit-content;
@@ -373,10 +374,10 @@ section {
   justify-content: center;
   border-radius: 15px;
 }
-.banner1_img {
+
+.banner {
   width: 100%;
   height: 200px;
-  background-image: url(/img/travel_route/banner1/banner1.png);
   background-repeat: no-repeat;
   padding: 0 175px;
   box-sizing: border-box;
@@ -384,6 +385,20 @@ section {
   align-items: center;
   border-radius: 15px;
 }
+
+.banner1_img {
+  background-image: url(/img/travel_route/banner1/banner1.png);
+}
+.banner2_img {
+  background-image: url(/img/travel_route/banner1/banner2.png);
+}
+.banner3_img {
+  background-image: url(/img/travel_route/banner1/banner3.png);
+}
+.banner4_img {
+  background-image: url(/img/travel_route/banner1/banner4.png);
+}
+
 /* 베너1 텍스트 */
 .banner1_textbox {
   color: var(--default-wh);
@@ -392,7 +407,7 @@ section {
 }
 .banner1_button {
   width: fit-content;
-  font-size: 12px;
+  font-size: 15px;
   color: var(--default-wh);
   background-color: var(--default-gr);
   padding: 5px 20px;
@@ -415,18 +430,21 @@ section {
 }
 
 .sec3 h4 {
-  font-size: 12px;
+  font-size: 16px;
 }
 
-/* 🌞🌞🌞🌞섹션4 */
+/* 섹션4 */
 .sec4 {
   padding: 120px 0;
 }
 .sec4 > h2 {
   margin-bottom: 20px;
 }
+h2 > span {
+  font-size: 27px;
+}
 .sec4 > p {
-  font-size: 15px;
+  font-size: 17px;
   color: #818181;
   font-weight: 600;
   width: fit-content;
@@ -446,7 +464,7 @@ section {
   width: 270px;
   height: fit-content;
   position: relative;
-  border: 1px solid #d9d9d9;
+  border: 2px solid rgba(217, 217, 217, 0.5);
   box-sizing: border-box;
 }
 
@@ -454,10 +472,11 @@ section {
   width: 100%;
   height: 200px;
   object-fit: cover;
+  object-position: center;
 }
 
 .sec4_card:hover {
-  border: 1px solid var(--main-color);
+  border: 2px solid var(--main-color);
 }
 
 /* 카드1 설정 */
@@ -483,7 +502,7 @@ section {
 /* 섹션4 카드 텍스트 */
 .sec4_card_txt {
   padding: 10px 10px;
-  font-size: var(--xs-font-size);
+  font-size: 15px;
   border-top: none;
   border-radius: 0 0 5px 5px;
 }
@@ -509,7 +528,7 @@ section {
 }
 
 #price {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 800;
 }
 
@@ -528,7 +547,6 @@ section {
   align-items: center;
 }
 
-/* ================================================ */
 .content-area .content {
   display: none;
 }
@@ -548,7 +566,7 @@ footer {
   align-items: center;
   justify-content: space-between;
   padding: 30px 60px;
-  font-size: var(--xs-font-size);
+  font-size: 14px;
   color: var(--default-gr);
 }
 
