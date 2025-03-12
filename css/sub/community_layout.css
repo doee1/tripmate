@@ -270,7 +270,6 @@ main {
   margin: 0 auto;
   max-width: 1200px;
   padding: 120px 0;
-
 }
 
 /* sec2 메인 */
@@ -495,14 +494,14 @@ select {
   left: 1144px;
   cursor: pointer;
 }
-#mobile_tag_btn{
+#mobile_tag_btn {
   display: none;
   height: 30px;
-    padding: 0 8px;
-    border-radius: 3px;
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid rgba(189, 188, 188, 0.8);
+  padding: 0 8px;
+  border-radius: 3px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(189, 188, 188, 0.8);
 }
 
 /* 리뷰섹션 */
@@ -537,15 +536,16 @@ select {
 .sec3_review h3 {
   color: var(--default-bk);
   font-size: 20px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  font-weight: 600;
 }
 
 .sec3_review p {
-  font-size: 13px;
-  line-height: var(--xs-line-height);
-  margin-top: 8px;
+  font-size: 15px;
+  line-height: 25px;
   color: var(--default-gr);
+  letter-spacing: 1px;
 }
 
 #review_content {
@@ -561,7 +561,11 @@ select {
   text-align: center;
 }
 
-/* ========================= 페이지네이션 ================== */
+.review_icons span {
+  font-weight: 500;
+}
+
+/* pagination */
 
 .pagination {
   display: flex;
@@ -587,15 +591,15 @@ select {
 
 .page-number.active {
   color: var(--main-color);
-    font-weight: bold;
+  font-weight: bold;
 }
 
-button.prev, button.next {
+button.prev,
+button.next {
   font-size: 16px;
 }
 
-
-/* 🦶푸터 */
+/* footer */
 footer {
   width: 100%;
   border-top: 1px solid rgba(217, 217, 217, 0.8);

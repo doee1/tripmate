@@ -24,15 +24,15 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
     />
 
-    <!-- css -->
+    <!-- Css -->
     <link rel="stylesheet" href="./css/layout.css" />
 
-    <!-- 반응형 -->
+    <!-- Responsive -->
     <link rel="stylesheet" href="./responsive/layout_rs.css" />
   </head>
   <body>
     <div class="wrap">
-      <!-- 헤더 -->
+      <!-- Header -->
       <header>
         <div class="header_contents">
           <!-- 로고 -->
@@ -165,15 +165,45 @@
         </div>
       </header>
 
-      <!-- 메인 -->
+      <!-- Main -->
       <main>
-        <!-- 메인비주얼 -->
+        <!-- MainVisual -->
         <div class="main_visual">
-          <img src="./img/main/main_visual/main1.jpg" alt="" />
-          <h4>당신의 여행 파트너 Trip Mate!</h4>
+          <video
+            src="./img/main/main_visual/video/4.mp4"
+            muted
+            autoplay
+            loop
+            playsinline
+            poster="./img/main/main_visual/main1.jpg"
+          >
+            이 영상은 해당 브라우저에서 지원되지 않습니다.
+          </video>
+          <div class="background_overlay"></div>
+          <div class="mainVisual_txt_wrap">
+            <h2>
+              <span>여행의 모든 순간을 함께, </span>당신의 여행 파트너 Trip
+              Mate.
+            </h2>
+            <h3>
+              여행 계획의 모든 것을, <br />
+              더 쉽고 간편하게
+            </h3>
+            <h4>나의 여행 스타일과 맞는 동행자와 루트를 만나보세요!</h4>
+
+            <div class="mainVisual_btns">
+              <a href="./sub/travel_route.html"
+                ><button type="button"># 나의 루트 찾기</button></a
+              >
+              <a href="./sub/trip_mate.html"
+                ><button type="button"># 나의 동행자 찾기</button></a
+              >
+            </div>
+          </div>
+          <a href="#" class="btn-shine" target="_blank">스크롤을 내려주세요.</a>
         </div>
 
-        <!-- 🌞섹션1 -->
+        <!-- Section1 -->
         <section class="sec1">
           <div class="sec1_left_text">
             <div class="text_box">
@@ -296,7 +326,7 @@
           </div>
           <a href="#" class="more mobile_more">전체보기</a>
         </section>
-        <!-- 🌞🌞섹션2 -->
+        <!-- Section2 -->
         <section class="sec2">
           <div class="sec2_contents">
             <div class="sec_title">
@@ -338,7 +368,7 @@
             <!-- 섹션2이미지 끝 -->
           </div>
         </section>
-        <!-- 🌞🌞🌞섹션3 -->
+        <!-- Section3 -->
         <section class="sec3">
           <div class="sec3_contents">
             <div class="sec_title">
@@ -441,7 +471,7 @@
             </div>
           </div>
         </section>
-        <!-- 🎀베너1 -->
+        <!-- Banner1 -->
         <div class="banner1">
           <div class="banner1_img">
             <div class="banner1_textbox">
@@ -454,7 +484,7 @@
             </div>
           </div>
         </div>
-        <!-- 🌞🌞🌞🌞섹션4 -->
+        <!-- Section4 -->
         <section class="sec4">
           <div class="sec4_contents">
             <div class="sec_title2">
@@ -538,7 +568,7 @@
             <!-- 카드 랩 끝 -->
           </div>
         </section>
-        <!-- 🌞섹션5 -->
+        <!-- Section5 -->
         <section class="sec5">
           <div class="sec_title2">
             <h2>FIND THE MATE</h2>
@@ -797,7 +827,7 @@
         </section>
       </main>
 
-      <!-- 푸터 -->
+      <!-- Footer -->
       <footer>
         <img src="./img/main/logo.png" alt="logo" />
         <ul>
