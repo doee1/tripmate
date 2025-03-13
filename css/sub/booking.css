@@ -444,24 +444,6 @@ select {
 }
 
 /* 카드1 설정 */
-.sec3_card:first-child > img {
-  filter: brightness(32%);
-}
-
-.sec3_card:first-child::after {
-  content: "모집마감";
-  color: var(--default-wh);
-  font-size: 16px;
-  padding: 10px 20px;
-  border: 1px solid var(--default-wh);
-  width: fit-content;
-  height: fit-content;
-  position: absolute;
-  top: 23%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 500;
-}
 
 /* 섹션3 카드 텍스트 */
 .sec3_card_txt {
@@ -488,10 +470,10 @@ select {
 }
 .txt_button {
   width: fit-content;
-  font-size: var(--xs-font-size);
+  font-size: 13px;
   color: var(--main-color);
   border: 1px solid var(--main-color);
-  padding: 5px 20px;
+  padding: 5px 18px;
   margin-bottom: 15px;
 }
 

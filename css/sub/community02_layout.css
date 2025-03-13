@@ -221,7 +221,7 @@ main {
   height: 100%;
 }
 
-/* 메인비주얼 - sec1 🌞 */
+/* 메인비주얼 - sec1 */
 .sec1 {
   width: 100%;
   padding-top: 80px;
@@ -258,7 +258,6 @@ main {
   font-size: 18px;
   margin-top: 10px;
 }
-
 
 /* 🌞🌞🌞섹션3 */
 .sec3 {
@@ -341,12 +340,11 @@ select {
   cursor: pointer;
 }
 
-
 /* 커뮤니티섹션 */
 .community-post {
   width: 1200px;
   margin: 20px auto;
-  border: 2px solid rgba(221, 221, 221,0.8);
+  border: 2px solid rgba(221, 221, 221, 0.8);
   padding: 20px;
   box-sizing: border-box;
   background-color: #fff;
@@ -379,8 +377,10 @@ select {
 }
 
 .post-body {
-  font-size: 16px;
+  font-size: 17px;
   color: #333;
+  margin-top: 15px;
+  line-height: 25px;
 }
 
 .hashtags {
@@ -401,7 +401,8 @@ select {
   margin: 10px 0;
 }
 
-.like, .comment-count {
+.like,
+.comment-count {
   font-size: 16px;
   color: #666;
 }
@@ -461,14 +462,13 @@ select {
 
 .page-number.active {
   color: var(--main-color);
-    font-weight: bold;
+  font-weight: bold;
 }
 
-button.prev, button.next {
+button.prev,
+button.next {
   font-size: 16px;
 }
-
-
 
 /* 🦶푸터 */
 footer {

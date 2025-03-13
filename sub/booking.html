@@ -10,148 +10,146 @@
       href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
     />
 
-    
     <!-- css -->
     <link rel="stylesheet" href="../css/sub/booking.css" />
 
-<!-- responsive -->
-     <link rel="stylesheet" href="../responsive/booking_rs.css">
-    
+    <!-- responsive -->
+    <link rel="stylesheet" href="../responsive/booking_rs.css" />
   </head>
   <body>
     <div class="wrap">
-     <!-- 헤더 -->
-     <header>
-      <div class="header_contents">
-        <!-- 로고 -->
-        <h1>
-          <a href="/"><img src="../img/header/logo.svg" alt="logo" /></a>
-        </h1>
-        <!-- 메뉴 -->
+      <!-- 헤더 -->
+      <header>
+        <div class="header_contents">
+          <!-- 로고 -->
+          <h1>
+            <a href="/"><img src="../img/header/logo.svg" alt="logo" /></a>
+          </h1>
+          <!-- 메뉴 -->
 
-        <!-- 모바일 메뉴 -->
-        <div id="menu-container">
-          <ul class="menu-list accordion" style="display: none">
-            <li class="toggle accordion-toggle">
-              <a class="menu-link" href="./sub/travel_route.html">여행루트</a>
-              <div>
-                <ul class="menu-submenu">
-                  <li><a href="./travel_route.html">📆날짜별</a></li>
-                  <li><a href="#">📌장소별</a></li>
-                  <li><a href="#">👀테마별</a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="toggle accordion-toggle">
-              <a class="menu-link" href="/mainmenu">트립메이트</a>
-              <div>
-                <ul class="menu-submenu">
-                  <li><a href="/submenu1">✋동행자</a></li>
-                  <li><a href="/submenu2">🙌여행그룹</a></li>
-                </ul>
-              </div>
-            </li>
+          <!-- 모바일 메뉴 -->
+          <div id="menu-container">
+            <ul class="menu-list accordion" style="display: none">
+              <li class="toggle accordion-toggle">
+                <a class="menu-link" href="./travel_route.html">여행루트</a>
+                <div>
+                  <ul class="menu-submenu">
+                    <li><a href="./travel_route.html">📆날짜별</a></li>
+                    <li><a href="#">📌장소별</a></li>
+                    <li><a href="#">👀테마별</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="toggle accordion-toggle">
+                <a class="menu-link" href="./trip_mate.html">트립메이트</a>
+                <div>
+                  <ul class="menu-submenu">
+                    <li><a href="./trip_mate.html">✋동행자</a></li>
+                    <li><a href="#">🙌여행그룹</a></li>
+                  </ul>
+                </div>
+              </li>
 
-            <li class="toggle accordion-toggle">
-              <a class="menu-link" href="./community.html">커뮤니티</a>
-              <div>
-                <ul class="menu-submenu">
-                  <li><a href="./community.html">📝후기/리뷰</a></li>
-                  <li><a href="./community02.html">📢실시간소통</a></li>
+              <li class="toggle accordion-toggle">
+                <a class="menu-link" href="./community.html">커뮤니티</a>
+                <div>
+                  <ul class="menu-submenu">
+                    <li><a href="./community.html">📝후기/리뷰</a></li>
+                    <li><a href="./community02.html">📢실시간소통</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="toggle accordion-toggle">
+                <a class="menu-link" href="./booking.html">예약 및 체험</a>
+                <div>
+                  <ul class="menu-submenu">
+                    <li><a href="./booking.html">🎫티켓</a></li>
+                    <li><a href="#">🚌데이투어</a></li>
+                    <li><a href="#">🏄‍♂️액티비티</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="toggle accordion-toggle">
+                <a class="menu-link" href="./promotion.html">프로모션</a>
+                <div>
+                  <ul class="menu-submenu">
+                    <li><a href="./promotion.html">✨이벤트</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- pc gnb -->
+          <nav id="gnb">
+            <ul>
+              <!-- 1차메뉴_여행루트 -->
+              <li>
+                <a href="./travel_route.html">여행루트</a>
+                <!-- 2차메뉴 -->
+                <ul class="submenu">
+                  <li><a href="./travel_route.html">날짜별</a></li>
+                  <li><a href="#">장소별</a></li>
+                  <li><a href="#">테마별</a></li>
                 </ul>
-              </div>
-            </li>
-            <li class="toggle accordion-toggle">
-              <a class="menu-link" href="/mainmenu">예약 및 체험</a>
-              <div>
-                <ul class="menu-submenu">
-                  <li><a href="/submenu1">🎫티켓</a></li>
-                  <li><a href="/submenu2">🚌데이투어</a></li>
-                  <li><a href="/submenu2">🏄‍♂️액티비티</a></li>
+              </li>
+              <li>
+                <a href="./trip_mate.html">트립메이트</a>
+                <!-- 2차메뉴 -->
+                <ul class="submenu">
+                  <li><a href="./trip_mate.html">동행자</a></li>
+                  <li><a href="#">여행그룹</a></li>
                 </ul>
-              </div>
-            </li>
-            <li class="toggle accordion-toggle">
-              <a class="menu-link" href="/mainmenu">프로모션</a>
-              <div>
-                <ul class="menu-submenu">
-                  <li><a href="/submenu1">✨이벤트</a></li>
+              </li>
+              <li>
+                <a href="./community.html">커뮤니티</a>
+                <!-- 2차메뉴 -->
+                <ul class="submenu">
+                  <li><a href="./community.html">후기/리뷰</a></li>
+                  <li><a href="./community02.html">실시간 소통</a></li>
                 </ul>
-              </div>
-            </li>
-          </ul>
+              </li>
+              <li>
+                <a href="./booking.html">예약 및 체험</a>
+                <!-- 2차메뉴 -->
+                <ul class="submenu">
+                  <li><a href="./booking.html">티켓</a></li>
+                  <li><a href="#">데이투어</a></li>
+                  <li><a href="#">액티비티</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="./promotion.html">프로모션</a>
+                <!-- 2차메뉴 -->
+                <ul class="submenu">
+                  <li><a href="./promotion.html">이벤트</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <!-- 네비 끝! -->
+          <!-- 아이콘 -->
+          <div class="icons">
+            <a href="#"
+              ><img src="../img/header/favorite.png" width="24px" alt="하트"
+            /></a>
+            <a href="#"
+              ><img
+                src="../img/header/account_circle.png"
+                width="24px"
+                alt="유저"
+            /></a>
+            <a href="#" id="hamburger-icon"
+              ><img
+                src="../img/header/mobile_menu.png"
+                width="24px"
+                alt="햄버거메뉴"
+                id="hamburger-menu"
+            /></a>
+          </div>
+          <!-- 아이콘 끝! -->
         </div>
-
-        <!-- pc gnb -->
-        <nav id="gnb">
-          <ul>
-            <!-- 1차메뉴_여행루트 -->
-            <li>
-              <a href="./travel_route.html">여행루트</a>
-              <!-- 2차메뉴 -->
-              <ul class="submenu">
-                <li><a href="./travel_route.html">날짜별</a></li>
-                <li><a href="#">장소별</a></li>
-                <li><a href="#">테마별</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="./sub/trip_mate.html">트립메이트</a>
-              <!-- 2차메뉴 -->
-              <ul class="submenu">
-                <li><a href="./sub/trip_mate.html">동행자</a></li>
-                <li><a href="#">여행그룹</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="./community.html">커뮤니티</a>
-              <!-- 2차메뉴 -->
-              <ul class="submenu">
-                <li><a href="./community.html">후기/리뷰</a></li>
-                <li><a href="./community02.html">실시간 소통</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="./sub/booking.html">예약 및 체험</a>
-              <!-- 2차메뉴 -->
-              <ul class="submenu">
-                <li><a href="./sub/booking.html">티켓</a></li>
-                <li><a href="#">데이투어</a></li>
-                <li><a href="#">액티비티</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">프로모션</a>
-              <!-- 2차메뉴 -->
-              <ul class="submenu">
-                <li><a href="#">이벤트</a></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-        <!-- 네비 끝! -->
-        <!-- 아이콘 -->
-        <div class="icons">
-          <a href="#"
-            ><img src="../img/header/favorite.png" width="24px" alt="하트"
-          /></a>
-          <a href="#"
-            ><img
-              src="../img/header/account_circle.png"
-              width="24px"
-              alt="유저"
-          /></a>
-          <a href="#" id="hamburger-icon"
-            ><img
-              src="../img/header/mobile_menu.png"
-              width="24px"
-              alt="햄버거메뉴"
-              id="hamburger-menu"
-          /></a>
-        </div>
-        <!-- 아이콘 끝! -->
-      </div>
-    </header>
+      </header>
 
       <main>
         <!-- 섹션1 -->
@@ -171,11 +169,15 @@
           </div>
           <h3>인기여행지</h3>
           <div class="popular">
-            <div><img src="../img/tour&booking/1.jpg" alt="" /> 나트랑</div>
-            <div><img src="../img/tour&booking/2.jpg" alt="" /> 다낭</div>
-            <div><img src="../img/tour&booking/3.jpg" alt="" /> 세부</div>
-            <div><img src="../img/tour&booking/4.jpg" alt="" /> 괌</div>
-            <div><img src="../img/tour&booking/5.jpg" alt="" /> 발리</div>
+            <div>
+              <img src="../img/tour&booking/sec2_1.jpg" alt="" /> 나트랑
+            </div>
+            <div>
+              <img src="../img/tour&booking/sec2_2.jpg" alt="" /> 시드니
+            </div>
+            <div><img src="../img/tour&booking/sec2_3.jpg" alt="" /> 세부</div>
+            <div><img src="../img/tour&booking/sec2_4.jpg" alt="" />파리</div>
+            <div><img src="../img/tour&booking/sec2_5.jpg" alt="" /> 뉴욕</div>
           </div>
         </section>
 
@@ -217,106 +219,107 @@
           <div class="sec3_card_wrap">
             <!-- 카드1 -->
             <div class="sec3_card">
-              <img src="../img/travel_route/sec4/card1.jpg" alt="프라하" />
+              <img src="../img/tour&booking/sec3_1.jpg" alt="뷔페" />
               <div class="sec3_card_txt">
                 <div class="sec3_buttons">
-                  <div class="txt_button">유럽여행</div>
-                  <div class="txt_button">인기</div>
+                  <div class="txt_button">나트랑</div>
                 </div>
-                <p>[파리 IN 프라하 OUT]</p>
-                <p>02월 일정(02/04 ~ 02/15) 12박 13일</p>
-                <p class="price_sec"><span id="price">2,49,000</span>원~</p>
+                <p>[5성급 호텔 디너]</p>
+                <p>쉐라톤 호텔 디너 씨푸드뷔페 이용권</p>
+                <p class="price_sec"><span id="price">24,900</span>원</p>
               </div>
             </div>
             <!-- 카드2 -->
             <div class="sec3_card">
-              <img src="../img/travel_route/sec4/card1.jpg" alt="프라하" />
+              <img
+                src="../img/tour&booking/sec3_2.jpg"
+                alt="유니버셜스튜디오"
+              />
               <div class="sec3_card_txt">
                 <div class="sec3_buttons">
-                  <div class="txt_button">유럽여행</div>
-                  <div class="txt_button">인기</div>
+                  <div class="txt_button">일본</div>
                 </div>
-                <p>[파리 IN 프라하 OUT]</p>
-                <p>02월 일정(02/04 ~ 02/15) 12박 13일</p>
-                <p class="price_sec"><span id="price">2,49,000</span>원~</p>
+                <p>[시간지정/즉시확정]</p>
+                <p>유니버셜 스튜디오 재팬 1일 입장권</p>
+                <p class="price_sec"><span id="price">60,706</span>원</p>
               </div>
             </div>
             <!-- 카드3 -->
             <div class="sec3_card">
-              <img src="../img/travel_route/sec4/card1.jpg" alt="프라하" />
+              <img src="../img/tour&booking/sec3_3.jpg" alt="세부" />
               <div class="sec3_card_txt">
                 <div class="sec3_buttons">
-                  <div class="txt_button">유럽여행</div>
-                  <div class="txt_button">인기</div>
+                  <div class="txt_button">미국</div>
+                  <div class="txt_button">샌디에고</div>
                 </div>
-                <p>[파리 IN 프라하 OUT]</p>
-                <p>02월 일정(02/04 ~ 02/15) 12박 13일</p>
-                <p class="price_sec"><span id="price">2,49,000</span>원~</p>
+                <p>[샌디에고 시티패스]</p>
+                <p>다양한 어트랙션 입장 시티패스</p>
+                <p class="price_sec"><span id="price">232,600</span>원</p>
               </div>
             </div>
             <!-- 카드4 -->
             <div class="sec3_card">
-              <img src="../img/travel_route/sec4/card1.jpg" alt="프라하" />
+              <img src="../img/tour&booking/sec3_4.jpg" alt="코알라" />
               <div class="sec3_card_txt">
                 <div class="sec3_buttons">
-                  <div class="txt_button">유럽여행</div>
-                  <div class="txt_button">인기</div>
+                  <div class="txt_button">시드니</div>
+                  <div class="txt_button">타롱가주</div>
                 </div>
-                <p>[파리 IN 프라하 OUT]</p>
-                <p>02월 일정(02/04 ~ 02/15) 12박 13일</p>
-                <p class="price_sec"><span id="price">2,49,000</span>원~</p>
+                <p>[당일사용 가능/즉시 확정]</p>
+                <p>시드니 타롱가주 동물원 입장권</p>
+                <p class="price_sec"><span id="price">49,000</span>원</p>
               </div>
             </div>
             <!-- 카드5 -->
             <div class="sec3_card">
-              <img src="../img/travel_route/sec4/card1.jpg" alt="프라하" />
+              <img src="../img/tour&booking/sec3_5.jpg" alt="뉴욕" />
               <div class="sec3_card_txt">
                 <div class="sec3_buttons">
-                  <div class="txt_button">유럽여행</div>
-                  <div class="txt_button">인기</div>
+                  <div class="txt_button">뉴욕</div>
                 </div>
-                <p>[파리 IN 프라하 OUT]</p>
-                <p>02월 일정(02/04 ~ 02/15) 12박 13일</p>
-                <p class="price_sec"><span id="price">2,49,000</span>원~</p>
+
+                <p>[박물관 입장권 + 가이드 포함]</p>
+                <p>뉴욕 자유의 여신상 & 엘리스 섬 페리</p>
+                <p class="price_sec"><span id="price">66,800</span>원</p>
               </div>
             </div>
             <!-- 카드6 -->
             <div class="sec3_card">
-              <img src="../img/travel_route/sec4/card1.jpg" alt="프라하" />
+              <img src="../img/tour&booking/sec3_6.jpg" alt="파리" />
               <div class="sec3_card_txt">
                 <div class="sec3_buttons">
-                  <div class="txt_button">유럽여행</div>
-                  <div class="txt_button">인기</div>
+                  <div class="txt_button">프랑스</div>
+                  <div class="txt_button">파리</div>
                 </div>
-                <p>[파리 IN 프라하 OUT]</p>
-                <p>02월 일정(02/04 ~ 02/15) 12박 13일</p>
-                <p class="price_sec"><span id="price">2,49,000</span>원~</p>
+                <p>[QR바로입장/ 패스트트랙]</p>
+                <p>파리 루브르 박물관 입장권</p>
+                <p class="price_sec"><span id="price">39,000</span>원</p>
               </div>
             </div>
             <!-- 카드7 -->
             <div class="sec3_card">
-              <img src="../img/travel_route/sec4/card1.jpg" alt="프라하" />
+              <img src="../img/tour&booking/sec3_7.jpg" alt="두바이" />
               <div class="sec3_card_txt">
                 <div class="sec3_buttons">
-                  <div class="txt_button">유럽여행</div>
-                  <div class="txt_button">인기</div>
+                  <div class="txt_button">두바이</div>
                 </div>
-                <p>[파리 IN 프라하 OUT]</p>
-                <p>02월 일정(02/04 ~ 02/15) 12박 13일</p>
-                <p class="price_sec"><span id="price">2,49,000</span>원~</p>
+                <p>[옵션 선택 가능]</p>
+                <p>두바이 어트랙션 패스</p>
+                <p class="price_sec"><span id="price">202,800</span>원~</p>
               </div>
             </div>
             <!-- 카드8 -->
             <div class="sec3_card">
-              <img src="../img/travel_route/sec4/card1.jpg" alt="프라하" />
+              <img src="../img/tour&booking/sec3_8.jpg" alt="라스베가스" />
               <div class="sec3_card_txt">
                 <div class="sec3_buttons">
-                  <div class="txt_button">유럽여행</div>
-                  <div class="txt_button">인기</div>
+                  <div class="txt_button">미국</div>
+                  <div class="txt_button">라스베가스</div>
                 </div>
-                <p>[파리 IN 프라하 OUT]</p>
-                <p>02월 일정(02/04 ~ 02/15) 12박 13일</p>
-                <p class="price_sec"><span id="price">2,49,000</span>원~</p>
+                <p>[2일/3일/4일/5일 선택]</p>
+                <p>고시티 올인클루시브 패스</p>
+
+                <p class="price_sec"><span id="price">187,800</span>원~</p>
               </div>
             </div>
           </div>
@@ -331,7 +334,7 @@
             <button class="page-number">5</button>
             <button class="next-page">></button>
             <button class="next">>></button>
-        </div>
+          </div>
         </section>
       </main>
       <!-- 푸터 -->

@@ -579,10 +579,6 @@
   }
 
   /* 섹션3 */
-  .left_img img:not(:first-child) {
-    object-position: 0px -389px;
-    object-fit: cover;
-  }
   .left_img img:first-child {
     object-position: bottom;
     object-fit: cover;
@@ -841,10 +837,6 @@
     border-radius: 15px 15px 0px 0px;
   }
 
-  .left_img img:not(:first-child) {
-    object-position: 0px -540px;
-    object-fit: cover;
-  }
   .left_img img:first-child {
     object-position: bottom;
     object-fit: cover;
