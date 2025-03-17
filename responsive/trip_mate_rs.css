@@ -32,15 +32,24 @@
     width: 100%;
     padding-top: 80px;
   }
-  .main-visual {
-    height: 150px;
-    background: url(../img/trip_mate/main/main.jpg) center/cover no-repeat;
+  .main_visual {
+    height: 100px;
+    padding: 0 10px;
+    gap: 10px;
+    align-items: center;
   }
-  .main-visual h1 {
+  .main_visual_logo img {
+    position: absolute;
+    right: 19%;
+    bottom: -15%;
+    width: 57%;
+  }
+
+  .main_visual h2 {
     font-size: 20px;
   }
-  .main-visual p {
-    font-size: 15px;
+  .main_visual h3 {
+    display: none;
   }
 
   /* 필터박스 */

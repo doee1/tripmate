@@ -41,9 +41,9 @@
   }
   .main_visual_logo img {
     position: absolute;
-    right: 10%;
-    bottom: -10%;
-    width: 75%;
+    right: 19%;
+    bottom: -15%;
+    width: 57%;
   }
 
   .main_visual h2 {
@@ -145,7 +145,7 @@
     margin-left: 3px;
   }
 
-  /* ==================섹션3 베너1 ===================*/
+  /* 섹션3 베너1*/
   .sec3 {
     width: 100%;
     height: 100px;
@@ -188,7 +188,7 @@
     font-size: 16px;
   }
 
-  /* =================섹션4=============== */
+  /*섹션4 */
   .sec4 {
     padding: 0px;
     padding-bottom: 50px;
@@ -306,6 +306,14 @@
     padding-right: 5px;
   }
 
+  /* mainvisual */
+
+  .main_visual_logo img {
+    position: absolute;
+    right: 27%;
+    bottom: -9%;
+    width: 46%;
+  }
   /* 베너*/
 
   .sec3 {
@@ -336,7 +344,7 @@
     font-size: 16px;
   }
 
-  /* ========섹션4========= */
+  /* 섹션4 */
 
   .sec4_card {
     width: calc((100% - 20px) / 2);
@@ -380,48 +388,35 @@
     margin-left: 0px;
   }
 
-  /* ===========메인비주얼 - sec1 🌞 =============*/
+  /* 메인비주얼 - sec1 */
+
+  /* mainvisual */
 
   .sec1 {
     width: 100%;
     padding-top: 80px;
   }
-
   .main_visual {
-    width: 100%;
-    height: 70px;
-    background-color: #ffff;
-    padding: 0 120px;
-    box-sizing: border-box;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 30px;
-    color: #363636;
-  }
-  .main_visual_logo {
-    width: fit-content;
-    height: fit-content;
+    height: 150px;
+    padding: 0 10px;
+    gap: 10px;
+    align-items: center;
   }
   .main_visual_logo img {
     position: absolute;
-    right: 22px;
-    bottom: -102px;
-    opacity: 0.1;
-    transform: rotate(326deg);
+    right: 10%;
+    bottom: -10%;
+    width: 50%;
   }
 
   .main_visual h2 {
-    font-size: var(--xl-font-size);
-    font-weight: 700;
+    font-size: 24px;
   }
   .main_visual h3 {
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 18px;
   }
 
-  /* 🌞🌞sec2 */
+  /* sec2 */
 
   /* 섹션2 */
   section {
@@ -456,7 +451,7 @@
     width: 130px;
   }
 
-  /* ======베너====== */
+  /* 베너 */
 
   .sec3 {
     width: 100%;
@@ -478,7 +473,7 @@
     font-size: 23px;
   }
 
-  /* =========섹션4============ */
+  /* 섹션4 */
   .sec4 {
     padding: 0 0 100px 0;
     width: 100%;
@@ -497,7 +492,7 @@
     display: none;
   }
 
-  /* 🦶푸터 */
+  /* footer */
   .footer_con {
     width: 90%;
     height: fit-content;
