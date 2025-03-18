@@ -261,7 +261,7 @@
     font-weight: 800;
   }
 
-  /* 🦶푸터 */
+  /* footer */
   footer {
     width: 100%;
   }
@@ -288,11 +288,11 @@
   footer ul {
     display: flex;
     gap: 10px;
-    font-size: 11px;
+    font-size: 12px;
     flex-wrap: wrap;
   }
   footer span {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
@@ -515,11 +515,11 @@
   footer ul {
     display: flex;
     gap: 10px;
-    font-size: 11px;
+    font-size: 14px;
     flex-wrap: wrap;
   }
   footer span {
-    font-size: 10px;
+    font-size: 14px;
   }
 }
 
@@ -577,7 +577,7 @@
     font-size: 17px;
   }
 
-  /* =============섹션4================= */
+  /* sec4 */
   .sec4 {
     width: 100%;
     padding: 0px;
@@ -587,7 +587,7 @@
     margin-bottom: 20px;
   }
 
-  /* 섹션4 카드 */
+  /* sec4 card */
 
   .sec4_card_wrap {
     display: flex;
@@ -596,7 +596,7 @@
     margin-top: 85px;
     flex-wrap: wrap;
   }
-  /* 섹션4 카드 */
+
   .sec4_card {
     flex: 1 1 calc((100% - 40px) / 3);
   }
@@ -606,7 +606,7 @@
     display: none;
   }
 
-  /* 🦶푸터 */
+  /* footer */
   .footer_con {
     width: 90%;
     height: fit-content;

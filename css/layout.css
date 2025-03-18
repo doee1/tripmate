@@ -10,10 +10,6 @@ body {
   background-color: #fff;
 }
 
-.container {
-  width: 100%;
-  height: auto;
-}
 /* 헤더 */
 
 header {
@@ -909,7 +905,7 @@ p .sec3_rs_content {
   border-top: 1px solid #d9d9d9;
   padding: 10px 0;
 }
-/* 🌞🌞🌞🌞섹션5 */
+/* sec5 */
 
 .sec5 {
   width: 100%;
@@ -1028,7 +1024,7 @@ p .sec3_rs_content {
   background-color: #fff;
 }
 
-/* 🦶푸터 */
+/* footer */
 footer {
   display: flex;
   align-items: center;

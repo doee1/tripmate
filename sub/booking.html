@@ -10,6 +10,9 @@
       href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
     />
 
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
     <!-- css -->
     <link rel="stylesheet" href="../css/sub/booking.css" />
 
@@ -83,10 +86,8 @@
           <!-- pc gnb -->
           <nav id="gnb">
             <ul>
-              <!-- 1차메뉴_여행루트 -->
               <li>
                 <a href="./travel_route.html">여행루트</a>
-                <!-- 2차메뉴 -->
                 <ul class="submenu">
                   <li><a href="./travel_route.html">날짜별</a></li>
                   <li><a href="#">장소별</a></li>
@@ -95,7 +96,6 @@
               </li>
               <li>
                 <a href="./trip_mate.html">트립메이트</a>
-                <!-- 2차메뉴 -->
                 <ul class="submenu">
                   <li><a href="./trip_mate.html">동행자</a></li>
                   <li><a href="#">여행그룹</a></li>
@@ -103,7 +103,6 @@
               </li>
               <li>
                 <a href="./community.html">커뮤니티</a>
-                <!-- 2차메뉴 -->
                 <ul class="submenu">
                   <li><a href="./community.html">후기/리뷰</a></li>
                   <li><a href="./community02.html">실시간 소통</a></li>
@@ -111,7 +110,6 @@
               </li>
               <li>
                 <a href="./booking.html">예약 및 체험</a>
-                <!-- 2차메뉴 -->
                 <ul class="submenu">
                   <li><a href="./booking.html">티켓</a></li>
                   <li><a href="#">데이투어</a></li>
@@ -120,49 +118,48 @@
               </li>
               <li>
                 <a href="./promotion.html">프로모션</a>
-                <!-- 2차메뉴 -->
                 <ul class="submenu">
                   <li><a href="./promotion.html">이벤트</a></li>
                 </ul>
               </li>
             </ul>
           </nav>
-          <!-- 네비 끝! -->
           <!-- 아이콘 -->
           <div class="icons">
-            <a href="#"
+            <a href="../login.html"
               ><img src="../img/header/favorite.png" width="24px" alt="하트"
             /></a>
-            <a href="#"
+            <a href="../login.html"
               ><img
                 src="../img/header/account_circle.png"
                 width="24px"
                 alt="유저"
             /></a>
-            <a href="#" id="hamburger-icon"
-              ><img
+            <a href="#" id="hamburger-icon">
+              <img
                 src="../img/header/mobile_menu.png"
                 width="24px"
                 alt="햄버거메뉴"
                 id="hamburger-menu"
-            /></a>
+              />
+            </a>
           </div>
-          <!-- 아이콘 끝! -->
         </div>
       </header>
 
       <main>
-        <!-- 섹션1 -->
+        <!-- sec1 -->
         <section class="sec1">
-          <div class="main-visual">
-            <div class="overlay">
-              <h1>여행 동행자를 찾아보세요</h1>
-              <p>함께 여행할 친구를 찾아 새로운 경험을 만들어보세요!</p>
+          <div class="main_visual">
+            <h2>나만의 여행 루트를 찾아보세요!</h2>
+            <h3>TripMate에서 맞춤형 여행 추천받고, 예약까지 간편하게!</h3>
+            <div class="main_visual_logo">
+              <img src="/img/travel_route/main/logo.svg" alt="로고" />
             </div>
           </div>
         </section>
 
-        <!-- 섹션2 -->
+        <!-- sec2 -->
         <section class="sec2">
           <div class="sec2_icon">
             <img src="../img/tour&booking/icon/like4.png" alt="like" />
@@ -170,20 +167,25 @@
           <h3>인기여행지</h3>
           <div class="popular">
             <div>
-              <img src="../img/tour&booking/sec2_1.jpg" alt="" /> 나트랑
+              <img src="../img/tour&booking/sec2_1.jpg" alt="나트랑" /> 나트랑
             </div>
             <div>
-              <img src="../img/tour&booking/sec2_2.jpg" alt="" /> 시드니
+              <img src="../img/tour&booking/sec2_2.jpg" alt="시드니" /> 시드니
             </div>
-            <div><img src="../img/tour&booking/sec2_3.jpg" alt="" /> 세부</div>
-            <div><img src="../img/tour&booking/sec2_4.jpg" alt="" />파리</div>
-            <div><img src="../img/tour&booking/sec2_5.jpg" alt="" /> 뉴욕</div>
+            <div>
+              <img src="../img/tour&booking/sec2_3.jpg" alt="세부" /> 세부
+            </div>
+            <div>
+              <img src="../img/tour&booking/sec2_4.jpg" alt="파리" /> 파리
+            </div>
+            <div>
+              <img src="../img/tour&booking/sec2_5.jpg" alt="뉴욕" /> 뉴욕
+            </div>
           </div>
         </section>
 
-        <!-- 섹션3 -->
+        <!-- sec3 -->
         <section class="sec3">
-          <!-- 리스트 -->
           <div class="list-header">
             <div class="left_con">
               <span class="total-count">전체 1,624개</span>
@@ -215,6 +217,7 @@
               </select>
             </div>
           </div>
+
           <!-- 카드섹션 -->
           <div class="sec3_card_wrap">
             <!-- 카드1 -->
@@ -323,7 +326,7 @@
               </div>
             </div>
           </div>
-          <!--카드랩 끝-->
+
           <div class="pagination">
             <button class="prev"><<</button>
             <button class="prev-page"><</button>
@@ -337,7 +340,8 @@
           </div>
         </section>
       </main>
-      <!-- 푸터 -->
+
+      <!-- footer -->
       <footer>
         <div class="footer_con">
           <img src="../img/main/logo.png" alt="logo" />
@@ -353,5 +357,7 @@
         </div>
       </footer>
     </div>
+
+    <script src="../js/header.js"></script>
   </body>
 </html>

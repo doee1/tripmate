@@ -27,15 +27,28 @@
     font-weight: 500;
   }
   /* mainvisual - sec1  */
-  .main-visual {
-    height: 150px;
-    background: url(../img/trip_mate/main/main.jpg) center/cover no-repeat;
+  .sec1 {
+    width: 100%;
+    padding-top: 80px;
   }
-  .main-visual h1 {
+  .main_visual {
+    height: 100px;
+    padding: 0 10px;
+    gap: 10px;
+    align-items: center;
+  }
+  .main_visual_logo img {
+    position: absolute;
+    right: 19%;
+    bottom: -15%;
+    width: 57%;
+  }
+
+  .main_visual h2 {
     font-size: 20px;
   }
-  .main-visual p {
-    font-size: 12px;
+  .main_visual h3 {
+    display: none;
   }
 
   /* Sec2 */
@@ -91,13 +104,13 @@
     display: none;
   }
 
-  /* 섹션3 카드 */
+  /* sec3 카드 */
   .sec3_card_wrap {
     gap: 15px;
     margin-top: 30px;
     flex-wrap: wrap;
   }
-  /* 섹션3 카드 */
+  /* sec3 카드 */
   .sec3_card {
     width: 100%;
   }
@@ -137,7 +150,7 @@
     margin-top: 30px;
   }
 
-  /* 🦶푸터 */
+  /* footer */
   footer {
     width: 100%;
   }
@@ -164,11 +177,11 @@
   footer ul {
     display: flex;
     gap: 10px;
-    font-size: 11px;
+    font-size: 12px;
     flex-wrap: wrap;
   }
   footer span {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
@@ -229,21 +242,31 @@
     margin-left: 0px;
   }
 
-  /* 메인비주얼 */
-  .main-visual {
+  /* mainvisual */
+  .sec1 {
     width: 100%;
-    height: 200px;
-    background: url(../img/trip_mate/main/main.jpg) center/cover no-repeat;
   }
-  .main-visual h1 {
-    font-size: 30px;
+  .main_visual {
+    height: 150px;
+    padding: 0 10px;
+    gap: 10px;
+    align-items: center;
   }
-  .main-visual p {
-    font-size: 16px;
-    margin-top: 10px;
+  .main_visual_logo img {
+    position: absolute;
+    right: 10%;
+    bottom: -10%;
+    width: 50%;
   }
 
-  /* 섹션2 */
+  .main_visual h2 {
+    font-size: 24px;
+  }
+  .main_visual h3 {
+    font-size: 18px;
+  }
+
+  /* sec2 */
 
   .sec2 {
     width: 90%;
@@ -267,12 +290,12 @@
     font-size: 17px;
   }
 
-  /* 섹션3 카드 */
+  /* sec3 카드 */
   .sec3_card {
     width: calc((100% - 40px) / 2);
   }
 
-  /* 🦶푸터 */
+  /* footer */
   .footer_con {
     width: 90%;
     height: fit-content;
@@ -295,16 +318,16 @@
   footer ul {
     display: flex;
     gap: 10px;
-    font-size: 11px;
+    font-size: 14px;
     flex-wrap: wrap;
   }
   footer span {
-    font-size: 10px;
+    font-size: 14px;
   }
 }
 
 @media screen and (min-width: 900px) and (max-width: 1440px) {
-  /* 섹션3 카드 */
+  /* sec3 카드 */
   .sec3_card_wrap {
     gap: 15px;
     margin-top: 85px;
@@ -374,7 +397,7 @@
     display: block;
   }
 
-  /* 🦶푸터 */
+  /* footer */
   .footer_con {
     width: 90%;
     height: fit-content;
@@ -399,7 +422,7 @@
     padding: 0 30px;
   }
 
-  /* 섹션3 카드 */
+  /* sec3 카드 */
   .sec3_card_wrap {
     gap: 20px;
     margin-top: 85px;

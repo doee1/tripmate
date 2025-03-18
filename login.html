@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인</title>
+    <!-- 아이콘 링크 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
+
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/login.css" />
+
+    <!-- responsive -->
+    <link rel="stylesheet" href="./responsive/login_rs.css" />
+  </head>
+
+  <body>
+    <div class="wrap">
+      <!-- Header -->
+      <header>
+        <div class="header_contents">
+          <!-- 로고 -->
+          <h1>
+            <a href="/"><img src="./img/header/logo.svg" alt="logo" /></a>
+          </h1>
+          <!-- 메뉴 -->
+
+          <!-- 모바일 메뉴 -->
+          <div id="menu-container">
+            <ul class="menu-list accordion" style="display: none">
+              <li class="toggle accordion-toggle">
+                <a class="menu-link" href="./sub/travel_route.html">여행루트</a>
+                <div>
+                  <ul class="menu-submenu">
+                    <li><a href="./sub/travel_route.html">📆날짜별</a></li>
+                    <li><a href="#">📌장소별</a></li>
+                    <li><a href="#">👀테마별</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="toggle accordion-toggle">
+                <a class="menu-link" href="./sub/trip_mate.html">트립메이트</a>
+                <div>
+                  <ul class="menu-submenu">
+                    <li><a href="./sub/trip_mate.html">✋동행자</a></li>
+                    <li><a href="#">🙌여행그룹</a></li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="toggle accordion-toggle">
+                <a class="menu-link" href="./sub/community.html">커뮤니티</a>
+                <div>
+                  <ul class="menu-submenu">
+                    <li><a href="./sub/community.html">📝후기/리뷰</a></li>
+                    <li><a href="./sub/community02.html">📢실시간소통</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="toggle accordion-toggle">
+                <a class="menu-link" href="./sub/booking.html">예약 및 체험</a>
+                <div>
+                  <ul class="menu-submenu">
+                    <li><a href="./sub/booking.html">🎫티켓</a></li>
+                    <li><a href="#">🚌데이투어</a></li>
+                    <li><a href="#">🏄‍♂️액티비티</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="toggle accordion-toggle">
+                <a class="menu-link" href="./sub/promotion.html">프로모션</a>
+                <div>
+                  <ul class="menu-submenu">
+                    <li><a href="./sub/promotion.html">✨이벤트</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- pc gnb -->
+          <nav id="gnb">
+            <ul>
+              <!-- 1차메뉴_여행루트 -->
+              <li>
+                <a href="./sub/travel_route.html">여행루트</a>
+                <!-- 2차메뉴 -->
+                <ul class="submenu">
+                  <li><a href="./sub/travel_route.html">날짜별</a></li>
+                  <li><a href="#">장소별</a></li>
+                  <li><a href="#">테마별</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="./sub/trip_mate.html">트립메이트</a>
+                <!-- 2차메뉴 -->
+                <ul class="submenu">
+                  <li><a href="./sub/trip_mate.html">동행자</a></li>
+                  <li><a href="#">여행그룹</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="./sub/community.html">커뮤니티</a>
+                <!-- 2차메뉴 -->
+                <ul class="submenu">
+                  <li><a href="./sub/community.html">후기/리뷰</a></li>
+                  <li><a href="./sub/community02.html">실시간 소통</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="./sub/booking.html">예약 및 체험</a>
+                <!-- 2차메뉴 -->
+                <ul class="submenu">
+                  <li><a href="./sub/booking.html">티켓</a></li>
+                  <li><a href="#">데이투어</a></li>
+                  <li><a href="#">액티비티</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">프로모션</a>
+                <!-- 2차메뉴 -->
+                <ul class="submenu">
+                  <li><a href="#">이벤트</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <!-- 네비 끝! -->
+          <!-- 아이콘 -->
+          <div class="icons">
+            <a href="./login.html"
+              ><img src="./img/header/favorite.png" width="24px" alt="하트"
+            /></a>
+            <a href="./login.html"
+              ><img
+                src="./img/header/account_circle.png"
+                width="24px"
+                alt="유저"
+            /></a>
+            <a href="#" id="hamburger-icon"
+              ><img
+                src="./img/header/mobile_menu.png"
+                width="24px"
+                alt="햄버거메뉴"
+                id="hamburger-menu"
+            /></a>
+          </div>
+          <!-- 아이콘 끝! -->
+        </div>
+      </header>
+
+      <!-- Main -->
+      <main>
+        <div class="main_wrap">
+          <div class="login_box">
+            <!-- 로고 -->
+            <img src="./img/logo.svg" alt="로고" />
+            <h2>
+              <a href="#">LOGIN </a>
+            </h2>
+            <form action="#" method="post" autocomplete="on">
+              <!-- 아이디 -->
+              <div class="contents">
+                <div class="input_box">
+                  <label for="user_id">
+                    <input
+                      type="text"
+                      name="user_id"
+                      id="user_id"
+                      minlength="5"
+                      maxlength="12"
+                      required
+                      autofocus
+                      placeholder="아이디"
+                    />
+                  </label>
+                </div>
+
+                <!-- 비밀번호 -->
+                <div class="input_box">
+                  <label for="user_pw">
+                    <input
+                      type="password"
+                      name="user_pw"
+                      id="user_pw"
+                      minlength="6"
+                      maxlength="10"
+                      required
+                      placeholder="패스워드"
+                    />
+                  </label>
+                </div>
+              </div>
+
+              <!-- 체크박스 -->
+              <div class="checkbox">
+                <label for="keep_login">
+                  <input type="checkbox" name="keep_login" checked />
+                  로그인 상태 유지
+                </label>
+              </div>
+
+              <!-- 버튼 -->
+              <button class="login_button" type="submit">로그인</button>
+
+              <!-- 아이디,비밀번호,회원가입 -->
+              <div class="links">
+                <ul>
+                  <li>아이디 찾기</li>
+                  <li>비밀번호 찾기</li>
+                  <li>회원가입</li>
+                </ul>
+              </div>
+
+              <!-- 간편로그인 -->
+              <div class="social_login">
+                <button type="button">
+                  <img src="./img/login/Google.svg" alt="구글" />구글로 로그인
+                </button>
+                <button type="button">
+                  <img
+                    src="./img/login/kakaotalk_logo.svg"
+                    alt="카카오톡"
+                  />카카오톡으로 로그인
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer>
+        <img src="./img/main/logo.png" alt="logo" />
+        <ul>
+          <li>광고/제휴문의</li>
+          <li>서비스문의</li>
+          <li>개인정보 취급방침</li>
+          <li>이용약관</li>
+          <li>여행자약관</li>
+          <li>가이드약관</li>
+        </ul>
+        <span>Copyright ⓒ TripMate All Rights Reserved</span>
+      </footer>
+    </div>
+
+    <!-- 제이쿼리 -->
+    <script src="./js/header.js"></script>
+    >
+  </body>
+</html>

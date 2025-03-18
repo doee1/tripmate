@@ -209,7 +209,7 @@
   /* Section3 */
 
   .sec3 {
-    padding-bottom: 50px;
+    padding-bottom: 100px;
   }
   /* sec3 main */
   .sec3_contents {
@@ -298,7 +298,7 @@
     padding: 0 0;
     overflow: hidden;
     box-sizing: border-box;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
   }
   .banner1_img {
     width: 100%;
@@ -531,11 +531,11 @@
   footer ul {
     display: flex;
     gap: 10px;
-    font-size: 11px;
+    font-size: 12px;
     flex-wrap: wrap;
   }
   footer span {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
@@ -980,11 +980,11 @@
   footer ul {
     display: flex;
     gap: 10px;
-    font-size: 11px;
+    font-size: 14px;
     flex-wrap: wrap;
   }
   footer span {
-    font-size: 10px;
+    font-size: 14px;
   }
 }
 
@@ -1140,7 +1140,7 @@
     margin: 0 auto;
   }
 
-  /* ============섹션2======== */
+  /* sec2 */
   .sec2 {
     width: 100%;
   }
@@ -1162,7 +1162,7 @@
     border-radius: 24px;
   }
 
-  /* ================섹션3=========== */
+  /* sec3 */
   .sec3 {
     width: 100%;
   }
@@ -1189,7 +1189,7 @@
     width: calc((100% - 10px) / 2);
   }
 
-  /* ===========베너1========= */
+  /* banner1 */
 
   .banner1 {
     width: 90%;
@@ -1200,7 +1200,7 @@
     padding: 0 100px;
   }
 
-  /* =============섹션4============ */
+  /* sec4 */
   .sec4 {
     width: 100%;
   }
@@ -1219,8 +1219,7 @@
     margin-bottom: 17px;
   }
 
-  /* 푸터 */
-  /* 🦶푸터 */
+  /* footer */
   footer {
     width: 90%;
     height: fit-content;
