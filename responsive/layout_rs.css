@@ -64,7 +64,9 @@
 
   .mainVisual_btns {
     flex-direction: column;
+    gap: 0px;
   }
+
   .mainVisual_txt_wrap button {
     background-color: rgba(255, 255, 255, 0.4);
     padding: 12px;
@@ -329,12 +331,16 @@
 
   .banner1 h3 {
     font-size: 14px;
-    line-height: 14px;
+    line-height: 20px;
     margin-bottom: 10px;
   }
 
   .banner1 span {
     font-size: 16px;
+  }
+
+  .banner1 p {
+    font-size: 12px;
   }
 
   /* Section4 */
