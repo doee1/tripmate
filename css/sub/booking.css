@@ -485,12 +485,12 @@ select {
   margin-top: 50px;
 }
 
-#price {
+.price {
   font-size: 16px;
   font-weight: 800;
 }
 
-/* ========================= 페이지네이션 ================== */
+/* pagination*/
 
 .pagination {
   display: flex;

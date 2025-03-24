@@ -746,7 +746,7 @@ p .sec3_rs_content {
   display: none;
 }
 
-/*==========베너1=========== */
+/*banner1 */
 .banner1 {
   width: 100%;
   height: fit-content;
@@ -800,7 +800,7 @@ p .sec3_rs_content {
   line-height: 38px;
 }
 
-/* ================섹션4=============== */
+/*section4 */
 .sec4 {
   background-color: #f7f7f7;
 }

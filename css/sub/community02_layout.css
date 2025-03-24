@@ -422,7 +422,8 @@ select {
   text-decoration: none;
 }
 
-.comment-input {
+.comment-box {
+  display: block;
   width: 100%;
   padding: 10px;
   border: 1px solid #ddd;
@@ -432,11 +433,7 @@ select {
   margin-bottom: 10px;
 }
 
-.comment-input::placeholder {
-  color: #999;
-}
-
-/* ========================= 페이지네이션 ================== */
+/* pagination*/
 
 .pagination {
   display: flex;

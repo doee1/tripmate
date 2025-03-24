@@ -139,7 +139,7 @@
     font-weight: 500;
   }
 
-  #check {
+  .check {
     width: 18px;
     height: 18px;
     margin-left: 3px;
@@ -266,7 +266,7 @@
     justify-content: start;
   }
 
-  #price {
+  .price {
     font-size: 16px;
     font-weight: 800;
   }

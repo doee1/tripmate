@@ -367,7 +367,7 @@ section {
   font-weight: 500;
 }
 
-#check {
+.check {
   width: 18px;
   height: 18px;
   margin-left: 3px;
@@ -536,7 +536,7 @@ h2 > span {
   margin-top: 50px;
 }
 
-#price {
+.price {
   font-size: 18px;
   font-weight: 800;
 }
